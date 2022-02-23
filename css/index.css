@@ -1,0 +1,221 @@
+@import "about.css";
+@import "projects.css";
+@import "footer.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@100&display=swap');
+
+:root{}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	transition: .3s ease;
+}
+.main-container{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	min-width: 300px;
+}
+
+.main-container .header{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 5rem;
+	background: #fff;
+	transition: .3s ease;
+	position: fixed;
+	z-index: 1000;
+}
+.main-container .header a{
+	text-decoration: none;
+	color: #000;
+}
+.main-container .header.sticky{
+	box-shadow: 1px 1px 30px #888888;
+}
+.main-container .header .menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-container .header .menu a{
+	padding-left: 1rem;
+	text-decoration: none;
+	color: black;
+	font-size: 1.1rem;
+	transition: .3s ease-in-out;
+}
+.main-container .header .menu #sun,#moon{
+	position: fixed;
+	top: 1%;
+	right: 1%;
+	cursor: pointer;
+	font-size: 1.2rem;
+}
+.main-container .header .menu #sun{
+	display: none;
+	color: gold;
+}
+.main-container .header .menu #moon{
+	color: black;
+}
+/*Home CSS*/
+.main-container .home{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 90vh;
+	min-height: 1000px;
+	width: 100%;
+	min-height: 900px;
+	position: relative;
+}
+.main-container .home:before{
+	content: "";
+	height: 25vh;
+	width: 100%;
+	z-index: -1000;
+	background: #80808017;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+/*Home left side css*/
+.main-container .home .left{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.main-container .home .left .home-icon-con{
+	display: flex;
+	flex-direction: column;
+}
+.main-container .home .left .home-icon-con a i{
+	font-size: 1.5rem;
+	color: #d1d1d1;
+	cursor: pointer;
+	padding: 1rem 1rem 0 1rem;	
+}
+.main-container .home .left .home-icon-con a{
+	transition: .3s ease;
+}
+.main-container .home .left .home-icon-con a:hover{
+	transform: scale(1.5);
+}
+.main-container .home .left .home-text-con h1{
+	font-size: 4rem;
+	padding-bottom: .2rem;
+}
+.main-container .home .left .home-text-con h6{
+	font-size: 1.1rem;
+	color: gray;
+	padding-bottom: .5rem;
+}
+.main-container .home .left .home-text-con p{
+	color: grey;
+}
+.main-container .home .left .home-text-con .home-btn{
+	padding: .7rem;
+	font-size: 1rem;
+	border-radius: 15px;
+	cursor: pointer;
+	outline: none;
+	margin-top: .4rem;
+	font-weight: bold;
+	width: 50%;
+	transition: .3s ease;
+	border: 1px solid black;
+}
+.main-container .home .left .home-text-con .home-btn:hover{
+	box-shadow: 1px 1px 30px #888888;
+
+}
+.main-container .home .left .circle{
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	height: 100%;
+	width: 100%;
+	max-height: 15rem;
+	max-width: 15rem;
+	z-index: -9999;
+	border-radius: 50%;
+	opacity: .3;
+}
+.main-container .home .left .circle1{
+	position: absolute;
+	top: -30%;
+	left: 100%;
+	height: 100%;
+	width: 100%;
+	max-height: 5rem;
+	max-width: 5rem;
+	z-index: -9999;
+	border-radius: 50%;
+	opacity: .3;
+}
+
+/*Home right side css*/
+.main-container .home .right img{
+	max-height: 35rem;
+	max-width: 35rem;
+	width: 100%;
+	height: 100%;
+	border-radius: 40%;
+	transition: .3s ease-in-out;
+	padding-right: 1rem;
+}
+.main-container .home .right img:hover{
+	margin-bottom: 1rem;
+	/*transform: perspective(1000px) rotateY(-45deg);*/
+
+}
+
+@media screen and (max-width: 678px){
+.main-container .header{
+	flex-direction: column;
+}
+.main-container .header .menu{
+display: flex;
+}
+.main-container .header .menu a{
+	font-size: 1rem;
+	padding-right: .8rem;
+	padding-left: 0;
+}
+
+.main-container .home{
+	display: flex;
+	flex-direction: column;
+	min-height: 900px;
+	justify-content: unset;
+	padding-top: 7rem;
+}
+.main-container .home .right img{
+	max-height: 20rem;
+	max-width: 20rem;
+	width: 100%;
+	height: 100%;
+	border-radius: 40%;
+	transition: .3s ease;
+	padding-right: 1rem;
+	padding-top: 4rem;
+}
+.main-container .home .left .circle1{
+	display: none;
+}
+.main-container .home .left .home-text-con h1{
+	font-size: 3rem;
+	padding-bottom: .2rem;
+}
+
+}

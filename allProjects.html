@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="My Icon" type="image/x-icon" href="./images/favicon.png">
+	<title>Jonrie | All Projects</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body{
+			transition: .3s ease;
+		}
+		.main-container{
+			position: relative;
+			height: 100vh;
+			width: 100%;
+		}
+		.main-container .back{
+			position: absolute;
+			top: 5%;
+			right: 3%;
+			text-decoration: none;
+			color: gray;
+			border: 1px solid #d1d1d1;
+			padding: 1rem;
+			border-radius: 5px;
+			font-size: 1.2rem;
+		}
+		.main-container .back:hover{
+			opacity: .8;
+		}
+		.main-container .back img{
+			height: 1.2rem;
+			width: 1.2rem;
+		}
+		.main-container #sun,#moon{
+		position: fixed;
+		top: 1%;
+		right: 1%;
+		cursor: pointer;
+		font-size: 1.2rem;
+		}
+	.main-container #sun{
+	display: none;
+	color: gold;
+		}
+   .main-container #moon{
+	color: black;
+		}
+	</style>
+</head>
+<body class="light">
+<div class="main-container">
+	<abbr title="Darkmode"><i id="moon" class="fa-solid fa-moon"></i></abbr>
+ 	<abbr title="Lightmode"><i id="sun" class="fa-solid fa-sun"></i></abbr>	
+<a href="index.html" class="back">
+back
+<img src="https://img.icons8.com/plasticine/100/000000/reply-arrow.png"/>
+</a>
+
+</div>
+</body>
+<script src="https://kit.fontawesome.com/4f085de0b2.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	var body = document.querySelector('.light');
+	var sun = document.querySelector('#sun');
+	var moon = document.querySelector('#moon');
+
+	moon.addEventListener('click',()=>{
+	if(body.classList.contains('light')){
+		body.style.background="black";
+		body.classList.remove('light')
+		body.classList.add('dark')
+		body.style.color="white";
+		moon.style.display="none";
+		sun.style.display="block";
+		
+		
+	}
+	
+});
+
+
+sun.addEventListener('click',()=>{
+	if(body.classList.contains('dark')){
+		body.style.background="white";
+		body.classList.remove('dark')
+		body.classList.add('light')
+		body.style.color="black";
+		moon.style.display="block"
+		sun.style.display="none"
+		
+		
+	}
+	
+});
+
+</script>
+</html>
