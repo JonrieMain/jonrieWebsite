@@ -38,31 +38,93 @@
 			width: 1.2rem;
 		}
 		.main-container #sun,#moon{
-		position: fixed;
-		top: 1%;
-		right: 1%;
-		cursor: pointer;
-		font-size: 1.2rem;
+			position: fixed;
+			top: 1%;
+			right: 1%;
+			cursor: pointer;
+			font-size: 1.2rem;
 		}
-	.main-container #sun{
-	display: none;
-	color: gold;
+		.main-container #sun{
+			display: none;
+			color: gold;
 		}
-   .main-container #moon{
-	color: black;
+		.main-container #moon{
+			color: black;
+		}
+		.main-container .project-container{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			padding: 8rem 1rem 0 1rem;
+			max-width: 1300px;
+			margin: 0 auto;
+		}
+		.main-container .project-container div{
+				overflow: hidden;
+		}
+		.main-container .project-container div img{
+			width: 100%;
+			height: 100%;
+			max-height: 300px;
+			max-width: 600px;
+			background: #d1d1d161;
+			padding: 1rem;
+			transition: .2s ease;
+		}
+		.main-container .project-container div img:hover{
+			transform: scale(1.1);
+			box-shadow: 1px 1px 30px #888888;
+		}
+		.main-container .project-container div p{
+			font-size: 1.5rem;
+			opacity: .8;
+		}
+		.main-container .project-container div p span{
+			text-decoration: underline;
+			word-break: break-word;
+		}
+
+		@media screen and (max-width: 1300px){
+			.main-container .project-container{
+			flex-direction: column;
+		}
+		.main-container .project-container div img{
+			margin-bottom: 1.5rem;
+		}
 		}
 	</style>
 </head>
 <body class="light">
-<div class="main-container">
-	<abbr title="Darkmode"><i id="moon" class="fa-solid fa-moon"></i></abbr>
- 	<abbr title="Lightmode"><i id="sun" class="fa-solid fa-sun"></i></abbr>	
-<a href="index.html" class="back">
-back
-<img src="https://img.icons8.com/plasticine/100/000000/reply-arrow.png"/>
-</a>
+	<div class="main-container">
 
-</div>
+
+
+
+		<abbr title="Darkmode"><i id="moon" class="fa-solid fa-moon"></i></abbr>
+		<abbr title="Lightmode"><i id="sun" class="fa-solid fa-sun"></i></abbr>	
+		<a href="index.html" class="back">
+			back
+			<img src="https://img.icons8.com/plasticine/100/000000/reply-arrow.png"/>
+		</a>
+
+
+
+		<div class="project-container">
+			<div class="dheeluxe">
+				<a href="https://jonriemain.github.io/ExampleBeautyProducts/"><img src="./images/dheeluxe.png"></a>
+				<p><b>Dheeluxe Skin</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>
+			</div>
+			<div class="alwaysChooseGood">
+				<a href="https://jonriemain.github.io/AlwaysChooseGood/"><img src="./images/alwaysChooseGood.png"></a>
+				<p><b>Always Choose Good</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>
+			</div>
+
+
+		</div>
+
+
+
+	</div>
 </body>
 <script src="https://kit.fontawesome.com/4f085de0b2.js" crossorigin="anonymous"></script>
 <script type="text/javascript">
@@ -71,33 +133,33 @@ back
 	var moon = document.querySelector('#moon');
 
 	moon.addEventListener('click',()=>{
-	if(body.classList.contains('light')){
-		body.style.background="black";
-		body.classList.remove('light')
-		body.classList.add('dark')
-		body.style.color="white";
-		moon.style.display="none";
-		sun.style.display="block";
-		
-		
-	}
-	
-});
+		if(body.classList.contains('light')){
+			body.style.background="black";
+			body.classList.remove('light')
+			body.classList.add('dark')
+			body.style.color="white";
+			moon.style.display="none";
+			sun.style.display="block";
 
 
-sun.addEventListener('click',()=>{
-	if(body.classList.contains('dark')){
-		body.style.background="white";
-		body.classList.remove('dark')
-		body.classList.add('light')
-		body.style.color="black";
-		moon.style.display="block"
-		sun.style.display="none"
-		
-		
-	}
-	
-});
+		}
+
+	});
+
+
+	sun.addEventListener('click',()=>{
+		if(body.classList.contains('dark')){
+			body.style.background="white";
+			body.classList.remove('dark')
+			body.classList.add('light')
+			body.style.color="black";
+			moon.style.display="block"
+			sun.style.display="none"
+
+
+		}
+
+	});
 
 </script>
 </html>
