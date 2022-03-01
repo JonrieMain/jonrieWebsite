@@ -81,6 +81,7 @@ body{
 .main-container .home:before{
 	content: "";
 	height: 25vh;
+	max-height: 600px;
 	width: 100%;
 	z-index: -1000;
 	background: #80808017;

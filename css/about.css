@@ -24,6 +24,9 @@
 	color: gray;
 	font-size: 1.6rem;
 }
+.main-container .about h2{
+	padding-top: 2rem;
+}
 .main-container .about #underline{
 	padding: 1rem 0;
 	font-weight: 200;
