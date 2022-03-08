@@ -72,23 +72,13 @@ body{
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	height: 90vh;
+	height: 100vh;
 	min-height: 1000px;
 	width: 100%;
 	min-height: 900px;
 	position: relative;
 }
-.main-container .home:before{
-	content: "";
-	height: 25vh;
-	max-height: 600px;
-	width: 100%;
-	z-index: -1000;
-	background: #80808017;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
+
 /*Home left side css*/
 .main-container .home .left{
 	display: flex;
@@ -200,6 +190,7 @@ display: flex;
 	min-height: 900px;
 	justify-content: unset;
 	padding-top: 7rem;
+	max-height: 950px;
 }
 .main-container .home .right img{
 	max-height: 20rem;

@@ -39,7 +39,7 @@
 			width: 1.2rem;
 		}
 		.main-container #sun,#moon{
-			position: fixed;
+			position: absolute;
 			top: 1%;
 			right: 1%;
 			cursor: pointer;
@@ -137,17 +137,45 @@
 	var body = document.querySelector('.light');
 	var sun = document.querySelector('#sun');
 	var moon = document.querySelector('#moon');
+	var themeColorCount = 0;
 
-	moon.addEventListener('click',()=>{
-		if(body.classList.contains('light')){
+
+
+	darkFunc = ()=>{
 			body.style.background="black";
 			body.classList.remove('light')
 			body.classList.add('dark')
 			body.style.color="white";
 			moon.style.display="none";
 			sun.style.display="block";
+	}
+
+	lightFunc = ()=>{
+			body.style.background="white";
+			body.classList.remove('dark')
+			body.classList.add('light')
+			body.style.color="black";
+			moon.style.display="block"
+			sun.style.display="none"
+	}
 
 
+	check = () =>{
+	if(localStorage.getItem("themeColor") === null){
+		lightFunc();
+	}else if(localStorage.getItem("themeColor") === "0"){
+		lightFunc();
+	}else if(localStorage.getItem("themeColor") === "1"){
+		darkFunc();
+
+	}
+}
+check();
+	moon.addEventListener('click',()=>{
+		if(body.classList.contains('light')){
+			darkFunc();
+			themeColorCount++;
+			localStorage.setItem("themeColor", themeColorCount);
 		}
 
 	});
@@ -155,12 +183,15 @@
 
 	sun.addEventListener('click',()=>{
 		if(body.classList.contains('dark')){
-			body.style.background="white";
-			body.classList.remove('dark')
-			body.classList.add('light')
-			body.style.color="black";
-			moon.style.display="block"
-			sun.style.display="none"
+			if (themeColorCount === 0) {
+			themeColorCount = themeColorCount = 0;
+			lightFunc();
+			localStorage.setItem("themeColor", themeColorCount);
+		}else{
+			lightFunc();
+			themeColorCount--;
+			localStorage.setItem("themeColor", themeColorCount);
+		}
 
 
 		}
