@@ -45,6 +45,10 @@
 	color: gray;
 }
 
+.main-container .about img{
+	display: none;
+}
+
 @media screen and (min-width: 1161px){
 	.main-container .about{
 	padding: 8rem 15rem 4rem 15rem;
