@@ -37,6 +37,7 @@ body{
 	width: 100%;
 	position: relative;
 	min-width: 300px;
+	display: none;
 }
 
 .main-container .header{

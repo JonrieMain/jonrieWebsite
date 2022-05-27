@@ -12,11 +12,13 @@ var menu = document.getElementById("menu").children;
 var jonrieLogo = document.querySelector('#jonrieLogo');
 var themeColorCount = 0;
 var left = document.querySelector('.left');
+var mainContainer = document.querySelector('.main-container');
 
 /* Loading */
 window.addEventListener('load',()=>{
 	loadingFunc = ()=>{
 		loading.style.left="-100%";
+		mainContainer.style.display="block";
 		clearInterval(count);
 	}
 	var count = setInterval(loadingFunc,1000);
