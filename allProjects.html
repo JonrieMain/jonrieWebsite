@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="My Icon" type="image/x-icon" href="./images/favicon.png">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<title>Jonrie | All Projects</title>
 	<style type="text/css">
 		*{
@@ -23,10 +24,14 @@
 			top: 0;
 			left: 0;
 			z-index: 100000;
+		}
+		body .note span{
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
+			height: 100vh;
+			width: 100%;
 		}
 		body .note p{
 			background: #ffff;
@@ -89,8 +94,8 @@
 			margin: 0 auto;
 		}
 		.main-container .project-container div{
-				overflow: hidden;
-				padding-bottom: 2rem;
+			overflow: hidden;
+			padding-bottom: 2rem;
 		}
 		.main-container .project-container div img{
 			width: 100%;
@@ -116,153 +121,159 @@
 
 		@media screen and (max-width: 1300px){
 			.main-container .project-container{
-			flex-direction: column;
+				flex-direction: column;
 
-		}
-		.main-container .project-container div{
+			}
+			.main-container .project-container div{
 				padding-bottom: 3rem;
-		}
-		.main-container .project-container div img{
-			margin-bottom: 1.5rem;
-		}
-		.main-container .project-container div:nth-child(3) img{
-			min-width: 600px;
-		}
-		@media screen and (max-width: 1500px){
+			}
+			.main-container .project-container div img{
+				margin-bottom: 1.5rem;
+			}
+			.main-container .project-container div:nth-child(3) img{
+				min-width: 600px;
+			}
+			@media screen and (max-width: 1500px){
 				.main-container .project-container{
-				display: grid;
-				grid-template-columns: 1fr;
-				grid-template-rows: repeat(4, 1fr);
-				place-items:  center;
-				column-gap: 1rem;
+					display: grid;
+					grid-template-columns: 1fr;
+					grid-template-rows: repeat(4, 1fr);
+					place-items:  center;
+					column-gap: 1rem;
+				}
 			}
-		}
-		@media screen and (max-width: 620px){
-			.main-container .project-container{
-			padding: 8rem 1rem 0 1rem;
-		}
+			@media screen and (max-width: 620px){
+				.main-container .project-container{
+					padding: 8rem 1rem 0 1rem;
+				}
 				.main-container .project-container div:nth-child(3) img{
-				min-width: 100%;
+					min-width: 100%;
+				}
 			}
-		}
-		
-	</style>
-</head>
-<body class="light">
-	<div class="note" id="note"> 
-		<p><i class="fa-solid fa-quote-left"></i>Note: Some of my project designs have an original creator. <br> But the method of coding to build the website design is almost entirely mine.</p>
-		<button id="note-btn">OK</button>
-	</div>
-	<div class="main-container">
+
+		</style>
+	</head>
+	<body class="light">
+		<div class="note" id="note"> 
+			<span>
+				<p data-aos="fade-right" data-aos-duration="1500"><i class="fa-solid fa-quote-left"></i>Note: Some of my project designs have an original creator. <br> But the method of coding to build the website design is almost entirely mine.</p>
+				<button data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000" id="note-btn">OK</button>
+			</span>
+		</div>
+		<div class="main-container">
 
 
 
 
-		<abbr title="Darkmode"><i id="moon" class="fa-solid fa-moon"></i></abbr>
-		<abbr title="Lightmode"><i id="sun" class="fa-solid fa-sun"></i></abbr>	
-		<a href="index.html" class="back">
-			back
-			<img src="https://img.icons8.com/plasticine/100/000000/reply-arrow.png"/>
-		</a>
+			<abbr title="Darkmode"><i id="moon" class="fa-solid fa-moon"></i></abbr>
+			<abbr title="Lightmode"><i id="sun" class="fa-solid fa-sun"></i></abbr>	
+			<a href="index.html" class="back">
+				back
+				<img src="https://img.icons8.com/plasticine/100/000000/reply-arrow.png"/>
+			</a>
 
 
 
-		<div class="project-container">
-			<div class="dheeluxe">
-				<a href="https://jonriemain.github.io/ExampleBeautyProducts/"><img src="./images/dheeluxe.png"></a>
-				<p><b>Dheeluxe Skin</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>
+			<div class="project-container">
+				<div class="dheeluxe">
+					<a href="https://jonriemain.github.io/ExampleBeautyProducts/"><img src="./images/dheeluxe.png"></a>
+					<p><b>Dheeluxe Skin</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>
+				</div>
+				<div class="alwaysChooseGood">
+					<a href="https://jonriemain.github.io/AlwaysChooseGood/"><img src="./images/alwaysChooseGood.png"></a>
+					<p><b>Always Choose Good</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>
+				</div>
+
+				<div class="phoneBrand">
+					<a href="https://jonriemain.github.io/PhoneBrand/"><img src="./images/phoneBrand.png"></a>
+					<p><b>Phone Brand</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT</span></p>
+				</div>
+
+				<div class="trinity">
+					<a href="https://jonriemain.github.io/TrinityPolytechnicCollegeBlogsite/"><img src="./images/trinityBlogsite.png"></a>
+					<p><b>Trinity Polytechnic College Blogsite</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT,BOOTSTRAP</span></p>
+				</div>
+
+
 			</div>
-			<div class="alwaysChooseGood">
-				<a href="https://jonriemain.github.io/AlwaysChooseGood/"><img src="./images/alwaysChooseGood.png"></a>
-				<p><b>Always Choose Good</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>
-			</div>
 
-			<div class="phoneBrand">
-				<a href="https://jonriemain.github.io/PhoneBrand/"><img src="./images/phoneBrand.png"></a>
-				<p><b>Phone Brand</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT</span></p>
-			</div>
-
-			<div class="trinity">
-				<a href="https://jonriemain.github.io/TrinityPolytechnicCollegeBlogsite/"><img src="./images/trinityBlogsite.png"></a>
-				<p><b>Trinity Polytechnic College Blogsite</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT,BOOTSTRAP</span></p>
-			</div>
 
 
 		</div>
+	</body>
+	<script src="https://kit.fontawesome.com/4f085de0b2.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		var body = document.querySelector('.light');
+		var sun = document.querySelector('#sun');
+		var moon = document.querySelector('#moon');
+		var note = document.querySelector('#note');
+		var noteBtn = document.querySelector('#note-btn');
+		var themeColorCount = 0;
 
+		noteBtn.addEventListener('click',()=>{
+			note.style.display="none";
+		});
 
-
-	</div>
-</body>
-<script src="https://kit.fontawesome.com/4f085de0b2.js" crossorigin="anonymous"></script>
-<script type="text/javascript">
-	var body = document.querySelector('.light');
-	var sun = document.querySelector('#sun');
-	var moon = document.querySelector('#moon');
-	var note = document.querySelector('#note');
-	var noteBtn = document.querySelector('#note-btn');
-	var themeColorCount = 0;
-
-	noteBtn.addEventListener('click',()=>{
-		note.style.display="none";
-	});
-
-	darkFunc = ()=>{
+		darkFunc = ()=>{
 			body.style.background="black";
 			body.classList.remove('light')
 			body.classList.add('dark')
 			body.style.color="white";
 			moon.style.display="none";
 			sun.style.display="block";
-	}
+		}
 
-	lightFunc = ()=>{
+		lightFunc = ()=>{
 			body.style.background="white";
 			body.classList.remove('dark')
 			body.classList.add('light')
 			body.style.color="black";
 			moon.style.display="block"
 			sun.style.display="none"
-	}
-
-
-	check = () =>{
-	if(localStorage.getItem("themeColor") === null){
-		lightFunc();
-	}else if(localStorage.getItem("themeColor") === "0"){
-		lightFunc();
-	}else if(localStorage.getItem("themeColor") === "1"){
-		darkFunc();
-
-	}
-}
-check();
-	moon.addEventListener('click',()=>{
-		if(body.classList.contains('light')){
-			darkFunc();
-			themeColorCount++;
-			localStorage.setItem("themeColor", themeColorCount);
-		}
-
-	});
-
-
-	sun.addEventListener('click',()=>{
-		if(body.classList.contains('dark')){
-			if (themeColorCount === 0) {
-			themeColorCount = themeColorCount = 0;
-			lightFunc();
-			localStorage.setItem("themeColor", themeColorCount);
-		}else{
-			lightFunc();
-			themeColorCount--;
-			localStorage.setItem("themeColor", themeColorCount);
 		}
 
 
+		check = () =>{
+			if(localStorage.getItem("themeColor") === null){
+				lightFunc();
+			}else if(localStorage.getItem("themeColor") === "0"){
+				lightFunc();
+			}else if(localStorage.getItem("themeColor") === "1"){
+				darkFunc();
+
+			}
 		}
+		check();
+		moon.addEventListener('click',()=>{
+			if(body.classList.contains('light')){
+				darkFunc();
+				themeColorCount++;
+				localStorage.setItem("themeColor", themeColorCount);
+			}
 
-	});
+		});
 
-</script>
-</html>
+
+		sun.addEventListener('click',()=>{
+			if(body.classList.contains('dark')){
+				if (themeColorCount === 0) {
+					themeColorCount = themeColorCount = 0;
+					lightFunc();
+					localStorage.setItem("themeColor", themeColorCount);
+				}else{
+					lightFunc();
+					themeColorCount--;
+					localStorage.setItem("themeColor", themeColorCount);
+				}
+
+
+			}
+
+		});
+
+	</script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	</html>
