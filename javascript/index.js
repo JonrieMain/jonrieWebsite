@@ -4,6 +4,7 @@ window.addEventListener('scroll', () =>{
 	header.classList.toggle('sticky', window.scrollY > 0);
 });
 /*Darkmode Lightmode*/
+var loading = document.querySelector('.loading');
 var body = document.querySelector('.light');
 var sun = document.querySelector('#sun');
 var moon = document.querySelector('#moon');
@@ -11,7 +12,10 @@ var menu = document.getElementById("menu").children;
 var jonrieLogo = document.querySelector('#jonrieLogo');
 var themeColorCount = 0;
 
-
+/* Loading */
+window.addEventListener('load',()=>{
+	loading.style.display="none";
+});
 
 
 
