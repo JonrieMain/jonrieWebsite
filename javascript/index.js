@@ -11,11 +11,21 @@ var moon = document.querySelector('#moon');
 var menu = document.getElementById("menu").children;
 var jonrieLogo = document.querySelector('#jonrieLogo');
 var themeColorCount = 0;
+var left = document.querySelector('.left');
 
 /* Loading */
 window.addEventListener('load',()=>{
-	loading.style.display="none";
+	loadingFunc = ()=>{
+		loading.style.left="-100%";
+		clearInterval(count);
+	}
+	var count = setInterval(loadingFunc,1000);
+
+
 });
+
+
+
 
 
 

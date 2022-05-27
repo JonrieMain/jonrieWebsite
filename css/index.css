@@ -26,9 +26,11 @@ body{
 	z-index: 10000000000;
 	display: grid;
 	place-items: center;
+	transition: 1.5s ease;
 }
 .loading h1{
 	margin-top: 13rem;
+	color: #fff;
 }
 .main-container{
 	height: 100%;
