@@ -3,7 +3,9 @@ var header = document.querySelector('.header');
 window.addEventListener('scroll', () =>{
 	header.classList.toggle('sticky', window.scrollY > 0);
 });
-/*Darkmode Lightmode*/
+
+
+/* Call element */
 var loading = document.querySelector('.loading');
 var body = document.querySelector('.light');
 var sun = document.querySelector('#sun');
@@ -13,6 +15,9 @@ var jonrieLogo = document.querySelector('#jonrieLogo');
 var themeColorCount = 0;
 var left = document.querySelector('.left');
 var mainContainer = document.querySelector('.main-container');
+var color = document.querySelector('#color');
+var colorContainer = document.querySelector('#colorContainer');
+
 
 /* Loading */
 window.addEventListener('load',()=>{
@@ -28,9 +33,31 @@ window.addEventListener('load',()=>{
 
 
 
+/* Color picker*/
+color.addEventListener('click', ()=>{
+	checkColor = ()=>{
+		body.style.background=color.value;
+		header.style.background=color.value;
+	}
+	const countColor = setInterval(checkColor,.1)
+
+	document.addEventListener('click', (event)=>{
+		if(event.target.closest("#colorContainer")){
+			return true
+		}else{
+			clearInterval(countColor)
+		}
+
+
+	})
+
+
+})
 
 
 
+
+/* --------------------- Function for dark ---------------------------- */
 darkFunc = () =>{
 	body.style.background="black";
 	body.classList.remove('light')
@@ -45,6 +72,8 @@ darkFunc = () =>{
 	jonrieLogo.style.color="white";
 }
 
+
+/* --------------------- Function for light ---------------------------- */
 lightFunc = () =>{
 	body.style.background="white";
 	body.classList.remove('dark')
@@ -60,7 +89,7 @@ lightFunc = () =>{
 
 }
 
-
+/* --------------------- check localStorage ---------------------------- */
 check = () =>{
 	if(localStorage.getItem("themeColor") === null){
 		lightFunc();
@@ -72,6 +101,9 @@ check = () =>{
 	}
 }
 check();
+
+/* --------------------- Dark and light mode ---------------------------- */
+/* --------------------- Moon click event ---------------------------- */
 moon.addEventListener('click',()=>{
 	if(body.classList.contains('light')){
 		darkFunc();
@@ -80,6 +112,7 @@ moon.addEventListener('click',()=>{
 	}
 });
 
+/* --------------------- Sun click event ---------------------------- */
 sun.addEventListener('click',()=>{
 	if(body.classList.contains('dark')){
 		if (themeColorCount === 0) {
