@@ -20,6 +20,7 @@
 	border: 1px solid #d1d1d1;
 	padding: 1rem;
 	border-radius: 5px;
+	text-align: center;
 }
 .main-container .projects .view-all:hover{
 	opacity: .8;
@@ -122,9 +123,17 @@
 	.main-container .projects{
 		min-height: 700px;
 	}
+	.main-container .projects h1{
+	opacity: .7;
+	position: absolute;
+	top: 4%;
+	left: 3.5%;
+	}
+
 	.main-container .projects .view-all{
 	top: 90%;
-	right: 25%;
+	left: 50%;
+	right: 0;
 	transform: translate(-50%,-50%);
    	}
 	.main-container .projects .project-main-con .project-con .chooseGood img{
@@ -141,29 +150,21 @@
 @media screen and (max-width: 460px){
 
 
-	.main-container .projects .view-all{
-	top: 90%;
-	right: 22%;
-	transform: translate(-50%,-50%);
+   	.main-container .projects .project-main-con .project-con .chooseGood p{
+   		font-size: 1rem;
    	}
+
 
 }
 
-@media screen and (max-width: 400px){
-	.main-container .projects .view-all{
-	top: 90%;
-	right: 25%;
-	transform: translate(-50%,-50%);
-   	}
-}
 
 @media screen and (max-width: 360px){
 	.main-container .projects{
 		min-height: 500px;
 	}
 	.main-container .projects .project-main-con .project-con .chooseGood img{
-		max-width: 10rem;
-		max-height: 10rem;
+		max-width: 12rem;
+		max-height: 13rem;
 	}
 	.main-container .projects .project-main-con .project-con .chooseGood{
 		min-height: 15rem;
@@ -172,11 +173,7 @@
 		font-size: 4rem;
 	}
 
-	.main-container .projects .view-all{
-	top: 90%;
-	right: 15%;
-	transform: translate(-50%,-50%);
-   	}
+
 
 
 }

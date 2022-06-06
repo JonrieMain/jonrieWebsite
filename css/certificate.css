@@ -1,15 +1,22 @@
 .main-container .certificate-con{
 	height: 100%;
 	width: 100%;
-	padding: 3rem .5rem;
+	padding: 9rem 1rem 2rem 1rem;
 	background: #80808017;
 	box-shadow: 1px 1px 10px #000;
-	overflow: hidden;
+	position: relative;
 }
 .main-container .certificate-con h1{
-	margin-left: 4rem;
 	font-size: 7rem;
 	opacity: .7;
+	position: absolute;
+	top: 0;
+	left: 3.5%;
+}
+.main-container .certificate-con #carouselExampleDark{
+	max-width: 56rem;
+	margin: 0 auto;
+	box-shadow: 1px 1px 10px #000;
 }
 .main-container .certificate-con #carouselExampleDark .carousel-inner img{
 	width: 100%;
@@ -19,16 +26,20 @@
 	margin: 0 auto;
 	transition: .6s ease;
 }
-.main-container .certificate-con #carouselExampleDark .carousel-inner img:hover{
-	transform: scale(1.5);
-}
 
 
 @media screen and (max-width: 650px){
 	.main-container .certificate-con h1{
-		margin-left: 1rem;
 		font-size: 5rem;
 	}
+	.main-container .certificate-con h1{
+		font-size: 5rem;
+		opacity: .7;
+		position: absolute;
+		top: 3%;
+		left: 3.5%;
+	}
+
 }
 
 @media screen and (max-width: 460px){
@@ -40,5 +51,6 @@
 @media screen and (max-width: 360px){
 	.main-container .certificate-con h1{
 		font-size: 3rem;
+		top: 10%;
 	}
 }
