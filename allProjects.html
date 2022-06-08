@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="eu">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="My Icon" type="image/x-icon" href="./images/favicon.png">
-	<!-- --------------------------AOS-------------------------- -->
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<title>Jonrie | All Projects</title>
 	<!-- --------------------------CSS-------------------------- -->
 	<style type="text/css">
@@ -18,42 +16,28 @@
 		body{
 			transition: .3s ease;
 		}
-		body .note{
-			position: fixed;
-			background: rgb(0, 0, 0,.6);
-			height: 100vh;
+		/* ---------------------Loading CSS---------------------------- */
+		.loading{
+			height: 100%;
 			width: 100%;
+			position: fixed;
 			top: 0;
 			left: 0;
-			z-index: 100000;
+			background: #000 url(./images/loading1.gif)no-repeat center center;
+			z-index: 10000000000;
+			display: grid;
+			place-items: center;
+			transition: 1.5s ease;
 		}
-		body .note span{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			height: 100vh;
-			width: 100%;
-		}
-		body .note p{
-			background: #ffff;
-			color: #000;
-			text-align: center;
-			padding: 1rem;
-			font-size: 1.1rem;
-			border-radius: 1rem;
-
-		}
-		body .note button{
-			cursor: pointer;
-			padding: .5rem 3rem;
-			margin-top: .5rem;
-			
+		.loading h1{
+			margin-top: 13rem;
+			color: #fff;
 		}
 		.main-container{
 			position: relative;
 			height: 100vh;
 			width: 100%;
+			display: none;
 		}
 		.main-container .back{
 			position: absolute;
@@ -145,7 +129,7 @@
 		}
 
 		@media screen and (max-width: 400px){
-				.main-container .footer{
+			.main-container .footer{
 				flex-direction: column;
 			}
 			.main-container .footer .footer-links{
@@ -190,47 +174,43 @@
 		</style>
 	</head>
 	<body class="light">
-		<!-- ----------------------------------Note Container-------------------------------------------- -->
-		<div class="note" id="note"> 
-			<span>
-				<p data-aos="fade-right" data-aos-duration="1500"><i class="fa-solid fa-quote-left"></i>Note: Some of my project designs have an original creator. <br> But the method of coding to build the website design is almost entirely mine.</p>
-				<button data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000" id="note-btn">OK</button>
-			</span>
+		<div class="loading" id="loading">
+			<h1>LOADING...</h1>
 		</div>
 
-<!-- ----------------------------------Main Container-------------------------------------------- -->
+		<!-- ----------------------------------Main Container-------------------------------------------- -->
 		<div class="main-container">
 
 
 
-<!-- ----------------------------------Dark and Light Mode-------------------------------------------- -->
+			<!-- ----------------------------------Dark and Light Mode-------------------------------------------- -->
 			<abbr title="Darkmode"><i id="moon" class="fa-solid fa-moon"></i></abbr>
 			<abbr title="Lightmode"><i id="sun" class="fa-solid fa-sun"></i></abbr>	
 			<!-- ----------------------------------back-------------------------------------------- -->
 			<a href="index.html" class="back">
 				back
-				<img src="https://img.icons8.com/plasticine/100/000000/reply-arrow.png"/>
+				<img alt="arrowImage" src="https://img.icons8.com/plasticine/100/000000/reply-arrow.png"/>
 			</a>
 
 
 			<!-- ----------------------------------Project Container-------------------------------------------- -->
 			<div class="project-container">
 				<div class="dheeluxe">
-					<a target="__blank" href="https://jonriemain.github.io/ExampleBeautyProducts/"><img src="./images/dheeluxe.png"></a>
+					<a target="__blank" href="https://jonriemain.github.io/ExampleBeautyProducts/"><img alt="dheeluxeImage" src="./images/dheeluxe.png"></a>
 					<p><b>Dheeluxe Skin</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>
 				</div>
 				<div class="alwaysChooseGood">
-					<a target="__blank" href="https://jonriemain.github.io/AlwaysChooseGood/"><img src="./images/alwaysChooseGood.png"></a>
+					<a target="__blank" href="https://jonriemain.github.io/AlwaysChooseGood/"><img alt="ChooseGoodImage" src="./images/alwaysChooseGood.png"></a>
 					<p><b>Always Choose Good</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>
 				</div>
 
 				<div class="phoneBrand">
-					<a target="__blank" href="https://jonriemain.github.io/PhoneBrand/"><img src="./images/phoneBrand.png"></a>
+					<a target="__blank" href="https://jonriemain.github.io/PhoneBrand/"><img alt="PhoneBrandImage" src="./images/phoneBrand.png"></a>
 					<p><b>Phone Brand</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT</span></p>
 				</div>
 
 				<div class="trinity">
-					<a target="__blank" href="https://jonriemain.github.io/TrinityPolytechnicCollegeBlogsite/"><img src="./images/trinityBlogsite.png"></a>
+					<a target="__blank" href="https://jonriemain.github.io/TrinityPolytechnicCollegeBlogsite/"><img alt="TrinityImage" src="./images/trinityBlogsite.png"></a>
 					<p><b>Trinity Polytechnic College Blogsite</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT,BOOTSTRAP</span></p>
 				</div>
 			</div>
@@ -260,9 +240,19 @@
 		var note = document.querySelector('#note');
 		var noteBtn = document.querySelector('#note-btn');
 		var themeColorCount = 0;
+		var loading = document.querySelector('.loading');
+		var mainContainer = document.querySelector('.main-container');
 
-		noteBtn.addEventListener('click',()=>{
-			note.style.display="none";
+		/* Loading */
+		window.addEventListener('load',()=>{
+			loadingFunc = ()=>{
+				loading.style.left="-100%";
+				mainContainer.style.display="block";
+				clearInterval(count);
+			}
+			var count = setInterval(loadingFunc,1000);
+
+
 		});
 
 		darkFunc = ()=>{
@@ -322,9 +312,5 @@
 
 		});
 
-	</script>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-		AOS.init();
 	</script>
 	</html>
