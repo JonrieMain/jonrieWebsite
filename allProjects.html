@@ -4,8 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="My Icon" type="image/x-icon" href="./images/favicon.png">
+	<!-- --------------------------AOS-------------------------- -->
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<title>Jonrie | All Projects</title>
+	<!-- --------------------------CSS-------------------------- -->
 	<style type="text/css">
 		*{
 			padding: 0;
@@ -73,7 +75,7 @@
 		}
 		.main-container #sun,#moon{
 			position: absolute;
-			top: 1%;
+			top: 0;
 			right: 1%;
 			cursor: pointer;
 			font-size: 1.2rem;
@@ -87,10 +89,10 @@
 		}
 		.main-container .project-container{
 			display: grid;
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: repeat(2, 1fr);
 			column-gap: 1rem;
 			padding: 15rem 1rem 0 1rem;
-			max-width: 2000px;
+			max-width: 1280px;
 			margin: 0 auto;
 		}
 		.main-container .project-container div{
@@ -117,18 +119,49 @@
 		.main-container .project-container div p span{
 			text-decoration: underline;
 			word-break: break-word;
+			color: tomato;
 		}
 
-		@media screen and (max-width: 1300px){
-			.main-container .project-container{
-				flex-direction: column;
 
+
+
+
+		.main-container .footer{
+			padding: 1rem;
+			background: #80808017;
+			font-weight: 200;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		/* -----------------------------Media Query--------------------------------- */
+		@media screen and (max-width: 350px){
+			.main-container .footer{
+				min-height: 3rem;
 			}
+			.main-container .footer p{
+				font-size: 1rem;
+			}
+		}
+
+		@media screen and (max-width: 400px){
+				.main-container .footer{
+				flex-direction: column;
+			}
+			.main-container .footer .footer-links{
+				margin-top: 1rem;
+			}
+		}
+
+
+		@media screen and (max-width: 1130px){
 			.main-container .project-container div{
 				padding-bottom: 3rem;
 			}
 			.main-container .project-container div img{
 				margin-bottom: 1.5rem;
+				max-height: 700px;
+				max-width: 700px;
 			}
 			.main-container .project-container div:nth-child(3) img{
 				min-width: 600px;
@@ -149,31 +182,38 @@
 				.main-container .project-container div:nth-child(3) img{
 					min-width: 100%;
 				}
+				.main-container .project-container div p{
+					font-size: 1.1rem;
+				}
 			}
 
 		</style>
 	</head>
 	<body class="light">
+		<!-- ----------------------------------Note Container-------------------------------------------- -->
 		<div class="note" id="note"> 
 			<span>
 				<p data-aos="fade-right" data-aos-duration="1500"><i class="fa-solid fa-quote-left"></i>Note: Some of my project designs have an original creator. <br> But the method of coding to build the website design is almost entirely mine.</p>
 				<button data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000" id="note-btn">OK</button>
 			</span>
 		</div>
+
+<!-- ----------------------------------Main Container-------------------------------------------- -->
 		<div class="main-container">
 
 
 
-
+<!-- ----------------------------------Dark and Light Mode-------------------------------------------- -->
 			<abbr title="Darkmode"><i id="moon" class="fa-solid fa-moon"></i></abbr>
 			<abbr title="Lightmode"><i id="sun" class="fa-solid fa-sun"></i></abbr>	
+			<!-- ----------------------------------back-------------------------------------------- -->
 			<a href="index.html" class="back">
 				back
 				<img src="https://img.icons8.com/plasticine/100/000000/reply-arrow.png"/>
 			</a>
 
 
-
+			<!-- ----------------------------------Project Container-------------------------------------------- -->
 			<div class="project-container">
 				<div class="dheeluxe">
 					<a target="__blank" href="https://jonriemain.github.io/ExampleBeautyProducts/"><img src="./images/dheeluxe.png"></a>
@@ -193,14 +233,25 @@
 					<a target="__blank" href="https://jonriemain.github.io/TrinityPolytechnicCollegeBlogsite/"><img src="./images/trinityBlogsite.png"></a>
 					<p><b>Trinity Polytechnic College Blogsite</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT,BOOTSTRAP</span></p>
 				</div>
+			</div>
+			<!-- ----------------------------------Footer Container-------------------------------------------- -->
+			<hr>
+			<div class="footer">
 
+				<p>© 2022 Jonrie | Personal Portfolio</p>	
+				<div class="footer-links">
+					<a href="https://web.facebook.com/JonrieMain"><abbr title="Facebook"><i class="fa-brands fa-facebook-f"></abbr></i></a>
+					<a href="https://www.instagram.com/jonrieeee/"><abbr title="Instagram"><i class="fa-brands fa-instagram"></abbr></i></a>
+					<a href="https://twitter.com/jonriemain"><abbr title="Twitter"><i class="fa-brands fa-twitter"></i></abbr></a>
+					<a href="https://github.com/JonrieMain"><abbr title="Github"><i class="fa-brands fa-github"></abbr></i></a>
+					<a href="https://ph.linkedin.com/in/jonrie-badiang-321470232"><abbr title="Linkedin"><i class="fa-brands fa-linkedin-in"></abbr></i></a>
+				</div>
 
 			</div>
 
-
-
 		</div>
 	</body>
+	<!-- ----------------------------------Javascript-------------------------------------------- -->
 	<script src="https://kit.fontawesome.com/4f085de0b2.js" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 		var body = document.querySelector('.light');
