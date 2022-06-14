@@ -84,7 +84,7 @@ body{
 /* --------------------- Header Lightmode And Darkmode style ---------------------------- */
 .main-container .header .menu #sun,#moon{
 	position: absolute;
-	top: 1%;
+	top: 2%;
 	right: 1%;
 	cursor: pointer;
 	font-size: 1.2rem;

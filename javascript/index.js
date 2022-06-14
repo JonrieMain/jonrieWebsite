@@ -12,7 +12,6 @@ var sun = document.querySelector('#sun');
 var moon = document.querySelector('#moon');
 var menu = document.getElementById("menu").children;
 var jonrieLogo = document.querySelector('#jonrieLogo');
-var themeColorCount = 0;
 var left = document.querySelector('.left');
 var mainContainer = document.querySelector('.main-container');
 var color = document.querySelector('#color');
@@ -38,6 +37,7 @@ color.addEventListener('click', ()=>{
 	checkColor = ()=>{
 		body.style.background=color.value;
 		header.style.background=color.value;
+		localStorage.setItem("themeColor", color.value)
 	}
 	const countColor = setInterval(checkColor,.1)
 
@@ -70,6 +70,7 @@ darkFunc = () =>{
 		menu[i].style.color = "white";
 	}
 	jonrieLogo.style.color="white";
+	localStorage.setItem("themeColor", "dark");
 }
 
 
@@ -86,45 +87,32 @@ lightFunc = () =>{
 		menu[i].style.color = "black";
 	}
 	jonrieLogo.style.color="black";
-
+	localStorage.setItem("themeColor", "light");
 }
 
 /* --------------------- check localStorage ---------------------------- */
 check = () =>{
-	if(localStorage.getItem("themeColor") === null){
+	if(localStorage.getItem("themeColor") === null) {
 		lightFunc();
-	}else if(localStorage.getItem("themeColor") === "0"){
+	}else if(localStorage.getItem("themeColor") === "light"){
 		lightFunc();
-	}else if(localStorage.getItem("themeColor") === "1"){
+	}else if(localStorage.getItem("themeColor") === "dark"){
 		darkFunc();
-
+	}else{
+		body.style.background=localStorage.getItem("themeColor");
+		header.style.background=localStorage.getItem("themeColor");
 	}
 }
 check();
-
 /* --------------------- Dark and light mode ---------------------------- */
 /* --------------------- Moon click event ---------------------------- */
 moon.addEventListener('click',()=>{
-	if(body.classList.contains('light')){
-		darkFunc();
-		themeColorCount++;
-		localStorage.setItem("themeColor", themeColorCount);
-	}
+	darkFunc();
 });
 
 /* --------------------- Sun click event ---------------------------- */
 sun.addEventListener('click',()=>{
-	if(body.classList.contains('dark')){
-		if (themeColorCount === 0) {
-			themeColorCount = themeColorCount = 0;
-			lightFunc();
-			localStorage.setItem("themeColor", themeColorCount);
-		}else{
-			lightFunc();
-			themeColorCount--;
-			localStorage.setItem("themeColor", themeColorCount);
-		}
-	}
+	lightFunc();
 });
 
 
