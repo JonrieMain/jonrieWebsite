@@ -118,6 +118,15 @@
 			justify-content: space-around;
 			align-items: center;
 		}
+
+		.main-container .footer .footer-links a abbr i{
+			color: grey;
+			transition: .3s linear;
+			margin: 0 .4rem;
+		}
+		.main-container .footer .footer-links a abbr i:hover{
+			opacity: .7;
+		}
 		/* -----------------------------Media Query--------------------------------- */
 		@media screen and (max-width: 350px){
 			.main-container .footer{
@@ -253,6 +262,9 @@
 
 
 		});
+
+		/*Prevent right click*/
+		document.body.addEventListener('contextmenu', e=> e.preventDefault());
 
 		darkFunc = ()=>{
 			body.style.background="black";

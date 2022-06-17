@@ -17,6 +17,9 @@ var mainContainer = document.querySelector('.main-container');
 var color = document.querySelector('#color');
 var colorContainer = document.querySelector('#colorContainer');
 
+/* Prevent right Click*/
+document.body.addEventListener('contextmenu', e=> e.preventDefault());
+
 
 /* Loading */
 window.addEventListener('load',()=>{
