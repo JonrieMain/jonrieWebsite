@@ -96,7 +96,7 @@ lightFunc = () =>{
 /* --------------------- check localStorage ---------------------------- */
 check = () =>{
 	if(localStorage.getItem("themeColor") === null) {
-		lightFunc();
+		return true
 	}else if(localStorage.getItem("themeColor") === "light"){
 		lightFunc();
 	}else if(localStorage.getItem("themeColor") === "dark"){
