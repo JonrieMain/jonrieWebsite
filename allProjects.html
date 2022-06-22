@@ -72,12 +72,12 @@
 			color: black;
 		}
 		.main-container .project-container{
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			column-gap: 1rem;
-			padding: 15rem 1rem 0 1rem;
-			max-width: 1280px;
-			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			padding-top: 20rem;
+			gap: 1rem;
 		}
 		.main-container .project-container div{
 			overflow: hidden;
@@ -159,15 +159,6 @@
 			.main-container .project-container div:nth-child(3) img{
 				min-width: 600px;
 			}
-			@media screen and (max-width: 1500px){
-				.main-container .project-container{
-					display: grid;
-					grid-template-columns: 1fr;
-					grid-template-rows: repeat(4, 1fr);
-					place-items:  center;
-					column-gap: 1rem;
-				}
-			}
 			@media screen and (max-width: 620px){
 				.main-container .project-container{
 					padding: 8rem 1rem 0 1rem;
@@ -220,6 +211,10 @@
 
 				<div class="trinity">
 					<a target="__blank" href="https://jonriemain.github.io/TrinityPolytechnicCollegeBlogsite/"><img alt="TrinityImage" src="./images/trinityBlogsite.png"></a>
+					<p><b>Trinity Polytechnic College Blogsite</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT,BOOTSTRAP</span></p>
+				</div>
+				<div class="restauOpening">
+					<a target="__blank" href="https://jonriemain.github.io/RestaurantsOpening/"><img alt="Restaurant Oening" src="./images/restauOpeningDestop.png"></a>
 					<p><b>Trinity Polytechnic College Blogsite</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT,BOOTSTRAP</span></p>
 				</div>
 			</div>

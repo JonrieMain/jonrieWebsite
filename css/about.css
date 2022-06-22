@@ -33,19 +33,6 @@
 	font-weight: 200;
 }
 
-.main-container .about .rateSkill{
-	height: 100%;
-	width: 100%;
-	max-width: 300px;
-}
-.main-container .about .rateSkill div span{
-	display: flex;
-	justify-content: space-between;
-}
-.main-container .about .rateSkill div progress{
-	width: 100%;
-	max-width: 300px;
-}
 
 
 
@@ -76,12 +63,5 @@
 @media screen and (max-width: 678px){
 	.main-container .about h1{
 		font-size: 5rem;
-	}
-	.main-container .about .rateSkill{
-	max-width: 200px;
-	}
-	.main-container .about .rateSkill div progress{
-	width: 100%;
-	max-width: 200px;
 	}
 }
