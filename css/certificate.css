@@ -1,7 +1,7 @@
 .main-container .certificate-con{
 	height: 100%;
 	width: 100%;
-	padding: 9rem 1rem 2rem 1rem;
+	padding: 10rem 1rem 2rem 1rem;
 	background: #80808017;
 	box-shadow: 1px 1px 10px #000;
 	position: relative;
@@ -27,30 +27,15 @@
 	transition: .6s ease;
 }
 
-
-@media screen and (max-width: 650px){
+@media screen and (max-width: 678px){
 	.main-container .certificate-con h1{
-		font-size: 5rem;
-	}
-	.main-container .certificate-con h1{
-		font-size: 5rem;
-		opacity: .7;
-		position: absolute;
-		top: 3%;
-		left: 3.5%;
+		font-size: 2.5rem;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
+	.main-container .certificate-con{
+	padding: 4rem 1rem 2rem 1rem;
+}
 }
 
-@media screen and (max-width: 460px){
-	.main-container .certificate-con h1{
-		font-size: 4rem;
-	}
-}
-
-@media screen and (max-width: 360px){
-	.main-container .certificate-con h1{
-		font-size: 3rem;
-		top: 10%;
-	}
-}

@@ -109,28 +109,26 @@
 	}
 }
 
-@media screen and (max-width: 650px){
-	.main-container .projects .project-main-con .project-con .chooseGood img{
-		max-width: 20rem;
-		max-height: 30rem;
-	}
-	.main-container .projects h1{
-		font-size: 5rem;
-	}
-}
-
-@media screen and (max-width: 500px){
-	.main-container .projects{
-		min-height: 700px;
-	}
-	.main-container .projects h1{
-	opacity: .7;
-	position: absolute;
-	top: 4%;
-	left: 3.5%;
+@media screen and (max-width: 678px){
+		.main-container .projects h1{
+		font-size: 2.5rem;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
-	.main-container .projects .view-all{
+		.main-container .projects{
+		height: 100%;
+		width: 100%;
+		padding: 5rem .5rem 3rem .5rem;
+		position: relative;
+	}
+
+	.main-container .projects {
+    min-height: 620px;
+      }
+
+
+      	.main-container .projects .view-all{
 	top: 90%;
 	left: 50%;
 	right: 0;
@@ -144,8 +142,15 @@
 		min-height: 25rem;
 	}
 
-
 }
+
+@media screen and (max-width: 650px){
+	.main-container .projects .project-main-con .project-con .chooseGood img{
+		max-width: 20rem;
+		max-height: 30rem;
+	}
+}
+
 
 @media screen and (max-width: 460px){
 
@@ -159,9 +164,6 @@
 
 
 @media screen and (max-width: 360px){
-	.main-container .projects{
-		min-height: 500px;
-	}
 	.main-container .projects .project-main-con .project-con .chooseGood img{
 		max-width: 12rem;
 		max-height: 13rem;
@@ -169,12 +171,12 @@
 	.main-container .projects .project-main-con .project-con .chooseGood{
 		min-height: 15rem;
 	}
-	.main-container .projects h1{
-		font-size: 4rem;
+
+
+	.main-container .projects {
+		min-height: 440px;
 	}
-
-
-
+    
 
 }
 
