@@ -59,7 +59,6 @@ color.addEventListener('click', ()=>{
 
 
 
-
 /* --------------------- Function for dark ---------------------------- */
 darkFunc = () =>{
 	body.style.background="black";

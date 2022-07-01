@@ -27,6 +27,7 @@
 }
 .main-container .about h2{
 	padding-top: 2rem;
+	font-style: italic;
 }
 .main-container .about #underline{
 	padding: 1rem 0;

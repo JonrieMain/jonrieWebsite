@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eu">
+<html lang="eu" manifest="offline_2.manifest">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +15,9 @@
 		}
 		body{
 			transition: .3s ease;
+		}
+		body p{
+			cursor: default;
 		}
 		/* ---------------------Loading CSS---------------------------- */
 		.loading{
@@ -35,14 +38,22 @@
 		}
 		.main-container{
 			position: relative;
-			height: 100vh;
+			height: 100%;
 			width: 100%;
 			display: none;
 		}
-		.main-container .back{
-			position: absolute;
-			top: 5%;
-			right: 3%;
+		/* header style */
+		.main-container .allProjectHeader{
+			height: 6rem;
+			width: 100%;
+			background: #c0c0c036;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 1.5rem;
+		}
+		.main-container .allProjectHeader .back{
 			text-decoration: none;
 			color: gray;
 			border: 1px solid #d1d1d1;
@@ -50,25 +61,22 @@
 			border-radius: 5px;
 			font-size: 1.2rem;
 		}
-		.main-container .back:hover{
+		.main-container .allProjectHeader .back:hover{
 			opacity: .8;
 		}
-		.main-container .back img{
+		.main-container .allProjectHeader .back img{
 			height: 1.2rem;
 			width: 1.2rem;
 		}
-		.main-container #sun,#moon{
-			position: absolute;
-			top: 1%;
-			right: 1%;
+		.main-container .allProjectHeader #sun,#moon{
 			cursor: pointer;
 			font-size: 1.2rem;
 		}
-		.main-container #sun{
+		.main-container .allProjectHeader #sun{
 			display: none;
 			color: gold;
 		}
-		.main-container #moon{
+		.main-container .allProjectHeader #moon{
 			color: black;
 		}
 		.main-container .project-container{
@@ -76,7 +84,7 @@
 			justify-content: center;
 			align-items: center;
 			flex-wrap: wrap;
-			padding-top: 20rem;
+			padding-top: 2rem;
 			gap: 1rem;
 		}
 		.main-container .project-container div{
@@ -161,7 +169,7 @@
 			}
 			@media screen and (max-width: 620px){
 				.main-container .project-container{
-					padding: 8rem 1rem 0 1rem;
+					padding: 2rem 1rem 0 1rem;
 				}
 				.main-container .project-container div:nth-child(3) img{
 					min-width: 100%;
@@ -184,41 +192,43 @@
 
 
 			<!-- ----------------------------------Dark and Light Mode-------------------------------------------- -->
-			<abbr title="Darkmode"><i id="moon" class="fa-solid fa-moon"></i></abbr>
-			<abbr title="Lightmode"><i id="sun" class="fa-solid fa-sun"></i></abbr>	
-			<!-- ----------------------------------back-------------------------------------------- -->
-			<a href="index.html" class="back">
-				back
-				<img alt="arrowImage" src="https://img.icons8.com/plasticine/100/000000/reply-arrow.png"/>
-			</a>
+			<div class="allProjectHeader">
+				<abbr title="Darkmode"><i id="moon" class="fa-solid fa-moon"></i></abbr>
+				<abbr title="Lightmode"><i id="sun" class="fa-solid fa-sun"></i></abbr>	
+				<!-- ----------------------------------back-------------------------------------------- -->
+				<a href="index.html" class="back">
+					back
+					<img alt="arrowImage" src="https://img.icons8.com/plasticine/100/000000/reply-arrow.png"/>
+				</a>
+			</div>
 
 
 			<!-- ----------------------------------Project Container-------------------------------------------- -->
 			<div class="project-container">
 				<div class="dheeluxe">
-					<a target="__blank" href="https://jonriemain.github.io/ExampleBeautyProducts/"><img alt="dheeluxeImage" src="./images/dheeluxe.png"></a>
+					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/ExampleBeautyProducts/"><img alt="dheeluxeImage" src="./images/dheeluxe.png"></a></abbr>
 					<p><b>Dheeluxe Skin</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>
 				</div>
 				<div class="alwaysChooseGood">
-					<a target="__blank" href="https://jonriemain.github.io/AlwaysChooseGood/"><img alt="ChooseGoodImage" src="./images/alwaysChooseGood.png"></a>
+					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/AlwaysChooseGood/"><img alt="ChooseGoodImage" src="./images/alwaysChooseGood.png"></a></abbr>
 					<p><b>Always Choose Good</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>
 				</div>
 
 				<div class="phoneBrand">
-					<a target="__blank" href="https://jonriemain.github.io/PhoneBrand/"><img alt="PhoneBrandImage" src="./images/phoneBrand.png"></a>
+					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/PhoneBrand/"><img alt="PhoneBrandImage" src="./images/phoneBrand.png"></a></abbr>
 					<p><b>Phone Brand</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT</span></p>
 				</div>
 
 				<div class="trinity">
-					<a target="__blank" href="https://jonriemain.github.io/TrinityPolytechnicCollegeBlogsite/"><img alt="TrinityImage" src="./images/trinityBlogsite.png"></a>
+					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/TrinityPolytechnicCollegeBlogsite/"><img alt="TrinityImage" src="./images/trinityBlogsite.png"></a></abbr>
 					<p><b>Trinity Polytechnic College Blogsite</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT,BOOTSTRAP</span></p>
 				</div>
 				<div class="restauOpening">
-					<a target="__blank" href="https://jonriemain.github.io/RestaurantsOpening/"><img alt="Restaurant Oening" src="./images/restauOpeningDestop.png"></a>
+					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/RestaurantsOpening/"><img alt="Restaurant Oening" src="./images/restauOpeningDestop.png"></a></abbr>
 					<p><b>Restaurant Opening</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT</span></p>
 				</div>
 				<div class="hikingConcept">
-					<a target="__blank" href="https://jonriemain.github.io/HikingConcept/"><img alt="Hiking Concept" src="./images/hikingConcept.png"></a>
+					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/HikingConcept/"><img alt="Hiking Concept" src="./images/hikingConcept.png"></a></abbr>
 					<p><b>Hiking Concept</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT</span></p>
 				</div>
 			</div>

@@ -19,6 +19,9 @@ html{
 body{
 	transition: .3s ease;
 }
+body h1,h2,h6,p{
+	cursor: default;
+}
 /* ---------------------Loading CSS---------------------------- */
 .loading{
 	height: 100%;
@@ -87,9 +90,12 @@ body{
 	position: fixed;
 	z-index: 1000;
 }
-.main-container .header a{
+.main-container .header #jonrieLogo{
 	text-decoration: none;
 	color: #000;
+}
+.main-container .header a h1{
+	cursor: pointer;
 }
 .main-container .header.sticky{
 	box-shadow: 1px 1px 30px #888888;
@@ -105,10 +111,6 @@ body{
 	color: black;
 	font-size: 1.1rem;
 	transition: .3s ease-in-out;
-}
-/* Hover */
-.main-container .header .menu a:hover{
-	color: lightgreen;
 }
 
 
