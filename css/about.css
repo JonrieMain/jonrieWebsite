@@ -1,7 +1,7 @@
 .main-container .about{
 	height: 100%;
 	width: 100%;
-	padding: 8rem 2rem 4rem 2rem;
+	padding: 0rem 2rem 0rem 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content:center;
@@ -9,14 +9,12 @@
 	position: relative;
 	box-shadow: 1px 1px 10px #000;
 	background: #80808017;
-
 }
 .main-container .about h1{
-	font-size: 7rem;
+	font-size: 6rem;
 	opacity: .7;
-	position: absolute;
-	top: 0;
-	left: 5%;
+		font-weight: 800;
+		padding-bottom: 1.5rem;
 }
 .main-container .about p a{
 	color: gray;
@@ -34,28 +32,6 @@
 	font-weight: 200;
 }
 
-
-
-
-
-.main-container .about .about-icon-con{
-	padding-top: 1rem;
-}
-.main-container .about .about-icon-con i{
-	font-size: 1.5rem;
-	padding-right: 1rem;
-	color: #d1d1d1;
-	transition: all .3s ease;
-	cursor: pointer;
-}
-.main-container .about .about-icon-con i:hover{
-	color: gray;
-}
-
-.main-container .about img{
-	display: none;
-}
-
 @media screen and (min-width: 1161px){
 	.main-container .about{
 	padding: 8rem 15rem 4rem 15rem;
@@ -63,13 +39,7 @@
 }
 @media screen and (max-width: 678px){
 	.main-container .about h1{
-		font-size: 2.5rem;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-
-		.main-container .about{
-		padding: 4rem 2rem 4rem 2rem;
+		font-size: 3rem;
 
 	}
 }

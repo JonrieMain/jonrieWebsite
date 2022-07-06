@@ -1,324 +1,35 @@
-<!DOCTYPE html>
-<html lang="eu" manifest="offline_2.manifest">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="My Icon" type="image/x-icon" href="./images/favicon.png">
-	<title>Jonrie | All Projects</title>
-	<!-- --------------------------CSS-------------------------- -->
-	<style type="text/css">
-		*{
-			padding: 0;
-			margin: 0;
-			box-sizing: border-box;
-			font-family: sans-serif;
-		}
-		body{
-			transition: .3s ease;
-		}
-		body p{
-			cursor: default;
-		}
-		/* ---------------------Loading CSS---------------------------- */
-		.loading{
-			height: 100%;
-			width: 100%;
-			position: fixed;
-			top: 0;
-			left: 0;
-			background: #000 url(./images/loading1.gif)no-repeat center center;
-			z-index: 10000000000;
-			display: grid;
-			place-items: center;
-			transition: 1.5s ease;
-		}
-		.loading h1{
-			margin-top: 13rem;
-			color: #fff;
-		}
-		.main-container{
-			position: relative;
-			height: 100%;
-			width: 100%;
-			display: none;
-		}
-		/* header style */
-		.main-container .allProjectHeader{
-			height: 6rem;
-			width: 100%;
-			background: #c0c0c036;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-wrap: wrap;
-			gap: 1.5rem;
-		}
-		.main-container .allProjectHeader .back{
-			text-decoration: none;
-			color: gray;
-			border: 1px solid #d1d1d1;
-			padding: 1rem;
-			border-radius: 5px;
-			font-size: 1.2rem;
-		}
-		.main-container .allProjectHeader .back:hover{
-			opacity: .8;
-		}
-		.main-container .allProjectHeader .back img{
-			height: 1.2rem;
-			width: 1.2rem;
-		}
-		.main-container .allProjectHeader #sun,#moon{
-			cursor: pointer;
-			font-size: 1.2rem;
-		}
-		.main-container .allProjectHeader #sun{
-			display: none;
-			color: gold;
-		}
-		.main-container .allProjectHeader #moon{
-			color: black;
-		}
-		.main-container .project-container{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-wrap: wrap;
-			padding-top: 2rem;
-			gap: 1rem;
-		}
-		.main-container .project-container div{
-			overflow: hidden;
-			padding-bottom: 2rem;
-		}
-		.main-container .project-container div img{
-			width: 100%;
-			height: 100%;
-			max-height: 300px;
-			max-width: 600px;
-			background: #d1d1d161;
-			padding: 1rem;
-			transition: .2s ease;
-		}
-		.main-container .project-container div img:hover{
-			transform: scale(1.1);
-			box-shadow: 1px 1px 30px #888888;
-		}
-		.main-container .project-container div p{
-			font-size: 1.5rem;
-			opacity: .8;
-		}
-		.main-container .project-container div p span{
-			text-decoration: underline;
-			word-break: break-word;
-			color: tomato;
-		}
 
-
-
-
-
-		.main-container .footer{
-			padding: 1rem;
-			background: #80808017;
-			font-weight: 200;
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-		}
-
-		.main-container .footer .footer-links a abbr i{
-			color: grey;
-			transition: .3s linear;
-			margin: 0 .4rem;
-		}
-		.main-container .footer .footer-links a abbr i:hover{
-			opacity: .7;
-		}
-		/* -----------------------------Media Query--------------------------------- */
-		@media screen and (max-width: 350px){
-			.main-container .footer{
-				min-height: 3rem;
-			}
-			.main-container .footer p{
-				font-size: 1rem;
-			}
-		}
-
-		@media screen and (max-width: 400px){
-			.main-container .footer{
-				flex-direction: column;
-			}
-			.main-container .footer .footer-links{
-				margin-top: 1rem;
-			}
-		}
-
-
-		@media screen and (max-width: 1130px){
-			.main-container .project-container div{
-				padding-bottom: 3rem;
-			}
-			.main-container .project-container div img{
-				margin-bottom: 1.5rem;
-				max-height: 700px;
-				max-width: 700px;
-			}
-			.main-container .project-container div:nth-child(3) img{
-				min-width: 600px;
-			}
-			@media screen and (max-width: 620px){
-				.main-container .project-container{
-					padding: 2rem 1rem 0 1rem;
-				}
-				.main-container .project-container div:nth-child(3) img{
-					min-width: 100%;
-				}
-				.main-container .project-container div p{
-					font-size: 1.1rem;
-				}
-			}
-
-		</style>
-	</head>
-	<body class="light">
-		<div class="loading" id="loading">
-			<h1>LOADING...</h1>
-		</div>
-
-		<!-- ----------------------------------Main Container-------------------------------------------- -->
-		<div class="main-container">
-
-
-
-			<!-- ----------------------------------Dark and Light Mode-------------------------------------------- -->
-			<div class="allProjectHeader">
-				<abbr title="Darkmode"><i id="moon" class="fa-solid fa-moon"></i></abbr>
-				<abbr title="Lightmode"><i id="sun" class="fa-solid fa-sun"></i></abbr>	
-				<!-- ----------------------------------back-------------------------------------------- -->
-				<a href="index.html" class="back">
-					back
-					<img alt="arrowImage" src="https://img.icons8.com/plasticine/100/000000/reply-arrow.png"/>
-				</a>
-			</div>
-
-
-			<!-- ----------------------------------Project Container-------------------------------------------- -->
+	<!-- ----------------------------------Project Container-------------------------------------------- -->
 			<div class="project-container">
 				<div class="dheeluxe">
-					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/ExampleBeautyProducts/"><img alt="dheeluxeImage" src="./images/dheeluxe.png"></a></abbr>
-					<p><b>Dheeluxe Skin</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>
+					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/ExampleBeautyProducts/"><img alt="dheeluxeImage" src="./images/dheeluxe.png"><h1>01</h1></a></abbr>
+					<p><b>Dheeluxe Skin</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>				
 				</div>
 				<div class="alwaysChooseGood">
-					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/AlwaysChooseGood/"><img alt="ChooseGoodImage" src="./images/alwaysChooseGood.png"></a></abbr>
+					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/AlwaysChooseGood/"><img alt="ChooseGoodImage" src="./images/alwaysChooseGood.png"><h1>02</h1></a></abbr>
 					<p><b>Always Choose Good</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>
 				</div>
 
 				<div class="phoneBrand">
-					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/PhoneBrand/"><img alt="PhoneBrandImage" src="./images/phoneBrand.png"></a></abbr>
+					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/PhoneBrand/"><img alt="PhoneBrandImage" src="./images/phoneBrand.png"><h1>03</h1></a></abbr>
 					<p><b>Phone Brand</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT</span></p>
+					
 				</div>
 
 				<div class="trinity">
-					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/TrinityPolytechnicCollegeBlogsite/"><img alt="TrinityImage" src="./images/trinityBlogsite.png"></a></abbr>
+					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/TrinityPolytechnicCollegeBlogsite/"><img alt="TrinityImage" src="./images/trinityBlogsite.png"><h1>04</h1></a></abbr>
 					<p><b>Trinity Polytechnic College Blogsite</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT,BOOTSTRAP</span></p>
+					
 				</div>
 				<div class="restauOpening">
-					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/RestaurantsOpening/"><img alt="Restaurant Oening" src="./images/restauOpeningDestop.png"></a></abbr>
+					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/RestaurantsOpening/"><img alt="Restaurant Oening" src="./images/restauOpeningDestop.png"><h1>05</h1></a></abbr>
 					<p><b>Restaurant Opening</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT</span></p>
+					
 				</div>
 				<div class="hikingConcept">
-					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/HikingConcept/"><img alt="Hiking Concept" src="./images/hikingConcept.png"></a></abbr>
+					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/HikingConcept/"><img alt="Hiking Concept" src="./images/hikingConcept.png"><h1>06</h1></a></abbr>
 					<p><b>Hiking Concept</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT</span></p>
+					
 				</div>
 			</div>
-			<!-- ----------------------------------Footer Container-------------------------------------------- -->
-			<hr>
-			<div class="footer">
-
-				<p>© 2022 Jonrie | Personal Portfolio</p>	
-				<div class="footer-links">
-					<a href="https://web.facebook.com/JonrieMain"><abbr title="Facebook"><i class="fa-brands fa-facebook-f"></abbr></i></a>
-					<a href="https://www.instagram.com/jonrieeee/"><abbr title="Instagram"><i class="fa-brands fa-instagram"></abbr></i></a>
-					<a href="https://twitter.com/jonriemain"><abbr title="Twitter"><i class="fa-brands fa-twitter"></i></abbr></a>
-					<a href="https://github.com/JonrieMain"><abbr title="Github"><i class="fa-brands fa-github"></abbr></i></a>
-					<a href="https://ph.linkedin.com/in/jonrie-badiang-321470232"><abbr title="Linkedin"><i class="fa-brands fa-linkedin-in"></abbr></i></a>
-				</div>
-
-			</div>
-
-		</div>
-	</body>
-	<!-- ----------------------------------Javascript-------------------------------------------- -->
-	<script src="https://kit.fontawesome.com/4f085de0b2.js" crossorigin="anonymous"></script>
-	<script type="text/javascript">
-		var body = document.querySelector('.light');
-		var sun = document.querySelector('#sun');
-		var moon = document.querySelector('#moon');
-		var note = document.querySelector('#note');
-		var noteBtn = document.querySelector('#note-btn');
-		var loading = document.querySelector('.loading');
-		var mainContainer = document.querySelector('.main-container');
-
-		/* Loading */
-		window.addEventListener('load',()=>{
-			loadingFunc = ()=>{
-				loading.style.left="-100%";
-				mainContainer.style.display="block";
-				clearInterval(count);
-			}
-			var count = setInterval(loadingFunc,1000);
-
-
-		});
-
-		/*Prevent right click*/
-		document.body.addEventListener('contextmenu', e=> e.preventDefault());
-
-		darkFunc = ()=>{
-			body.style.background="black";
-			body.classList.remove('light')
-			body.classList.add('dark')
-			body.style.color="white";
-			moon.style.display="none";
-			sun.style.display="block";
-			localStorage.setItem("themeColor", "dark");
-		}
-
-		lightFunc = ()=>{
-			body.style.background="white";
-			body.classList.remove('dark')
-			body.classList.add('light')
-			body.style.color="black";
-			moon.style.display="block"
-			sun.style.display="none"
-			localStorage.setItem("themeColor", "light");
-		}
-
-
-		check = () =>{
-			if(localStorage.getItem("themeColor") === null) {
-				lightFunc();
-			}else if(localStorage.getItem("themeColor") === "light"){
-				lightFunc();
-			}else if(localStorage.getItem("themeColor") === "dark"){
-				darkFunc();
-			}else{
-				body.style.background=localStorage.getItem("themeColor")
-			}
-		}
-		check();
-		moon.addEventListener('click',()=>{
-			darkFunc();
-		});
-
-
-		sun.addEventListener('click',()=>{
-			if(body.classList.contains('dark')){
-				lightFunc();
-			}
-
-		});
-
-	</script>
-	</html>
+			

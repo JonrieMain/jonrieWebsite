@@ -4,15 +4,20 @@
 	height: 100%;
 	width: 100%;
 	background: #80808017;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	align-items: center;
+	border-top: 1px solid silver;
 }
-.main-container .footer{
-	font-weight: 200;
+.main-container .footer .footer-icon i{
+	font-size: 1.5rem;
+	padding-right: 1rem;
+	color: #d1d1d1;
+	transition: all .3s ease;
+	cursor: pointer;
 }
-@media screen and (max-width: 350px){
-	.main-container .footer{
-		min-height: 3rem;
-	}
-	.main-container .footer p{
-		font-size: 1rem;
-	}
+.main-container .footer .footer-icon i:hover{
+	color: gray;
 }

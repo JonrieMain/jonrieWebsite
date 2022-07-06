@@ -1,8 +1,8 @@
 /* Scroll effect for header*/
 var header = document.querySelector('.header');
-window.addEventListener('scroll', () =>{
+/*window.addEventListener('scroll', () =>{
 	header.classList.toggle('sticky', window.scrollY > 0);
-});
+});*/
 
 
 /* Call element */
@@ -16,22 +16,39 @@ var left = document.querySelector('.left');
 var mainContainer = document.querySelector('.main-container');
 var color = document.querySelector('#color');
 var colorContainer = document.querySelector('#colorContainer');
+var pageh3 = document.querySelectorAll('.pageh3');
 
 /* Prevent right Click*/
 document.body.addEventListener('contextmenu', e=> e.preventDefault());
+
 
 
 /* Loading */
 window.addEventListener('load',()=>{
 	loadingFunc = ()=>{
 		loading.style.left="-100%";
-		mainContainer.style.display="block";
+		mainContainer.style.opacity="1";
 		clearInterval(count);
 	}
-	var count = setInterval(loadingFunc,1000);
+	var count = setInterval(loadingFunc,700);
 
 
 });
+
+
+
+/* h3 active & !active*/
+pageh3.forEach(pages =>{
+	pages.addEventListener('click',()=>{
+		/* remove active class*/
+		pageh3.forEach(re =>{
+			re.classList.remove('active');
+		})
+		/* add active class*/
+		pages.classList.add('active');
+	})
+})
+
 
 
 
