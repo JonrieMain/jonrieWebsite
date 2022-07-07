@@ -24,14 +24,46 @@
 	font-size: 1.6rem;
 	max-width: 850px;
 }
-.main-container .about h2{
-	padding-top: 2rem;
-	font-style: italic;
-}
 .main-container .about #underline{
 	padding: 1rem 0;
 	font-weight: 200;
 }
+
+.main-container .about h2{
+	font-size: 3rem;
+	font-weight: bold;
+	opacity: .7;
+	margin-top: 3rem;
+	text-align: center;
+}
+.main-container .about span{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+.main-container .about span abbr i{
+	font-size: 4rem;
+		cursor: default;
+}
+
+/* colors */
+.main-container .about span abbr:nth-child(1){
+	color: #d84924;
+}
+.main-container .about span abbr:nth-child(2){
+	color: #2760e5;
+}
+.main-container .about span abbr:nth-child(3){
+	color: #ead41c;
+}
+.main-container .about span abbr:nth-child(4){
+	color: #6c10e9;
+}
+
+
+
 
 @media screen and (max-width: 678px){
 	.main-container .about h1{
