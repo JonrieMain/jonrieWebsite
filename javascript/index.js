@@ -43,6 +43,8 @@ pageh3.forEach(pages =>{
 					localStorage.setItem("prevPageNum", "active2")
 				}else if(pages.id === "active3"){
 					localStorage.setItem("prevPageNum", "active3")
+				}else if(pages.id === "active4"){
+					localStorage.setItem("prevPageNum", "active4")
 				}
 			
 		
@@ -76,6 +78,8 @@ window.addEventListener('load',()=>{
 			document.querySelector('#active2').click();
 		}else if(localStorage.getItem("prevPageNum") === "active3"){
 			document.querySelector('#active3').click();
+		}else if(localStorage.getItem("prevPageNum") === "active4"){
+			document.querySelector('#active4').click();
 		}else if(localStorage.getItem("prevPageNum") === ""){
 			/* if no prevPageNum is stored */
 			localStorage.setItem("prevPageNum", "active0")
@@ -87,10 +91,6 @@ window.addEventListener('load',()=>{
 
 
 });
-
-
-
-
 
 
 

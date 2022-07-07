@@ -1,0 +1,24 @@
+.main-container .contact{
+	height: 100%;
+	width: 100%;
+	padding: 1.5rem .4rem;
+	max-width: 600px;
+	margin: auto;
+	position: relative;
+}
+.main-container .contact h1{
+	font-weight: 800 !important;
+	font-size: 4rem !important;
+	opacity: .7;
+}
+.main-container .contact .credits{
+	text-align: center;
+	margin-top: 2rem;
+}
+
+/* media */
+@media all and (max-width: 678px){
+		.main-container .contact h1{
+		font-size: 3rem !important;
+	}
+}
