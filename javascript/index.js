@@ -35,19 +35,17 @@ pageh3.forEach(pages =>{
 		pages.classList.add('active');
 		
 		/* save and find */
-		pageh3.forEach(fin =>{
-			fin.addEventListener('click', ()=>{
-				if (fin.id === "active0"){
+				if (pages.id === "active0"){
 					localStorage.setItem("prevPageNum", "active0")
-				}else if(fin.id === "active1"){
+				}else if(pages.id === "active1"){
 					localStorage.setItem("prevPageNum", "active1")
-				}else if(fin.id === "active2"){
+				}else if(pages.id === "active2"){
 					localStorage.setItem("prevPageNum", "active2")
-				}else if(fin.id === "active3"){
+				}else if(pages.id === "active3"){
 					localStorage.setItem("prevPageNum", "active3")
 				}
-			})
-		})
+			
+		
 	})
 })
 
@@ -55,17 +53,20 @@ pageh3.forEach(pages =>{
 
 /* Loading */
 window.addEventListener('load',()=>{
+
+	/* do if window is loaded */
 	loadingFunc = ()=>{
 		loading.style.left="-100%";
 		mainContainer.style.opacity="1";
 		clearInterval(count);
 	}
+	/* timer for loadingFunc */
 	var count = setInterval(loadingFunc,1000);
 
 
 
-	/* check prev active page */
 
+	/* check prev active page */
 	checkPage = ()=>{
 		if(localStorage.getItem("prevPageNum") === "active0"){
 			document.querySelector('#active0').click();
@@ -75,9 +76,13 @@ window.addEventListener('load',()=>{
 			document.querySelector('#active2').click();
 		}else if(localStorage.getItem("prevPageNum") === "active3"){
 			document.querySelector('#active3').click();
+		}else if(localStorage.getItem("prevPageNum") === ""){
+			/* if no prevPageNum is stored */
+			localStorage.setItem("prevPageNum", "active0")
 		}
 	}
-	checkPage()
+	/* run */
+	checkPage();
 
 
 
@@ -94,17 +99,23 @@ window.addEventListener('load',()=>{
 
 /* Color picker*/
 color.addEventListener('click', ()=>{
+	/* do if color is onClick */
 	checkColor = ()=>{
 		body.style.background=color.value;
 		header.style.background=color.value;
 		localStorage.setItem("themeColor", color.value)
 	}
+	/* timer */
 	const countColor = setInterval(checkColor,.1)
 
+
+	/* clear interval if click is outside color container */
 	document.addEventListener('click', (event)=>{
 		if(event.target.closest("#colorContainer")){
+			/* return none if inside click */
 			return true
 		}else{
+			/* clearn interval if outside click*/
 			clearInterval(countColor)
 		}
 
@@ -162,6 +173,7 @@ check = () =>{
 		header.style.background=localStorage.getItem("themeColor");
 	}
 }
+/* run */
 check();
 /* --------------------- Dark and light mode ---------------------------- */
 /* --------------------- Moon click event ---------------------------- */
