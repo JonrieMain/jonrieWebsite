@@ -20,8 +20,11 @@
 
 <!-- --------------------------preLoader-------------------------- -->
 <body class="light">
-	<div class="loading" id="loading">
-		<h1>LOADING...</h1>
+	<div class="loading">
+		 <strong class="text-light">Loading...</strong>
+		<div class="spinner-border text-light" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
 	</div>
 	
 
@@ -44,13 +47,13 @@
 		<!-- bootstrap slider for all -->
 		<div class="slider-all" id="slider-all">
 			<!-- --------------------------Bootstrap Carousel-------------------------- -->
-			<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+			<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" id="carouselExampleControlsNoTouching" data-bs-touch="false">
 				<div class="bootstrap-custom-indicator">
-					<h3 data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="pageh3 active" aria-current="true" aria-label="Slide 1">Home</h3>
-					<h3 data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class="pageh3" aria-label="Slide 2">About</h3>
-					<h3 data-bs-target="#carouselExampleDark" data-bs-slide-to="2" class="pageh3" aria-label="Slide 3">Projects</h3>
+					<h3 data-bs-target="#carouselExampleDark" data-bs-slide-to="0" id="active0" class="pageh3 active" aria-current="true" aria-label="Slide 1">Home</h3>
+					<h3 data-bs-target="#carouselExampleDark" data-bs-slide-to="1" id="active1" class="pageh3" aria-label="Slide 2">About</h3>
+					<h3 data-bs-target="#carouselExampleDark" data-bs-slide-to="2" id="active2" class="pageh3" aria-label="Slide 3">Projects</h3>
 
-					<h3 data-bs-target="#carouselExampleDark" data-bs-slide-to="3" class="pageh3" aria-label="Slide 4">Certificates</h3>
+					<h3 data-bs-target="#carouselExampleDark" data-bs-slide-to="3" id="active3" class="pageh3" aria-label="Slide 4">Certificates</h3>
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active" data-bs-interval="60000">
@@ -139,14 +142,14 @@
 						<div class="certificates"> 
 							<h1>Certifications</h1>
 							<span>
-							<abbr title="click to view"><a href="./images/cer1.jpg" target="__blank">Creating an Adventure Game with Python Code</a></abbr>
-							<abbr title="click to view"><a href="./images/cer2.jpg" target="__blank">Basic Computer</a></abbr>
-							<abbr title="click to view"><a href="./images/cer3.jpg" target="__blank">Cascading Style Sheet(CSS) Course</a></abbr>
-							<abbr title="click to view"><a href="./images/cer4.jpg" target="__blank">Const Coding Challenge</a></abbr>
-							<abbr title="click to view"><a href="./images/cer5.jpg" target="__blank">Hyper Text Markup Language(HTML) Course</a></abbr>
-							<abbr title="click to view"><a href="./images/cer6.jpg" target="__blank">Programming Philippines Coding Game Titled "The Matrix"</a></abbr>
-							<abbr title="click to view"><a href="./images/cer7.jpg" target="__blank">Javascript Course</a></abbr>
-							<abbr title="click to view"><a href="./images/cer8.jpg" target="__blank">Graphic Design Para Sa Mga Baguhan</a></abbr>
+								<abbr title="click to view"><a href="./images/cer1.jpg" target="__blank">Creating an Adventure Game with Python Code</a></abbr>
+								<abbr title="click to view"><a href="./images/cer2.jpg" target="__blank">Basic Computer</a></abbr>
+								<abbr title="click to view"><a href="./images/cer3.jpg" target="__blank">Cascading Style Sheet(CSS) Course</a></abbr>
+								<abbr title="click to view"><a href="./images/cer4.jpg" target="__blank">Const Coding Challenge</a></abbr>
+								<abbr title="click to view"><a href="./images/cer5.jpg" target="__blank">Hyper Text Markup Language(HTML) Course</a></abbr>
+								<abbr title="click to view"><a href="./images/cer6.jpg" target="__blank">Programming Philippines Coding Game Titled "The Matrix"</a></abbr>
+								<abbr title="click to view"><a href="./images/cer7.jpg" target="__blank">Javascript Course</a></abbr>
+								<abbr title="click to view"><a href="./images/cer8.jpg" target="__blank">Graphic Design Para Sa Mga Baguhan</a></abbr>
 							</span>
 						</div>
 					</div>
@@ -160,12 +163,12 @@
 
 				<p>© 2022 Jonrie | Personal Portfolio</p>	
 				<div class="footer-icon">
-								<a href="https://web.facebook.com/JonrieMain"><abbr title="Facebook"><i class="fa-brands fa-facebook-f"></abbr></i></a>
-								<a href="https://www.instagram.com/jonrieeee/"><abbr title="Instagram"><i class="fa-brands fa-instagram"></abbr></i></a>
-								<a href="https://twitter.com/jonriemain"><abbr title="Twitter"><i class="fa-brands fa-twitter"></i></abbr></a>
-								<a href="https://github.com/JonrieMain"><abbr title="Github"><i class="fa-brands fa-github"></abbr></i></a>
-								<a href="https://ph.linkedin.com/in/jonrie-badiang-321470232"><abbr title="Linkedin"><i class="fa-brands fa-linkedin-in"></abbr></i></a>
-							</div>
+					<a href="https://web.facebook.com/JonrieMain"><abbr title="Facebook"><i class="fa-brands fa-facebook-f"></abbr></i></a>
+					<a href="https://www.instagram.com/jonrieeee/"><abbr title="Instagram"><i class="fa-brands fa-instagram"></abbr></i></a>
+					<a href="https://twitter.com/jonriemain"><abbr title="Twitter"><i class="fa-brands fa-twitter"></i></abbr></a>
+					<a href="https://github.com/JonrieMain"><abbr title="Github"><i class="fa-brands fa-github"></abbr></i></a>
+					<a href="https://ph.linkedin.com/in/jonrie-badiang-321470232"><abbr title="Linkedin"><i class="fa-brands fa-linkedin-in"></abbr></i></a>
+				</div>
 
 			</div>
 

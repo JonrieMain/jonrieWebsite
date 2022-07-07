@@ -23,11 +23,15 @@
 	max-width: 1400px;
 	margin: 0 auto;
 }
-.main-container .certificates span a{
+.main-container .certificates span abbr{
+	text-align: center;
+}
+.main-container .certificates span abbr a{
 	padding: 1rem .5rem;
 	font-size: 1.2rem;
 	font-weight: 600;
 	word-break: break-word;
+	text-align: center;
 }
 
 @media all and (max-width: 950px){

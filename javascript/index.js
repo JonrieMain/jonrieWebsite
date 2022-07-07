@@ -23,19 +23,6 @@ document.body.addEventListener('contextmenu', e=> e.preventDefault());
 
 
 
-/* Loading */
-window.addEventListener('load',()=>{
-	loadingFunc = ()=>{
-		loading.style.left="-100%";
-		mainContainer.style.opacity="1";
-		clearInterval(count);
-	}
-	var count = setInterval(loadingFunc,700);
-
-
-});
-
-
 
 /* h3 active & !active*/
 pageh3.forEach(pages =>{
@@ -46,8 +33,61 @@ pageh3.forEach(pages =>{
 		})
 		/* add active class*/
 		pages.classList.add('active');
+		
+		/* save and find */
+		pageh3.forEach(fin =>{
+			fin.addEventListener('click', ()=>{
+				if (fin.id === "active0"){
+					localStorage.setItem("prevPageNum", "active0")
+				}else if(fin.id === "active1"){
+					localStorage.setItem("prevPageNum", "active1")
+				}else if(fin.id === "active2"){
+					localStorage.setItem("prevPageNum", "active2")
+				}else if(fin.id === "active3"){
+					localStorage.setItem("prevPageNum", "active3")
+				}
+			})
+		})
 	})
 })
+
+
+
+/* Loading */
+window.addEventListener('load',()=>{
+	loadingFunc = ()=>{
+		loading.style.left="-100%";
+		mainContainer.style.opacity="1";
+		clearInterval(count);
+	}
+	var count = setInterval(loadingFunc,1000);
+
+
+
+	/* check prev active page */
+
+	checkPage = ()=>{
+		if(localStorage.getItem("prevPageNum") === "active0"){
+			document.querySelector('#active0').click();
+		}else if(localStorage.getItem("prevPageNum") === "active1"){
+			document.querySelector('#active1').click();
+		}else if(localStorage.getItem("prevPageNum") === "active2"){
+			document.querySelector('#active2').click();
+		}else if(localStorage.getItem("prevPageNum") === "active3"){
+			document.querySelector('#active3').click();
+		}
+	}
+	checkPage()
+
+
+
+});
+
+
+
+
+
+
 
 
 
