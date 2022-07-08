@@ -5,6 +5,7 @@
 	max-width: 600px;
 	margin: auto;
 	position: relative;
+	margin-bottom: 1rem;
 }
 .main-container .contact h1{
 	font-weight: 800 !important;

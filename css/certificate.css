@@ -26,6 +26,9 @@
 .main-container .certificates span abbr{
 	text-align: center;
 }
+.main-container .certificates span abbr:hover{
+	margin-left: 4px;
+}
 .main-container .certificates span abbr a{
 	padding: 1rem .5rem;
 	font-size: 1.2rem;

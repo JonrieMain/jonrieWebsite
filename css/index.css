@@ -60,6 +60,26 @@ body h1,h6,p{
     transition: .4s linear;
 }
 
+/* up style */
+.fa-solid.fa-up-long{
+	position: fixed;
+	top: 90%;
+	right: -50%;
+	font-size: 2rem;
+	color: #81b2fc;
+	cursor: pointer;
+	z-index: 100000;
+	background: #d1d1d1;
+	padding: 1rem;
+	border-radius: 3rem;
+	transition: .7s;
+}
+.fa-solid.fa-up-long.sticky{
+	right: 2%;
+}
+.fa-solid.fa-up-long.sticky:hover{
+	transform: scale(1.1);
+}
 
 
 /* ---------------------Main Container style---------------------------- */

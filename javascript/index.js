@@ -1,11 +1,13 @@
-/* Scroll effect for header*/
-var header = document.querySelector('.header');
-/*window.addEventListener('scroll', () =>{
-	header.classList.toggle('sticky', window.scrollY > 0);
-});*/
+/* Scroll effect for up*/
+
+var up = document.querySelector('#up');
+window.addEventListener('scroll', () =>{
+	up.classList.toggle('sticky', window.scrollY > 0);
+});
 
 
 /* Call element */
+var header = document.querySelector('.header');
 var loading = document.querySelector('.loading');
 var body = document.querySelector('.light');
 var sun = document.querySelector('#sun');

@@ -13,7 +13,7 @@
 	<!-- google verification -->
 	<meta name="google-site-verification" content="DBHV3gxmZO5icWwQXN3yaQMyX0p8CO9NXvbjusoVgEQ" />
 	<!-- Description -->
-	<meta name="description" content="Jonrie - Personal Portfolio Website">
+	<meta name="description" content="Jonrie - Aspiring Software Engineer">
 	<meta name="keywords" content="Jonrie, Portfolio, Personal, Website, Personal Portfolio,Personal Portfolio Website, Jonrie Personal Portfolio Website, Jonrie Badiang">
 	<title>Jonrie | Personal Portfolio</title>
 </head>
@@ -26,13 +26,15 @@
 			<span class="visually-hidden">Loading...</span>
 		</div>
 	</div>
-	
+		
+		<!-- up -->
+	<a href="#header"><i class="fa-solid fa-up-long" id="up"></i></a>
 
 	<!-- --------------------------Main Container of all section-------------------------- -->
 	<div class="main-container">
 
 		<!-- --------------------------header section-------------------------- -->
-		<header class="header">
+		<header class="header" id="header">
 			<a href="index.html" id="jonrieLogo"><h1>Jonrie</h1></a>
 			<div class="menu" id="menu">
 				<abbr title="Darkmode"><i id="moon" class="fa-solid fa-moon"></i></abbr>
@@ -184,9 +186,12 @@
 										<!---------------------- extra------------------------ -->
 																		<!-- redirect after submit -->
 										<input type="hidden" name="_next" value="https://jonriemain.github.io/JonrieOfficial-/afterform.html">
+
+										<!-- disable reCaptcha -->
+										<input type="hidden" name="_captcha" value="false">
 									<!-- ----------------------------------------------------- -->
 							<button type="submit" class="btn btn-primary w-100">Submit</button>
-							<div class="credits">Powered by <a href="https://formsubmit.co/">FORMSUBMIT</a></div>
+							<div class="credits">Powered by <a target="__blank" href="https://formsubmit.co/">FORMSUBMIT</a></div>
 						</form>
 					</div>
 
