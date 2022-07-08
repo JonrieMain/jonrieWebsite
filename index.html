@@ -181,6 +181,16 @@
 								<label for="messege" class="form-label">Messege</label>
 								<textarea name="message" id="messege" type="text" class="form-control" rows="9" required></textarea>
 							</div>
+							<!---------------------- extra------------------------ -->
+							<!-- avoid spam -->
+							<input type="text" name="_honey" style="display:none">
+							<!-- redirect after submit -->
+							<input type="hidden" name="_next" value="afterform.html">
+							<!-- email template -->
+							<input type="hidden" name="_template" value="table">
+							<!-- automatic response -->
+							<input type="hidden" name="_autoresponse" value="Hello, thank you for messaging us. We'll get back to you as soon as possible.">
+							<!-- ----------------------------------------------------- -->
 							<button type="submit" class="btn btn-primary w-100">Submit</button>
 							<div class="credits">Powered by <a href="https://formsubmit.co/">FORMSUBMIT</a></div>
 						</form>
