@@ -41,7 +41,7 @@
 .main-container .projects .project-container div p span{
 	text-decoration: underline;
 	word-break: break-word;
-	color: tomato;
+	color: blue;
 }
 
 /* all h1 */
@@ -91,7 +91,7 @@
 
 @media screen and (max-width: 678px){
 	.main-container .projects >h1{
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 }
 

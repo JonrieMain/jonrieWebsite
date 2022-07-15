@@ -1,25 +1,35 @@
-.main-container .contact{
+.main-container .contactMain{
 	height: 100%;
 	width: 100%;
-	padding: 1.5rem .4rem;
-	max-width: 600px;
-	margin: auto;
-	position: relative;
-	margin-bottom: 1rem;
+	position: fixed;
+	top: -150%;
+	left: 0;
+	right: 0;
+	background: rgb(0, 0, 0,.7);
+	z-index: 100;
+	transition: .5s;
+}
+.main-container .contactMain .contact{
+	max-width: 500px;
+	margin: 0 auto;
 }
 .main-container .contact h1{
 	font-weight: 800 !important;
-	font-size: 4rem !important;
-	opacity: .7;
+	font-size: 3rem !important;
+	color: #fff;
+}
+.main-container .contactMain .contact div label{
+	color: #fff;
 }
 .main-container .contact .credits{
 	text-align: center;
 	margin-top: 2rem;
+	color: #fff;
 }
 
 /* media */
 @media all and (max-width: 678px){
 		.main-container .contact h1{
-		font-size: 3rem !important;
+		font-size: 2.5rem !important;
 	}
 }

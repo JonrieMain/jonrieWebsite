@@ -20,181 +20,207 @@
 
 <!-- --------------------------preLoader-------------------------- -->
 <body class="light">
-	<div class="loading">
+
+
+	<!-- preLoader -->
+	<div class="loading" id="loading">
 		<strong class="text-light">Loading...</strong>
 		<div class="spinner-border text-light" role="status">
 			<span class="visually-hidden">Loading...</span>
 		</div>
 	</div>
-		
+
+
+
+
+		<!-- contact -->
+		<abbr title="Contact"><i class="fa-solid fa-envelope"></i></abbr>
+
+
 		<!-- up -->
-	<a href="#header"><i class="fa-solid fa-up-long" id="up"></i></a>
-
-	<!-- --------------------------Main Container of all section-------------------------- -->
-	<div class="main-container">
-
-		<!-- --------------------------header section-------------------------- -->
-		<header class="header" id="header">
-			<a href="index.html" id="jonrieLogo"><h1>Jonrie</h1></a>
-			<div class="menu" id="menu">
-				<abbr title="Darkmode"><i id="moon" class="fa-solid fa-moon"></i></abbr>
-				<abbr title="Lightmode"><i id="sun" class="fa-solid fa-sun"></i></abbr>
-				<abbr id="colorContainer" title="Color picker for background color"><input id="color" type="color" name="color"></abbr>
-			</div>
-		</header>
+		<a href="#home"><i class="fa-solid fa-up-long" id="up"></i></a>
 
 
 
 
-		<!-- bootstrap slider for all -->
-		<div class="slider-all" id="slider-all">
-			<!-- --------------------------Bootstrap Carousel-------------------------- -->
-			<div id="carouselExampleDark" class="carousel carousel-dark slide" data-interval="false" id="carouselExampleControlsNoTouching" data-bs-touch="false">
-				<div class="bootstrap-custom-indicator">
-					<h3 data-bs-target="#carouselExampleDark" data-bs-slide-to="0" id="active0" class="pageh3 active" aria-current="true" aria-label="Slide 1">Home</h3>
-					<h3 data-bs-target="#carouselExampleDark" data-bs-slide-to="1" id="active1" class="pageh3" aria-label="Slide 2">About</h3>
-					<h3 data-bs-target="#carouselExampleDark" data-bs-slide-to="2" id="active2" class="pageh3" aria-label="Slide 3">Projects</h3>
 
-					<h3 data-bs-target="#carouselExampleDark" data-bs-slide-to="3" id="active3" class="pageh3" aria-label="Slide 4">Certificates</h3>
-					<h3 data-bs-target="#carouselExampleDark" data-bs-slide-to="4" id="active4" class="pageh3" aria-label="Slide 4">Contact</h3>
+		<!-- --------------------------Main Container of all section-------------------------- -->
+		<div class="main-container">
+
+
+
+			<!-- --------------------------header section-------------------------- -->
+			<header class="header" id="header">
+				<a href="index.html" id="jonrieLogo"><h1>Jonrie</h1></a>
+				<span>
+						<i id="darkMode" class="fa-solid fa-moon"></i>
+					<abbr id="colorContainer" title="Color picker for background color"><input id="color" type="color" name="color"></abbr>
+				</span>
+				<div class="menu" id="menu">
+					<a href="#home">Home</a>
+					<a href="#about">About</a>
+					<a href="#projects">Projects</a>
+					<a href="#certificate">Certificate</a>
 				</div>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<!-- --------------------------home section-------------------------- -->
-						<div class="home" id="home">
+			</header>
 
-							<div class="left">
-								<div class="home-icon-con">
-									<a href="https://web.facebook.com/JonrieMain"><abbr title="Facebook"><i class="fa-brands fa-facebook-f"></abbr></i></a>
-									<a href="https://www.instagram.com/jonrieeee/"><abbr title="Instagram"><i class="fa-brands fa-instagram"></abbr></i></a>
-									<a href="https://twitter.com/jonriemain"><abbr title="Twitter"><i class="fa-brands fa-twitter"></i></abbr></a>
-									<a href="https://github.com/JonrieMain"><abbr title="Github"><i class="fa-brands fa-github"></abbr></i></a>
-									<a href="https://ph.linkedin.com/in/jonrie-badiang-321470232"><abbr title="Linkedin"><i class="fa-brands fa-linkedin-in"></abbr></i></a>
-								</div>
-								<div class="home-text-con">
-									<h1>Hi, I am Jonrie</h1>
-									<h6>Aspiring Software Engineer</h6><br>
-									<p>I want to creat stunning website for your
-										business.<br> To enchance my skill and establish stronger<br> connection
-									and development</p>
-									<a href="JonrieCV.docx" download><button class="home-btn">Download CV</button></a>
-								</div>
-								<img class="circle" src="./images/circle.png" alt="Circle0">	
-								<img class="circle1" src="./images/circle.png" alt="Circle1">	
-							</div>
 
-							<div class="right">
-								<img src="./images/jonrie.png" alt="JonrieImage">
-							</div>
 
-						</div>
+
+
+
+			<!-- --------------------------home section-------------------------- -->
+			<div class="home" id="home">
+
+				<div class="left">
+					<div class="home-icon-con">
+						<a href="https://web.facebook.com/JonrieMain"><abbr title="Facebook"><i class="fa-brands fa-facebook-f"></abbr></i></a>
+						<a href="https://www.instagram.com/jonrieeee/"><abbr title="Instagram"><i class="fa-brands fa-instagram"></abbr></i></a>
+						<a href="https://twitter.com/jonriemain"><abbr title="Twitter"><i class="fa-brands fa-twitter"></i></abbr></a>
+						<a href="https://github.com/JonrieMain"><abbr title="Github"><i class="fa-brands fa-github"></abbr></i></a>
+						<a href="https://ph.linkedin.com/in/jonrie-badiang-321470232"><abbr title="Linkedin"><i class="fa-brands fa-linkedin-in"></abbr></i></a>
 					</div>
-					<div class="carousel-item">
-						<!-- --------------------------About Section-------------------------- -->
-						<div class="about" id="about">
-
-							<h1>About</h1>
-							<p>Hello!I'm Jonrie, 19 years old from Quezon City. I'm a working student and I want to become a software engineer soon. I'm currently a grade 12 student at <a href="https://web.facebook.com/Trinity-Polytechnic-College-Novaliches-453235035184551">Trinity Polytechnic College</a>, and I'm still studying web development and other technologies to make my knowledge solid.</p>
-							<br>
-							<p>For any sort of help, feel free to send me an <abbr title="jonriemain@gmail.com"><a href="mailto:jonriemain@gmail.com">email</a></abbr> and I'll get back to you soon or you can message me anonymously <a href="https://sayout.me/say/jonrie" style="text-decoration: underline;">here.</a></p>
-							<div class="aboutIcon">
-								<h2>Skills</h2>
-								<span>
-								<abbr title="HTML"><i class="fa-brands fa-html5"></i></abbr>
-								<abbr title="CSS"><i class="fa-brands fa-css3"></i></abbr>
-								<abbr title="JAVASCRIPT"><i class="fa-brands fa-js"></i></abbr>
-								<abbr title="BOOTSTRAP"><i class="fa-brands fa-bootstrap"></i></abbr>
-								</span>
-							</div>
-							
-						</div>
+					<div class="home-text-con">
+						<h1>Hi, I am Jonrie</h1>
+						<h6>Aspiring Software Engineer</h6><br>
+						<p>I want to creat stunning website for your
+							business.<br> To enchance my skill and establish stronger<br> connection
+						and development</p>
+						<a href="JonrieCV.docx" download><button class="home-btn">Download CV</button></a>
 					</div>
-					<div class="carousel-item">
-						<!-- --------------------------Project Section-------------------------- -->
-						<div class="projects" id="projects">
-							<h1>Self Projects</h1>
-							<!-- ----------------------------------Project Container-------------------->
-							<div class="project-container">
-								<div class="dheeluxe">
-									<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/ExampleBeautyProducts/"><img alt="dheeluxeImage" src="./images/dheeluxe.png"><h1>01</h1></a></abbr>
-									<p><b>Dheeluxe Skin</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>				
-								</div>
-								<div class="alwaysChooseGood">
-									<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/AlwaysChooseGood/"><img alt="ChooseGoodImage" src="./images/alwaysChooseGood.png"><h1>02</h1></a></abbr>
-									<p><b>Always Choose Good</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>
-								</div>
+					<img class="circle" src="./images/circle.png" alt="Circle0">	
+					<img class="circle1" src="./images/circle.png" alt="Circle1">	
+				</div>
 
-								<div class="phoneBrand">
-									<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/PhoneBrand/"><img alt="PhoneBrandImage" src="./images/phoneBrand.png"><h1>03</h1></a></abbr>
-									<p><b>Phone Brand</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT</span></p>
+				<div class="right">
+					<img src="./images/jonrie.png" alt="JonrieImage">
+				</div>
 
-								</div>
+			</div>
 
-								<div class="trinity">
-									<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/TrinityPolytechnicCollegeBlogsite/"><img alt="TrinityImage" src="./images/trinityBlogsite.png"><h1>04</h1></a></abbr>
-									<p><b>Trinity Polytechnic College Blogsite</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT,BOOTSTRAP</span></p>
 
-								</div>
-								<div class="restauOpening">
-									<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/RestaurantsOpening/"><img alt="Restaurant Oening" src="./images/restauOpeningDestop.png"><h1>05</h1></a></abbr>
-									<p><b>Restaurant Opening</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT</span></p>
 
-								</div>
-								<div class="hikingConcept">
-									<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/HikingConcept/"><img alt="Hiking Concept" src="./images/hikingConcept.png"><h1>06</h1></a></abbr>
-									<p><b>Hiking Concept</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT</span></p>
 
-								</div>
-							</div>
-						</div>
+
+
+
+			<!-- --------------------------About Section-------------------------- -->
+			<div class="about" id="about">
+
+				<h1>About</h1>
+				<p>Hello!I'm Jonrie, 19 years old from Quezon City. I'm a working student and I want to become a software engineer soon. I'm currently a grade 12 student at <a href="https://web.facebook.com/Trinity-Polytechnic-College-Novaliches-453235035184551">Trinity Polytechnic College</a>, and I'm still studying web development and other technologies to make my knowledge solid.</p>
+				<br>
+				<p>For any sort of help, feel free to send me an <abbr title="jonriemain@gmail.com"><a href="mailto:jonriemain@gmail.com">email</a></abbr> and I'll get back to you soon or you can message me anonymously <a href="https://sayout.me/say/jonrie" style="text-decoration: underline;">here.</a></p>
+				<div class="aboutIcon">
+					<h2>Skills</h2>
+					<span>
+						<abbr title="HTML"><i class="fa-brands fa-html5"></i></abbr>
+						<abbr title="CSS"><i class="fa-brands fa-css3"></i></abbr>
+						<abbr title="JAVASCRIPT"><i class="fa-brands fa-js"></i></abbr>
+						<abbr title="BOOTSTRAP"><i class="fa-brands fa-bootstrap"></i></abbr>
+					</span>
+				</div>
+
+			</div>
+
+
+
+
+
+
+			<!-- --------------------------Project Section-------------------------- -->
+			<div class="projects" id="projects">
+				<h1>Self Projects</h1>
+				<!-- ----------------------------------Project Container-------------------->
+				<div class="project-container">
+					<div class="dheeluxe">
+						<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/ExampleBeautyProducts/"><img alt="dheeluxeImage" src="./images/dheeluxe.png"><h1>01</h1></a></abbr>
+						<p><b>Dheeluxe Skin</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>				
 					</div>
-					<div class="carousel-item">
-						<div class="certificates"> 
-							<h1>Certifications</h1>
-							<span>
-								<abbr title="click to view"><a href="./images/cer1.jpg" target="__blank">Creating an Adventure Game with Python Code</a></abbr>
-								<abbr title="click to view"><a href="./images/cer2.jpg" target="__blank">Basic Computer</a></abbr>
-								<abbr title="click to view"><a href="./images/cer3.jpg" target="__blank">Cascading Style Sheet(CSS) Course</a></abbr>
-								<abbr title="click to view"><a href="./images/cer4.jpg" target="__blank">Const Coding Challenge</a></abbr>
-								<abbr title="click to view"><a href="./images/cer5.jpg" target="__blank">Hyper Text Markup Language(HTML) Course</a></abbr>
-								<abbr title="click to view"><a href="./images/cer6.jpg" target="__blank">Programming Philippines Coding Game Titled "The Matrix"</a></abbr>
-								<abbr title="click to view"><a href="./images/cer7.jpg" target="__blank">Javascript Course</a></abbr>
-								<abbr title="click to view"><a href="./images/cer8.jpg" target="__blank">Graphic Design Para Sa Mga Baguhan</a></abbr>
-							</span>
-						</div>
+					<div class="alwaysChooseGood">
+						<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/AlwaysChooseGood/"><img alt="ChooseGoodImage" src="./images/alwaysChooseGood.png"><h1>02</h1></a></abbr>
+						<p><b>Always Choose Good</b><br><br>Used: <span>HTML,CSS,BOOTSTRAP,VANILLA JAVASCRIPT</span></p>
 					</div>
 
-					<div class="carousel-item">
-						<form class="contact" action="https://formsubmit.co/ad4e0ff231edc13df9d5c9beef1e68b3" method="POST"> 
-							<h1 class="h1 mb-3 text-center">Send Messege</h1>
-							<div class="mb-3">
-								<label for="fullName" class="form-label">Full name</label>
-								<input name="fullName" type="text" class="form-control" id="fullName" aria-describedby="emailHelp" required>
-							</div>
-							<div class="mb-3">
-								<label for="emailAddress" class="form-label">Email Address</label>
-								<input name="email" type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" required>
-							</div>
-							<div class="mb-3">
-								<label for="subject" class="form-label">Subject</label>
-								<input name="subject" type="text" class="form-control" id="subject" aria-describedby="emailHelp" required>
-							</div>
-							<div class="mb-3">
-								<label for="messege" class="form-label">Messege</label>
-								<textarea name="message" id="messege" type="text" class="form-control" rows="9" required></textarea>
-							</div>
-										<!---------------------- extra------------------------ -->
-												<!-- redirect after submit -->
-									<input type="hidden" name="_next" value="https://jonriemain.github.io/JonrieOfficial-/afterform.html">
-									<!-- ----------------------------------------------------- -->
-							<button type="submit" class="btn btn-primary w-100">Submit</button>
-							<div class="credits">Powered by <a target="__blank" href="https://formsubmit.co/">FORMSUBMIT</a></div>
-						</form>
+					<div class="phoneBrand">
+						<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/PhoneBrand/"><img alt="PhoneBrandImage" src="./images/phoneBrand.png"><h1>03</h1></a></abbr>
+						<p><b>Phone Brand</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT</span></p>
+
 					</div>
 
+					<div class="trinity">
+						<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/TrinityPolytechnicCollegeBlogsite/"><img alt="TrinityImage" src="./images/trinityBlogsite.png"><h1>04</h1></a></abbr>
+						<p><b>Trinity Polytechnic College Blogsite</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT,BOOTSTRAP</span></p>
 
+					</div>
+					<div class="restauOpening">
+						<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/RestaurantsOpening/"><img alt="Restaurant Oening" src="./images/restauOpeningDestop.png"><h1>05</h1></a></abbr>
+						<p><b>Restaurant Opening</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT</span></p>
+
+					</div>
+					<div class="hikingConcept">
+						<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/HikingConcept/"><img alt="Hiking Concept" src="./images/hikingConcept.png"><h1>06</h1></a></abbr>
+						<p><b>Hiking Concept</b><br><br>Used: <span>HTML,CSS,VANILLA JAVASCRIPT</span></p>
+
+					</div>
 				</div>
 			</div>
+
+
+
+
+
+			<!-- --------------certifications----------------- -->
+			<div class="certificates" id="certificate"> 
+				<h1>Certifications</h1>
+				<span>
+					<abbr title="click to view"><a href="./images/cer1.jpg" target="__blank">Creating an Adventure Game with Python Code</a></abbr>
+					<abbr title="click to view"><a href="./images/cer2.jpg" target="__blank">Basic Computer</a></abbr>
+					<abbr title="click to view"><a href="./images/cer3.jpg" target="__blank">Cascading Style Sheet(CSS) Course</a></abbr>
+					<abbr title="click to view"><a href="./images/cer4.jpg" target="__blank">Const Coding Challenge</a></abbr>
+					<abbr title="click to view"><a href="./images/cer5.jpg" target="__blank">Hyper Text Markup Language(HTML) Course</a></abbr>
+					<abbr title="click to view"><a href="./images/cer6.jpg" target="__blank">Programming Philippines Coding Game Titled "The Matrix"</a></abbr>
+					<abbr title="click to view"><a href="./images/cer7.jpg" target="__blank">Javascript Course</a></abbr>
+					<abbr title="click to view"><a href="./images/cer8.jpg" target="__blank">Graphic Design Para Sa Mga Baguhan</a></abbr>
+				</span>
+			</div>
+
+
+
+
+
+
+				<!--  ---------------contact------------------- -->
+
+
+			<div class="contactMain close">
+			<form class="contact" action="https://formsubmit.co/ad4e0ff231edc13df9d5c9beef1e68b3" method="POST"> 
+				<h1 class="h1 mb-3 text-center">Send Messege</h1>
+				<div class="mb-3">
+					<label for="fullName" class="form-label">Full name</label>
+					<input name="fullName" type="text" class="form-control" id="fullName" aria-describedby="emailHelp" required>
+				</div>
+				<div class="mb-3">
+					<label for="emailAddress" class="form-label">Email Address</label>
+					<input name="email" type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" required>
+				</div>
+				<div class="mb-3">
+					<label for="subject" class="form-label">Subject</label>
+					<input name="subject" type="text" class="form-control" id="subject" aria-describedby="emailHelp" required>
+				</div>
+				<div class="mb-3">
+					<label for="messege" class="form-label">Messege</label>
+					<textarea name="message" id="messege" type="text" class="form-control" rows="9" required></textarea>
+				</div>
+				<!---------------------- extra------------------------ -->
+				<!-- redirect after submit -->
+				<input type="hidden" name="_next" value="https://jonriemain.github.io/JonrieOfficial-/afterform.html">
+				<!-- ----------------------------------------------------- -->
+				<button type="submit" class="btn btn-primary w-100">Submit</button>
+				<div class="credits">Powered by <a target="__blank" href="https://formsubmit.co/">FORMSUBMIT</a></div>
+			</form>
+			</div>
+
 
 
 
@@ -212,12 +238,11 @@
 
 			</div>
 
-		</div>
-	</body>
-	<!-- --------------------------Font Awesome CDN-------------------------- -->
-	<script src="https://kit.fontawesome.com/4f085de0b2.js" crossorigin="anonymous"></script>
-	<!-- --------------------------Main Javascript-------------------------- -->
-	<script type="text/javascript" src="./javascript/index.js"></script>
-	<!-- JavaScript Bootstrap CDN -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-	</html>
+		</body>
+		<!-- --------------------------Font Awesome CDN-------------------------- -->
+		<script src="https://kit.fontawesome.com/4f085de0b2.js" crossorigin="anonymous"></script>
+		<!-- --------------------------Main Javascript-------------------------- -->
+		<script type="text/javascript" src="./javascript/index.js"></script>
+		<!-- JavaScript Bootstrap CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+		</html>

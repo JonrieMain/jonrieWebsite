@@ -1,24 +1,23 @@
 /* Scroll effect for up*/
-
+var header = document.querySelector('.header');
 var up = document.querySelector('#up');
 window.addEventListener('scroll', () =>{
 	up.classList.toggle('sticky', window.scrollY > 0);
+	header.classList.toggle('boxShadow', window.scrollY > 0);
 });
 
 
 /* Call element */
-var header = document.querySelector('.header');
 var loading = document.querySelector('.loading');
-var body = document.querySelector('.light');
-var sun = document.querySelector('#sun');
-var moon = document.querySelector('#moon');
+var darkMode	 = document.querySelector('#darkMode');
 var menu = document.getElementById("menu").children;
 var jonrieLogo = document.querySelector('#jonrieLogo');
 var left = document.querySelector('.left');
 var mainContainer = document.querySelector('.main-container');
 var color = document.querySelector('#color');
 var colorContainer = document.querySelector('#colorContainer');
-var pageh3 = document.querySelectorAll('.pageh3');
+var contact = document.querySelector('.fa-envelope');
+var contactMain = document.querySelector('.contactMain');
 
 /* Prevent right Click*/
 document.body.addEventListener('contextmenu', e=> e.preventDefault());
@@ -26,75 +25,44 @@ document.body.addEventListener('contextmenu', e=> e.preventDefault());
 
 
 
-/* h3 active & !active*/
-pageh3.forEach(pages =>{
-	pages.addEventListener('click',()=>{
-		/* remove active class*/
-		pageh3.forEach(re =>{
-			re.classList.remove('active');
-		})
-		/* add active class*/
-		pages.classList.add('active');
-		
-		/* save and find */
-				if (pages.id === "active0"){
-					localStorage.setItem("prevPageNum", "active0")
-				}else if(pages.id === "active1"){
-					localStorage.setItem("prevPageNum", "active1")
-				}else if(pages.id === "active2"){
-					localStorage.setItem("prevPageNum", "active2")
-				}else if(pages.id === "active3"){
-					localStorage.setItem("prevPageNum", "active3")
-				}else if(pages.id === "active4"){
-					localStorage.setItem("prevPageNum", "active4")
-				}
-			
-		
-	})
-})
+/* contact */
+contact.addEventListener('click', ()=>{
+	if(contactMain.classList.contains('close')){
+		contactMain.style.top="0";
+		contactMain.classList.remove('close');
+		contactMain.classList.add('open');
+	}else{
+		contactMain.style.top="-150%";
+		contactMain.classList.add('close');
+		contactMain.classList.remove('open');
+	}
+});
+/* contact icon shake animation */
+
+contactShake = ()=>{
+	contact.style.animation="contactAnimate 2s 1s infinite";
+}
+ setInterval(contactShake,2000);
 
 
 
-/* Loading */
-window.addEventListener('load',()=>{
 
-	/* do if window is loaded */
+
+
+
+
+/* loading */
+window.addEventListener('load', ()=>{
+
+		/* do if window is loaded */
 	loadingFunc = ()=>{
 		loading.style.left="-100%";
 		mainContainer.style.opacity="1";
 		clearInterval(count);
 	}
 	/* timer for loadingFunc */
-	var count = setInterval(loadingFunc,1000);
-
-
-
-
-	/* check prev active page */
-	checkPage = ()=>{
-		if(localStorage.getItem("prevPageNum") === "active0"){
-			document.querySelector('#active0').click();
-		}else if(localStorage.getItem("prevPageNum") === "active1"){
-			document.querySelector('#active1').click();
-		}else if(localStorage.getItem("prevPageNum") === "active2"){
-			document.querySelector('#active2').click();
-		}else if(localStorage.getItem("prevPageNum") === "active3"){
-			document.querySelector('#active3').click();
-		}else if(localStorage.getItem("prevPageNum") === "active4"){
-			document.querySelector('#active4').click();
-		}else if(localStorage.getItem("prevPageNum") === ""){
-			/* if no prevPageNum is stored */
-			localStorage.setItem("prevPageNum", "active0")
-		}
-	}
-	/* run */
-	checkPage();
-
-
-
+	var count = setInterval(loadingFunc,500);
 });
-
-
 
 
 
@@ -131,12 +99,13 @@ color.addEventListener('click', ()=>{
 
 /* --------------------- Function for dark ---------------------------- */
 darkFunc = () =>{
-	body.style.background="black";
-	body.classList.remove('light')
-	body.classList.add('dark')
-	body.style.color="white";
-	moon.style.display="none";
-	sun.style.display="block";
+	document.body.style.background="black";
+	document.body.classList.remove('light')
+	document.body.classList.add('dark')
+	document.body.style.color="white";
+	darkMode.classList.remove('fa-moon')
+	darkMode.classList.add('fa-sun')
+	darkMode.style.color="gold";
 	header.style.background="black";
 	for (var i = 0; i < menu.length; i++) {
 		menu[i].style.color = "white";
@@ -148,12 +117,13 @@ darkFunc = () =>{
 
 /* --------------------- Function for light ---------------------------- */
 lightFunc = () =>{
-	body.style.background="white";
-	body.classList.remove('dark')
-	body.classList.add('light')
-	body.style.color="black";
-	moon.style.display="block"
-	sun.style.display="none"
+	document.body.style.background="white";
+	document.body.classList.remove('dark')
+	document.body.classList.add('light')
+	document.body.style.color="black";
+	darkMode.classList.add('fa-moon')
+	darkMode.classList.remove('fa-sun')
+	darkMode.style.color="#000";
 	header.style.background="white";
 	for (var i = 0; i < menu.length; i++) {
 		menu[i].style.color = "black";
@@ -178,14 +148,13 @@ check = () =>{
 /* run */
 check();
 /* --------------------- Dark and light mode ---------------------------- */
-/* --------------------- Moon click event ---------------------------- */
-moon.addEventListener('click',()=>{
-	darkFunc();
+darkMode.addEventListener('click',()=>{
+	if(document.body.classList.contains('light')){
+		darkFunc();
+	}else{
+		lightFunc();
+	}
 });
 
-/* --------------------- Sun click event ---------------------------- */
-sun.addEventListener('click',()=>{
-	lightFunc();
-});
 
 
