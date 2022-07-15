@@ -26,6 +26,9 @@
 	margin-top: 2rem;
 	color: #fff;
 }
+.main-container .contact .credits a{
+	color: tomato;
+}
 
 /* media */
 @media all and (max-width: 678px){
