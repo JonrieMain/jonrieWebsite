@@ -1,5 +1,6 @@
 .main-container  .projects{
 	padding: 0 .4rem;
+	position: relative;
 }
 .main-container  .projects >h1{
 	opacity: .7;
@@ -57,6 +58,20 @@
 	color: #fff;
 	border-radius: 2rem;
 	padding: .4rem;
+}
+
+.main-container .projects .circle4{
+	position: absolute;
+	 top: 100%;
+    left: 25%;
+	transform: translate(-50%,-50%);
+	height: 100%;
+	width: 100%;
+	max-height: 5rem;
+	max-width: 5rem;
+	z-index: -9999;
+	border-radius: 50%;
+	opacity: .3;
 }
 
 

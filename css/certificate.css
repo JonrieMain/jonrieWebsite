@@ -25,6 +25,19 @@
 	margin: 0 auto;
 	transition: .6s ease;
 }
+.main-container .certificate-con .circle5{
+	position: absolute;
+	    top: 100%;
+    left: 75%;
+	transform: translate(-50%,-50%);
+	height: 100%;
+	width: 100%;
+	max-height: 5rem;
+	max-width: 5rem;
+	z-index: -9999;
+	border-radius: 50%;
+	opacity: .3;
+}
 
 @media screen and (max-width: 678px){
 	.main-container .certificate-con h1{

@@ -56,7 +56,7 @@ window.addEventListener('load', ()=>{
 
 		/* do if window is loaded */
 	loadingFunc = ()=>{
-		loading.style.left="-100%";
+		loading.style.display="none";
 		mainContainer.style.opacity="1";
 		clearInterval(count);
 	}
