@@ -141,7 +141,7 @@ check = () =>{
 	}else if(localStorage.getItem("themeColor") === "dark"){
 		darkFunc();
 	}else{
-		body.style.background=localStorage.getItem("themeColor");
+		document.body.style.background=localStorage.getItem("themeColor");
 		header.style.background=localStorage.getItem("themeColor");
 	}
 }
