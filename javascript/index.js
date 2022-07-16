@@ -71,7 +71,7 @@ window.addEventListener('load', ()=>{
 color.addEventListener('click', ()=>{
 	/* do if color is onClick */
 	checkColor = ()=>{
-		body.style.background=color.value;
+		document.body.style.background=color.value;
 		header.style.background=color.value;
 		localStorage.setItem("themeColor", color.value)
 	}
