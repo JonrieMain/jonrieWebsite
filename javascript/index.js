@@ -32,7 +32,7 @@ contact.addEventListener('click', ()=>{
 		contactMain.classList.remove('close');
 		contactMain.classList.add('open');
 	}else{
-		contactMain.style.top="-150%";
+		contactMain.style.top="-500%";
 		contactMain.classList.add('close');
 		contactMain.classList.remove('open');
 	}

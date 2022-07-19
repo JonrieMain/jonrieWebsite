@@ -64,12 +64,13 @@ body h1,h6,p{
 /* contact */
 .fa-envelope{
 	position: fixed;
-	left: 2%;
-	top: 90%;
+	left: 5%;
+	top: 89%;
 	font-size: 3rem;
 	color: tomato;
 	cursor: pointer;
 	z-index: 10000;
+	display: none;
 }
 
 @keyframes contactAnimate{
@@ -83,13 +84,10 @@ body h1,h6,p{
 	position: fixed;
 	 top: 88.5%;;
 	right: -50%;
-	font-size: 2rem;
+	font-size: 3rem;
 	color: tomato;
 	cursor: pointer;
 	z-index: 100000;
-	background: #d1d1d1;
-	padding: 1rem;
-	border-radius: 3rem;
 	transition: .7s;
 }
 .fa-solid.fa-up-long.sticky{
@@ -181,6 +179,8 @@ body h1,h6,p{
 	min-height: 10000px;
 	height: 100vh;
 	width: 100%;
+	max-width: 2000px;
+	margin: 0 auto;
 	position: relative;
 	min-height: 750px;
 	padding: 9rem 0 3rem 0;
