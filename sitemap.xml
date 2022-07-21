@@ -5,15 +5,19 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-
 <url>
-  <loc>https://jonriemain.github.io/JonrieOfficial-/</loc>
-  <lastmod>2022-06-08T07:18:45+00:00</lastmod>
+  <loc>https://jonrie.xyz/</loc>
+  <lastmod>2022-07-21T05:41:23+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://jonriemain.github.io/JonrieOfficial-/allProjects.html</loc>
-  <lastmod>2022-06-08T07:18:45+00:00</lastmod>
+  <loc>https://jonrie.xyz/#about</loc>
+  <lastmod>2022-07-21T05:41:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jonrie.xyz/JonrieCV.docx</loc>
+  <lastmod>2022-07-21T05:41:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
