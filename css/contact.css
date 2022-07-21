@@ -1,34 +1,47 @@
 .main-container .contactMain{
 	height: 100%;
 	width: 100%;
+}
+
+/* trigger contact form */
+.main-container #contactTrig{
 	position: fixed;
-	top: -500%;
-	left: 0;
-	right: 0;
-	background: rgb(0, 0, 0,.7);
-	z-index: 100;
-	transition: .5s;
+	top: 90%;
+	left: 2%;
+	outline: none !important;
+	border: none !important;
+	background: tomato !important;
+	color: #fff !important;
 }
-.main-container .contactMain .contact{
-	max-width: 500px;
-	margin: 0 auto;
-}
+
+
 .main-container .contact h1{
 	font-weight: 800 !important;
 	font-size: 3rem !important;
-	color: #fff;
+	color: #000;
 }
 .main-container .contactMain .contact div label{
-	color: #fff;
+	color: #000;
 }
 .main-container .contact .credits{
 	text-align: center;
 	margin-top: 2rem;
-	color: #fff;
+	color: #000;
 }
 .main-container .contact .credits a{
 	color: tomato;
 }
+
+
+
+/* contact animation */
+@keyframes contactAnimate{
+	0%{}
+	20%{transform: scale(1.3);}
+	60%{transform: scale(1.0);}
+}
+
+
 
 /* media */
 @media all and (max-width: 678px){

@@ -62,6 +62,9 @@
 .main-container .about span abbr:nth-child(4){
 	color: #6c10e9;
 }
+.main-container .about span abbr:nth-child(5){
+	color: #d84924;
+}
 .main-container .about .circle3{
 	position: absolute;
 	    top: 100%;

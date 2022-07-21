@@ -16,7 +16,7 @@ var left = document.querySelector('.left');
 var mainContainer = document.querySelector('.main-container');
 var color = document.querySelector('#color');
 var colorContainer = document.querySelector('#colorContainer');
-var contact = document.querySelector('.fa-envelope');
+var contact = document.querySelector('#contactTrig');
 var contactMain = document.querySelector('.contactMain');
 
 /* Prevent right Click*/
@@ -25,18 +25,6 @@ document.body.addEventListener('contextmenu', e=> e.preventDefault());
 
 
 
-/* contact */
-contact.addEventListener('click', ()=>{
-	if(contactMain.classList.contains('close')){
-		contactMain.style.top="0";
-		contactMain.classList.remove('close');
-		contactMain.classList.add('open');
-	}else{
-		contactMain.style.top="-500%";
-		contactMain.classList.add('close');
-		contactMain.classList.remove('open');
-	}
-});
 /* contact icon shake animation */
 
 contactShake = ()=>{
