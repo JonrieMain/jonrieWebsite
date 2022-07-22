@@ -29,8 +29,8 @@
 }
 .main-container .projects .project-container{
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	flex-wrap: wrap;
 	padding-top: 2rem;
@@ -151,6 +151,14 @@
 			max-height: 700px;
 		}
 
+		.main-container .projects .project-container div >span{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			gap: .9rem;
+		}
+
 		.main-container .projects .project-container div img{
 				background: #d1d1d161;
 
@@ -161,9 +169,7 @@
 
 		}
 
-		.main-container .projects >h1{
-			font-size: 2.5rem;
-		}
+	
 
 
 			.main-container .projects div span >h1{
@@ -175,7 +181,11 @@
 
 
 
-
+@media screen and (max-width: 678px){
+	.main-container .projects >h1{
+			font-size: 2.5rem;
+		}
+}
 
 @media screen and (max-width: 620px){
 	.main-container .projects .project-container{
@@ -184,6 +194,7 @@
 	.main-container .projects .project-container div:nth-child(3) img{
 		min-width: 100%;
 	}
+		
 }
 
 
