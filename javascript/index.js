@@ -1,9 +1,11 @@
 /* Scroll effect for up*/
 var header = document.querySelector('.header');
 var up = document.querySelector('#up');
+var jonrie = document.querySelector('.jonrie');
 window.addEventListener('scroll', () =>{
 	up.classList.toggle('sticky', window.scrollY > 0);
 	header.classList.toggle('boxShadow', window.scrollY > 0);
+	jonrie.classList.add('show', window.scrollY > 0)
 });
 
 
@@ -19,6 +21,12 @@ var colorContainer = document.querySelector('#colorContainer');
 var contact = document.querySelector('#contactTrig');
 var contactMain = document.querySelector('.contactMain');
 
+
+
+
+
+
+
 /* Prevent right Click*/
 document.body.addEventListener('contextmenu', e=> e.preventDefault());
 
@@ -30,10 +38,7 @@ document.body.addEventListener('contextmenu', e=> e.preventDefault());
 contactShake = ()=>{
 	contact.style.animation="contactAnimate 2s 1s infinite";
 }
- setInterval(contactShake,2000);
-
-
-
+setInterval(contactShake,2000);
 
 
 
@@ -42,7 +47,7 @@ contactShake = ()=>{
 /* loading */
 window.addEventListener('load', ()=>{
 
-		/* do if window is loaded */
+	/* do if window is loaded */
 	loadingFunc = ()=>{
 		loading.style.display="none";
 		mainContainer.style.opacity="1";

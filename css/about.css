@@ -1,7 +1,7 @@
 .main-container .about{
 	height: 100%;
 	width: 100%;
-	padding: 2rem 1rem 4rem 1rem;
+	padding: 14rem 1rem 4rem 1rem;
 	display: flex;
 	flex-direction: column;
 	justify-content:center;
@@ -11,6 +11,24 @@
 	background: #80808017;
 	position: relative;
 }
+
+/* me overlay style */
+.main-container .about .jonrie{
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 100%;
+	width: 100%;
+	max-width: 20rem;
+	max-height: 20rem;
+	opacity: 0;
+	transition: 1s linear;
+}
+.main-container .about .jonrie.show{
+	opacity: 1;
+}
+
 .main-container .about h1{
 	font-size: 6rem;
 	opacity: .7;
@@ -86,5 +104,8 @@
 	.main-container .about h1{
 		font-size: 2.5rem;
 
+	}
+	.main-container .about p{
+		font-size: 1.1rem;
 	}
 }

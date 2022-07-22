@@ -1,8 +1,25 @@
-.main-container  .projects{
-	padding: 0 .4rem;
+.main-container .projects{
+	padding: 1rem .4rem;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	transition: 2s linear;
+}
+.main-container .projects abbr{
 	position: relative;
 }
-.main-container  .projects >h1{
+.main-container .projects abbr >h1{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 90%;
+	left: 4%;
+	color: #fff;
+	background: #000;
+	padding: .4rem;
+	border-radius: 3rem;
+	font-size: 1.6rem;
+}
+.main-container .projects >h1{
 	opacity: .7;
 	font-size: 6rem;
 	font-weight: 800;
@@ -12,22 +29,39 @@
 }
 .main-container .projects .project-container{
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
 	flex-wrap: wrap;
 	padding-top: 2rem;
 	gap: 1rem;
+	width: 1000px;
+	margin: 0 auto;
 }
 .main-container .projects .project-container div{
 	overflow: hidden;
 	padding-bottom: 2rem;
+	display: flex;
+	gap: 1rem;
+	width: 100%;
+	background: #d1d1d161;
+	padding: .5rem;
+	border-radius: 1rem;
+	max-height: 300px;
+}
+.main-container .projects .project-container div span h1{
+	font-weight: bold;
+}
+.main-container .projects .project-container div span ul li{
+	color: tomato;
 }
 .main-container .projects .project-container div img{
 	width: 100%;
 	height: 100%;
 	max-height: 300px;
 	max-width: 600px;
-	background: #d1d1d161;
+	min-width: 580px;
+	min-height: 300px;
 	padding: 1rem;
 	transition: .2s ease;
 }
@@ -49,7 +83,7 @@
 .main-container .projects .project-container div a{
 	position: relative;
 }
-.main-container .projects .project-container div h1{
+.main-container .projects .project-container div >h1{
 	position: absolute;
 	top: 558%;
 	left: 2%;
@@ -88,27 +122,59 @@
 	.main-container .projects .project-container div{
 		padding-bottom: 3rem;
 	}
-	.main-container .projects .project-container div img{
-		margin-bottom: 1.5rem;
-		max-height: 700px;
-		max-width: 700px;
-	}
 	.main-container .projects .project-container div:nth-child(3) img{
 		min-width: 600px;
 	}
-		.main-container .projects .project-container div h1{
-		top: -350%;
+
+
+
+
+		.main-container .projects div span >h1{
+		font-size: 3rem;
+	}
+}
+
+
+@media screen and (max-width: 1015px){
+	.main-container .projects .project-container{
+		width: 100%;
+	}
+		.main-container .projects .project-container div{
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background: none;
+			align-items: center;
+
+
+			/*reset*/
+			max-height: 700px;
+		}
+
+		.main-container .projects .project-container div img{
+				background: #d1d1d161;
+
+
+				/*reset*/
+				min-width: 0px;
+				min-height: 0px;
+
+		}
+
+		.main-container .projects >h1{
+			font-size: 2.5rem;
+		}
+
+
+			.main-container .projects div span >h1{
+		font-size: 2rem;
+		text-align: center;
 	}
 
 }
 
 
 
-@media screen and (max-width: 678px){
-	.main-container .projects >h1{
-		font-size: 2.5rem;
-	}
-}
 
 
 @media screen and (max-width: 620px){
@@ -117,13 +183,6 @@
 	}
 	.main-container .projects .project-container div:nth-child(3) img{
 		min-width: 100%;
-	}
-	.main-container .projects .project-container div p{
-		font-size: 1.1rem;
-	}
-		.main-container .projects .project-container div h1{
-		font-size: 1rem;
-		top: -193%;
 	}
 }
 
