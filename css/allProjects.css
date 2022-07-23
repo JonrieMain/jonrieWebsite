@@ -8,6 +8,7 @@
 .main-container .projects abbr{
 	position: relative;
 }
+
 .main-container .projects abbr >h1{
 	position: absolute;
 	transform: translate(-50%,-50%);
@@ -49,6 +50,9 @@
 	border-radius: 1rem;
 	max-height: 300px;
 }
+.main-container .projects .project-container div span{
+	margin-left: 2rem;
+}
 .main-container .projects .project-container div span h1{
 	font-weight: bold;
 }
@@ -72,11 +76,6 @@
 .main-container .projects .project-container div p{
 	font-size: 1.5rem;
 	opacity: .8;
-}
-.main-container .projects .project-container div p span{
-	text-decoration: underline;
-	word-break: break-word;
-	color: tomato;
 }
 
 /* all h1 */
@@ -158,6 +157,7 @@
 			align-items: center;
 			flex-direction: column;
 			gap: .9rem;
+			margin-left: 0;
 		}
 
 		.main-container .projects .project-container div img{
