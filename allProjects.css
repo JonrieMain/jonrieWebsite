@@ -8,6 +8,7 @@
 .main-container .projects abbr{
 	position: relative;
 }
+
 .main-container .projects abbr >h1{
 	position: absolute;
 	transform: translate(-50%,-50%);
