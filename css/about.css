@@ -95,6 +95,7 @@
 	z-index: -9999;
 	border-radius: 50%;
 	opacity: .3;
+		animation: allCircleAnimation 2s ease-in-out infinite alternate;
 }
 
 

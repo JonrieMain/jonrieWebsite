@@ -263,7 +263,17 @@ body h1,h6,p{
 	z-index: -9999;
 	border-radius: 50%;
 	opacity: .3;
+	animation: allCircleAnimation 6s ease-in-out infinite alternate;
 }
+
+@keyframes allCircleAnimation{
+	100%{
+		background: tomato;
+		padding: 1px;
+	}
+}
+
+
 
 /*Home right side css*/
 .main-container .home .right{

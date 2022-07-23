@@ -1,5 +1,5 @@
 .main-container .projects{
-	padding: 1rem .4rem;
+	padding: 3rem .4rem;
 	position: relative;
 	height: 100%;
 	width: 100%;
@@ -106,6 +106,7 @@
 	z-index: -9999;
 	border-radius: 50%;
 	opacity: .3;
+		animation: allCircleAnimation 2s ease-in-out infinite alternate;
 }
 
 
