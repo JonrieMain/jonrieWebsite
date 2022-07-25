@@ -90,7 +90,7 @@ body h1,h6,p{
 .theme{
 	position: fixed;
 	top: 50%;
-	right: -10%;
+	right: -30%;
 	transform: translateY(-50%);
 	display: flex;
 	justify-content: center;

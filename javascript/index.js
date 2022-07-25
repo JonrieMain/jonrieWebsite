@@ -117,7 +117,7 @@ themeBtn.addEventListener('click',()=>{
 		themeBtn.classList.remove('fa-arrow-right')
 
 		/* close */
-		theme.style.right="-10%"
+		theme.style.right="-30%"
 	}
 })
 
