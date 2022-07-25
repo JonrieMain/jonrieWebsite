@@ -1,7 +1,7 @@
 .main-container .about{
 	height: 100%;
 	width: 100%;
-	padding: 14rem 1rem 4rem 1rem;
+	padding: 2rem 1rem 4rem 1rem;
 	display: flex;
 	flex-direction: column;
 	justify-content:center;
@@ -12,28 +12,13 @@
 	position: relative;
 }
 
-/* me overlay style */
-.main-container .about .jonrie{
-	position: absolute;
-	top: 5%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	height: 100%;
-	width: 100%;
-	max-width: 20rem;
-	max-height: 20rem;
-	opacity: 0;
-	transition: 1s linear;
-}
-.main-container .about .jonrie.show{
-	opacity: 1;
-}
-
 .main-container .about h1{
 	font-size: 6rem;
 	opacity: .7;
 		font-weight: 800;
 		padding-bottom: 1.5rem;
+
+		z-index: 100000;
 }
 .main-container .about p a{
 	color: gray;
@@ -42,6 +27,7 @@
 	color: gray;
 	font-size: 1.6rem;
 	max-width: 850px;
+	z-index: 100000;
 }
 .main-container .about #underline{
 	padding: 1rem 0;
@@ -65,6 +51,14 @@
 .main-container .about span abbr i{
 	font-size: 4rem;
 		cursor: default;
+}
+.main-container .about span abbr i:hover{
+	animation: shake .5s ease-in-out alternate;
+}
+@keyframes shake{
+	0%{transform: rotate(10deg);}
+	90%{transform: rotate(-10deg);}
+	100%{transform: rotate(0deg);}
 }
 
 /* colors */
@@ -99,6 +93,41 @@
 }
 
 
+/* inside */
+.main-container .about .aboutInside1{
+	position: absolute;
+	    top: 36%;
+    left: 12%;
+	transform: translate(-50%,-50%);
+	z-index: 5;
+	border-radius: 50%;
+	opacity: .3;
+	height: 100%;
+	width: 100%;
+	max-height: 5rem;
+	max-width: 5rem;
+	transition: 1s linear;
+}
+.main-container .about .aboutInside2{
+	position: absolute;
+	    top: 75%;
+    left: 83%;
+	transform: translate(-50%,-50%);
+	z-index: 5;
+	border-radius: 50%;
+	opacity: .3;
+	height: 100%;
+	width: 100%;
+	max-height: 5rem;
+	max-width: 5rem;
+	transition: 1s linear;
+}
+.main-container .about .aboutInside1:hover,
+.main-container .about .aboutInside2:hover{
+	max-height: 2rem;
+	max-width: 2rem;
+}
+
 
 
 @media screen and (max-width: 678px){
@@ -108,5 +137,11 @@
 	}
 	.main-container .about p{
 		font-size: 1.1rem;
+	}
+
+
+	/* remove */
+	.main-container .about .aboutInside2{
+		display: none;
 	}
 }

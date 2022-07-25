@@ -109,6 +109,77 @@
 }
 
 
+/* inside */
+.main-container .projects .projectsInside1{
+	position: absolute;
+	     top: 57%;
+    left: 88%;
+	transform: translate(-50%,-50%);
+	z-index: 5;
+	border-radius: 50%;
+	opacity: .3;
+	height: 100%;
+	width: 100%;
+	max-height: 5rem;
+	max-width: 5rem;
+	transition: 1s linear;
+}
+.main-container .projects .projectsInside2{
+	position: absolute;
+	 top: 15%;
+    left: 7%;
+	transform: translate(-50%,-50%);
+	z-index: 5;
+	border-radius: 50%;
+	opacity: .3;
+	height: 100%;
+	width: 100%;
+	max-height: 5rem;
+	max-width: 5rem;
+	transition: 1s linear;
+}
+.main-container .projects .projectsInside3{
+	position: absolute;
+	 top: 90%;
+    left: 7%;
+	transform: translate(-50%,-50%);
+	z-index: 5;
+	border-radius: 50%;
+	opacity: .3;
+	height: 100%;
+	width: 100%;
+	max-height: 5rem;
+	max-width: 5rem;
+	transition: 1s linear;
+}
+.main-container .projects .projectsInside4{
+	position: absolute;
+	 top: 10%;
+    left: 90%;
+	transform: translate(-50%,-50%);
+	z-index: 5;
+	border-radius: 50%;
+	opacity: .3;
+	height: 100%;
+	width: 100%;
+	max-height: 5rem;
+	max-width: 5rem;
+	transition: 1s linear;
+}
+.main-container .projects .projectsInside1:hover,
+.main-container .projects .projectsInside2:hover,
+.main-container .projects .projectsInside3:hover,
+.main-container .projects .projectsInside4:hover{
+	max-height: 2rem;
+	max-width: 2rem;
+}
+
+
+
+
+
+
+
 
 
 /* -----------------------------Media Query--------------------------------- */
@@ -132,6 +203,17 @@
 		.main-container .projects div span >h1{
 		font-size: 3rem;
 	}
+
+
+
+
+			/* remove overlay */
+		.main-container .projects .projectsInside1,
+	.main-container .projects .projectsInside2,
+	.main-container .projects .projectsInside3,
+	.main-container .projects .projectsInside4{
+		display: none;
+	}
 }
 
 
@@ -143,7 +225,6 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			background: none;
 			align-items: center;
 
 
@@ -177,6 +258,7 @@
 		font-size: 2rem;
 		text-align: center;
 	}
+
 
 }
 

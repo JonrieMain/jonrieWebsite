@@ -1,11 +1,9 @@
 /* Scroll effect for up*/
 var header = document.querySelector('.header');
 var up = document.querySelector('#up');
-var jonrie = document.querySelector('.jonrie');
 window.addEventListener('scroll', () =>{
 	up.classList.toggle('sticky', window.scrollY > 0);
 	header.classList.toggle('boxShadow', window.scrollY > 0);
-	jonrie.classList.add('show', window.scrollY > 0)
 });
 
 

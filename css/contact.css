@@ -12,6 +12,7 @@
 	border: none !important;
 	background: tomato !important;
 	color: #fff !important;
+	z-index: 1000000;
 }
 
 
