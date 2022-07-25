@@ -18,6 +18,10 @@ var color = document.querySelector('#color');
 var colorContainer = document.querySelector('#colorContainer');
 var contact = document.querySelector('#contactTrig');
 var contactMain = document.querySelector('.contactMain');
+var theme = document.querySelector('.theme');
+var themeBtn = document.querySelector('.themeBtn');
+
+
 
 
 
@@ -84,6 +88,39 @@ color.addEventListener('click', ()=>{
 
 
 })
+
+
+
+
+
+/* open close*/
+themeBtn.addEventListener('click',()=>{
+	if(theme.classList.contains('close')){
+
+		/* add & remove */
+		theme.classList.remove('close')
+		theme.classList.add('open')
+
+		/* change */
+		themeBtn.classList.remove('fa-arrow-left')
+		themeBtn.classList.add('fa-arrow-right')
+
+		/* open*/
+		theme.style.right="-.3%"
+	}else{
+		/* add & remove */
+		theme.classList.remove('open')
+		theme.classList.add('close')
+
+		/* change */
+		themeBtn.classList.add('fa-arrow-left')
+		themeBtn.classList.remove('fa-arrow-right')
+
+		/* close */
+		theme.style.right="-10%"
+	}
+})
+
 
 
 

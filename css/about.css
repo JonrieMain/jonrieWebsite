@@ -75,6 +75,9 @@
 .main-container .about span abbr:nth-child(5){
 	color: #d84924;
 }
+.main-container .about span abbr:nth-child(6){
+	color: silver;
+}
 .main-container .about .circle3{
 	position: absolute;
 	    top: 100%;
@@ -135,6 +138,10 @@
 	}
 	.main-container .about p{
 		font-size: 1.1rem;
+	}
+
+	.main-container .about h2{
+		font-size: 2.5rem;
 	}
 
 
