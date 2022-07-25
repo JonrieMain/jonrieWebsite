@@ -28,7 +28,7 @@ body h1,h6,p{
 	left: 0;right: 0;
 	height: 100vh;
 	width: 100%;
-	background: rgb(0, 0, 0,.6);
+	background: #fff;
 	z-index: 10000000;
 	display: flex;
 	justify-content: center;
@@ -88,7 +88,6 @@ body h1,h6,p{
 	width: 100%;
 	position: relative;
 	min-width: 300px;
-	opacity: .1;
 }
 
 
@@ -236,13 +235,10 @@ body h1,h6,p{
 .main-container .home .right .jonrie{
 	height: 100%;
 	width: 100%;
-	max-width: 20rem;
-	max-height: 20rem;
+	max-width: 25rem;
+	max-height: 25rem;
+	margin-bottom: 4rem;
 }
-
-
-
-
 
 
 
@@ -324,8 +320,8 @@ body h1,h6,p{
 	}   
 
 .main-container .home .circle{
-	 top: 41%;
-    left: 45%;
+	 top: 35%;
+    left: 50%;
 }
 .main-container .home .circle1{
 	display: none;
@@ -359,6 +355,13 @@ body h1,h6,p{
 	.main-container .home .left .home-text-con h1{
 		font-size: 2.5rem;
 		padding-bottom: .2rem;
+	}
+
+
+
+	/* reset */
+	.main-container .home .right .jonrie{
+		margin-bottom: 0;
 	}
 
 }
