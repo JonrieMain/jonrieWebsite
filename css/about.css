@@ -147,6 +147,9 @@
 
 
 
+
+
+
 /* certifications */
 .main-container .about .certificate-con{
 	height: 100%;
@@ -193,6 +196,11 @@
 	/* i size */
 		.main-container .about span abbr i{
 		font-size: 4rem;
+	}
+
+	/* mt reduce*/
+		.main-container .about .certificate-con{
+		margin-top: 1.5rem;
 	}
 
 

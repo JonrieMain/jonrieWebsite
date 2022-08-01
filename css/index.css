@@ -372,10 +372,15 @@ body h1,h6,p{
 		display: flex;
 	}
 	.main-container .header .menu a{
-		font-size: 1rem;
+		font-size: 1.4rem;
+		margin-top: 1rem;
 		padding-right: .8rem;
 		padding-left: 0;
 	}   
+	/* reset */
+	.main-container .header .menu a:nth-child(2){
+			padding-right: 0rem;
+	}
 
 .main-container .home .circle{
 	 top: 35%;
