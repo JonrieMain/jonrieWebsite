@@ -10,6 +10,10 @@
 	<link rel="My Icon" type="image/x-icon" href="./images/favicon.png">
 	<!-- css -->
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
+
+	<!-- CSS AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 	<!-- google verification -->
 	<meta name="google-site-verification" content="ItHg_9cysnHe3fNSXX4yRCHi1qzFSCHoBpSwdHJYUpw" />
 	<!-- Description -->
@@ -42,10 +46,7 @@
 
 	<!-- preLoader -->
 	<div class="loading" id="loading">
-		<strong class="text-dark">Loading...</strong>
-		<div class="spinner-border text-dark" role="status">
-			<span class="visually-hidden">Loading...</span>
-		</div>
+		<strong data-aos="flip-down" class="text-dark">J</strong>
 	</div>
 
 
@@ -76,18 +77,10 @@
 			<a href="https://jonrie.xyz" id="jonrieLogo"><h1>Jonrie</h1></a>
 
 
-
-
-
 			<div class="menu" id="menu">
-				<a href="#home">Home</a>
 				<a href="#about">About</a>
 				<a href="#projects">Projects</a>
-				<a href="#certificate">Certificate</a>
 			</div>
-
-
-
 
 
 		</header>
@@ -110,7 +103,7 @@
 				</div>
 				<div class="home-text-con">
 					<h1>Hi, I am Jonrie</h1>
-					<h6>Aspiring Software Engineer</h6><br>
+					<h6>1st Year BSIS Student</h6><br>
 					<p>I want to creat stunning website for your
 						business.<br> To enchance my skill and establish stronger<br> connection
 					and development</p>
@@ -142,27 +135,88 @@
 
 
 			<h1>About</h1>
-			<p>Hello! I'm Jonrie, and I'm 19 years old from Quezon City. I'm a working student and I want to become a software engineer soon. I'm currently a 1st year Bachelor in Science in Information Systems(BSIS) student at <a href="https://www.facebook.com/IIHCMARKETINGOFFICIAL2009"> IIH College Novaliches Campus</a>, and I'm still studying web development and other technologies to make my knowledge solid.</p>
+			<p data-aos="fade-down"data-aos-easing="linear"data-aos-duration="750">Hello! I'm Jonrie, and I'm 19 years old from Quezon City. I'm a working student and I want to become a software engineer soon. I'm currently a 1st year Bachelor in Science in Information Systems(BSIS) student at <a href="https://www.facebook.com/IIHCMARKETINGOFFICIAL2009"> IIH College Novaliches Campus</a>, and I'm still studying web development and other technologies to make my knowledge solid.</p>
 			<br>
-			<p>For any sort of help, feel free to send me an <abbr title="jonriemain@gmail.com"><a href="mailto:jonriemain@gmail.com">email</a></abbr> and I'll get back to you soon or you can message me anonymously <a href="https://sayout.me/say/jonrie" style="text-decoration: underline;">here.</a></p>
-			<div class="aboutIcon">
-				<h2>Technologies</h2>
-				<span>
-					<abbr title="HTML"><i class="fa-brands fa-html5"></i></abbr>
-					<abbr title="CSS"><i class="fa-brands fa-css3"></i></abbr>
-					<abbr title="JAVASCRIPT"><i class="fa-brands fa-js"></i></abbr>
-					<abbr title="BOOTSTRAP"><i class="fa-brands fa-bootstrap"></i></abbr>
-					<abbr title="GIT"><i class="fa-brands fa-git-alt"></i></abbr>
-					<abbr title="GITHUB"><i class="fa-brands fa-github"></i></abbr>
-				</span>
+			<p data-aos="fade-down"data-aos-easing="linear"data-aos-duration="750">For any sort of help, feel free to send me an <abbr title="jonriemain@gmail.com"><a href="mailto:jonriemain@gmail.com">email</a></abbr> and I'll get back to you soon or you can message me anonymously <a href="https://sayout.me/say/jonrie" style="text-decoration: underline;">here.</a></p>
+
+			<div class="aboutRow">
+				<div class="aboutIcon" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">
+					<h2>Technologies</h2>
+					<span>
+						<abbr title="HTML"><i class="fa-brands fa-html5"></i></abbr>
+						<abbr title="CSS"><i class="fa-brands fa-css3"></i></abbr>
+						<abbr title="JAVASCRIPT"><i class="fa-brands fa-js"></i></abbr>
+						<abbr title="BOOTSTRAP"><i class="fa-brands fa-bootstrap"></i></abbr>
+						<abbr title="GIT"><i class="fa-brands fa-git-alt"></i></abbr>
+						<abbr title="GITHUB"><i class="fa-brands fa-github"></i></abbr>
+					</span>
+				</div>
+
+
+
+				<!-- --------------certifications----------------- -->
+				<div class="certificate-con" id="certificate" data-aos="fade-left"data-aos-offset="300"data-aos-easing="ease-in-sine">
+					<h1>Certificate</h1>
+					<!-- --------------------------Bootstrap Carousel-------------------------- -->
+					<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-bs-interval="2500">
+								<a target="__blank" href="./images/cer1.jpg"><img src="./images/cer1.jpg" class="d-block w-100" alt="imageCertificate"></a>
+							</div>
+							<div class="carousel-item" data-bs-interval="2500">
+								<a target="__blank" href="./images/cer2.jpg"><img src="./images/cer2.jpg" class="d-block w-100" alt="imageCertificate"></a>
+							</div>
+							<div class="carousel-item" data-bs-interval="2500">
+								<a target="__blank" href="./images/cer3.jpg"><img src="./images/cer3.jpg" class="d-block w-100" alt="imageCertificate"></a>
+							</div>
+							<div class="carousel-item" data-bs-interval="2500">
+								<a target="__blank" href="./images/cer4.jpg"><img src="./images/cer4.jpg" class="d-block w-100" alt="imageCertificate"></a>
+							</div>
+							<div class="carousel-item" data-bs-interval="2500">
+								<a target="__blank" href="./images/cer5.jpg"><img src="./images/cer5.jpg" class="d-block w-100" alt="imageCertificate"></a>
+							</div>
+							<div class="carousel-item" data-bs-interval="2500">
+								<a target="__blank" href="./images/cer6.jpg"><img src="./images/cer6.jpg" class="d-block w-100" alt="imageCertificate"></a>
+							</div>
+							<div class="carousel-item" data-bs-interval="2500">
+								<a target="__blank" href="./images/cer7.jpg"><img src="./images/cer7.jpg" class="d-block w-100" alt="imageCertificate"></a>
+							</div>
+							<div class="carousel-item" data-bs-interval="2500">
+								<a target="__blank" href="./images/cer8.jpg"><img src="./images/cer8.jpg" class="d-block w-100" alt="imageCertificate"></a>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+							<span style="color: silver !important;" aria-hidden="true"><i style="font-size: 4rem !important;" class="fa-solid fa-caret-left"></i></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+							<span style="color: silver !important;" aria-hidden="true"><i style="font-size: 4rem !important;" class="fa-solid fa-caret-right"></i></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
 			</div>
+
+
+
+
 			<img class="circle3" src="./images/circle.png" alt="Circle3">
 
 			<!-- circle inside -->
 			<img class="aboutInside1" src="./images/circle.png" alt="Circle">
-			<img class="aboutInside2" src="./images/circle.png" alt="Circle">
-		</div>
 
+		</div>
 
 
 
@@ -173,7 +227,7 @@
 			<h1>Self Projects</h1>
 			<!-- ----------------------------------Project Container-------------------->
 			<div class="project-container">
-				<div class="dheeluxe">
+				<div class="dheeluxe" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">
 					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/ExampleBeautyProducts/"><img alt="dheeluxeImage" src="./images/dheeluxe.png"></a><h1>01</h1></abbr>
 					<span>
 						<h1>Dheeluxe</h1>
@@ -187,7 +241,7 @@
 
 					</span>			
 				</div>
-				<div class="alwaysChooseGood">
+				<div class="alwaysChooseGood" data-aos="fade-left"data-aos-offset="300"data-aos-easing="ease-in-sine">
 					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/AlwaysChooseGood/"><img alt="ChooseGoodImage" src="./images/alwaysChooseGood.png"></a><h1>02</h1></abbr>
 					<span>
 						<h1>Always Choose Good</h1>
@@ -202,7 +256,7 @@
 					</span>	
 				</div>
 
-				<div class="phoneBrand">
+				<div class="phoneBrand" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">
 					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/PhoneBrand/"><img alt="PhoneBrandImage" src="./images/phoneBrand.png"></a><h1>03</h1></abbr>
 
 					<span>
@@ -218,7 +272,7 @@
 
 				</div>
 
-				<div class="trinity">
+				<div class="trinity" data-aos="fade-left"data-aos-offset="300"data-aos-easing="ease-in-sine">
 					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/TrinityPolytechnicCollegeBlogsite/"><img alt="TrinityImage" src="./images/trinityBlogsite.png"></a><h1>04</h1></abbr>
 
 					<span>
@@ -234,7 +288,7 @@
 					</span>	
 
 				</div>
-				<div class="restauOpening">
+				<div class="restauOpening" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">
 					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/RestaurantsOpening/"><img alt="Restaurant Oening" src="./images/restauOpeningDestop.png"></a><h1>05</h1></abbr>
 
 					<span>
@@ -249,7 +303,7 @@
 					</span>	
 
 				</div>
-				<div class="hikingConcept">
+				<div class="hikingConcept" data-aos="fade-left"data-aos-offset="300"data-aos-easing="ease-in-sine">
 					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/HikingConcept/"><img alt="Hiking Concept" src="./images/hikingConcept.png"></a><h1>06</h1></abbr>
 
 					<span>
@@ -266,7 +320,7 @@
 				</div>
 
 
-				<div class="musicShow">
+				<div class="musicShow" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">
 					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/musicShow/"><img alt="Hiking Concept" src="./images/musicShow.png"></a><h1>07</h1></abbr>
 
 					<span>
@@ -285,7 +339,7 @@
 
 
 
-				<div class="researchGenerator">
+				<div class="researchGenerator" data-aos="fade-left"data-aos-offset="300"data-aos-easing="ease-in-sine">
 					<abbr title="click to view"><a target="__blank" href="https://jonriemain.github.io/ResearchTitlesGenerator/"><img alt="researchGenerator" src="./images/researchGenerator.png"></a><h1>08</h1></abbr>
 
 					<span>
@@ -324,60 +378,6 @@
 
 
 
-
-		<!-- --------------certifications----------------- -->
-		<div class="certificate-con" id="certificate">
-			<h1>Certificate</h1>
-			<!-- --------------------------Bootstrap Carousel-------------------------- -->
-			<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-
-					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
-					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
-				</div>
-				<div class="carousel-inner">
-					<div class="carousel-item active" data-bs-interval="2500">
-						<img src="./images/cer1.jpg" class="d-block w-100" alt="imageCertificate">
-					</div>
-					<div class="carousel-item" data-bs-interval="2500">
-						<img src="./images/cer2.jpg" class="d-block w-100" alt="imageCertificate">
-					</div>
-					<div class="carousel-item" data-bs-interval="2500">
-						<img src="./images/cer3.jpg" class="d-block w-100" alt="imageCertificate">
-					</div>
-					<div class="carousel-item" data-bs-interval="2500">
-						<img src="./images/cer4.jpg" class="d-block w-100" alt="imageCertificate">
-					</div>
-					<div class="carousel-item" data-bs-interval="2500">
-						<img src="./images/cer5.jpg" class="d-block w-100" alt="imageCertificate">
-					</div>
-					<div class="carousel-item" data-bs-interval="2500">
-						<img src="./images/cer6.jpg" class="d-block w-100" alt="imageCertificate">
-					</div>
-					<div class="carousel-item" data-bs-interval="2500">
-						<img src="./images/cer7.jpg" class="d-block w-100" alt="imageCertificate">
-					</div>
-					<div class="carousel-item" data-bs-interval="2500">
-						<img src="./images/cer8.jpg" class="d-block w-100" alt="imageCertificate">
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-					<span style="color: silver !important;" aria-hidden="true"><i style="font-size: 4rem !important;" class="fa-solid fa-caret-left"></i></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-					<span style="color: silver !important;" aria-hidden="true"><i style="font-size: 4rem !important;" class="fa-solid fa-caret-right"></i></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
-			<img class="circle5" src="./images/circle.png" alt="Circle5">
-		</div>
 
 
 
@@ -455,4 +455,16 @@
 	<script type="text/javascript" src="./javascript/index.js"></script>
 	<!-- JavaScript Bootstrap CDN -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<!-- JS AOS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script type="text/javascript">
+
+		/* aos init*/
+		AOS.init();
+		AOS.init({
+			once: true,
+			duration: 400,
+			startEvent: 'DOMContentLoaded'
+		})
+	</script>
 	</html>

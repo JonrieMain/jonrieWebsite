@@ -4,6 +4,7 @@
 	height: 100%;
 	width: 100%;
 	transition: 2s linear;
+		overflow: hidden;
 }
 .main-container .projects abbr{
 	position: relative;
@@ -242,7 +243,6 @@
 		}
 
 		.main-container .projects .project-container div img{
-				background: #d1d1d161;
 
 
 				/*reset*/
