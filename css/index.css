@@ -24,7 +24,8 @@ body h1,h6,p{
 /* ---------------------Loading CSS---------------------------- */
 .loading{
 	position: fixed;
-	left: 0;right: 0;
+	top: 0;
+	left: 0%;
 	height: 100vh;
 	width: 100%;
 	background: #fff;
@@ -32,8 +33,9 @@ body h1,h6,p{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	transition: 1s ease;
+	transition: .4s linear;
 }
+
 .loading strong{
 	font-size: 4rem !important;
 	position: relative;

@@ -48,14 +48,17 @@ setInterval(contactShake,2000);
 
 /* loading */
 window.addEventListener('load', ()=>{
-
 	/* do if window is loaded */
 	loadingFunc = ()=>{
-		loading.style.display="none";
+		loading.style.opacity="0";
+		loading.style.zIndex="-999999";
+
 		clearInterval(count);
 	}
 	/* timer for loadingFunc */
 	var count = setInterval(loadingFunc,500);
+
+
 });
 
 
