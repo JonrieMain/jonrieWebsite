@@ -55,7 +55,8 @@
 	margin-left: 2rem;
 }
 .main-container .projects .project-container div span h1{
-	font-weight: bold;
+	font-size: 1.9rem;
+	font-weight: 300;
 }
 .main-container .projects .project-container div span ul li{
 	color: tomato;
