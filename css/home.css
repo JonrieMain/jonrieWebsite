@@ -37,20 +37,20 @@ body h1,h6,p{
 	content: "";
 	height: 7.5rem;
 	width: 7.5rem;
-	border-top: 3px solid tomato;
+	border-top: 8px solid tomato;
 	border-radius: 50%;
 	position: absolute;
-	top: -1%;
-    left: -237%;
-	transform: translate(-50%,-50%);
-	animation: spin 2s infinite;
+	top: 0;
+	left: 0;
+	margin: -2px 0 0 -55px;
+	animation: spin 2.3s linear infinite;
 }
 @keyframes spin{
 	0% {
-    transform: rotate(0);
+    transform: rotate(0deg);
 }
 100% {
-    transform: rotate(360deg);
+    transform: rotate(1turn);
 }
 }
 
