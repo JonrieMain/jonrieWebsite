@@ -61,14 +61,48 @@
 	<title>Jonrie</title>
 </head>
 
-<!-- --------------------------preLoader-------------------------- -->
 <body class="light">
 
 
+
+
+<!-- --------------------------preLoader-------------------------- -->
+	<!-- script for preLoader -->
+	<script type="text/javascript">
+		/* loading */
+		window.addEventListener('load', ()=>{
+			/* do if window is loaded */
+			loadingFunc = ()=>{
+
+				 /* hide */
+				loading.style.opacity="0";
+				loading.style.zIndex="-999999";
+				/* scroll on*/
+				document.body.style.overflow="unset";
+
+				 /* clear */
+				clearInterval(count);
+
+
+				/* remove */
+				setTimeout(()=>{
+					loading.style.display="none";
+				},3000)
+			}
+			/* timer for loadingFunc */
+			var count = setInterval(loadingFunc,500);
+
+		});
+
+	</script>
 	<!-- preLoader -->
 	<div class="loading" id="loading">
 		<strong data-aos="flip-down" class="text-dark">J</strong>
 	</div>
+
+
+
+
 
 
 
@@ -177,7 +211,7 @@
 
 				<!-- --------------certifications----------------- -->
 				<div class="certificate-con" id="certificate" data-aos="fade-left"data-aos-offset="300"data-aos-easing="ease-in-sine">
-					<h1>Certificate</h1>
+					<h1>Certifications</h1>
 					<!-- --------------------------Bootstrap Carousel-------------------------- -->
 					<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
 						<div class="carousel-indicators">
@@ -190,6 +224,7 @@
 							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
 							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
 							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
 						</div>
 						<div class="carousel-inner">
 							<div class="carousel-item active" data-bs-interval="2500">
@@ -215,6 +250,9 @@
 							</div>
 							<div class="carousel-item" data-bs-interval="2500">
 								<a target="__blank" href="./images/cer8.jpg"><img src="./images/cer8.jpg" class="d-block w-100" alt="imageCertificate"></a>
+							</div>
+							<div class="carousel-item" data-bs-interval="2500">
+								<a target="__blank" href="./images/cer9.jpg"><img src="./images/cer9.jpg" class="d-block w-100" alt="imageCertificate"></a>
 							</div>
 						</div>
 						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">

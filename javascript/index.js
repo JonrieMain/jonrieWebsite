@@ -9,7 +9,7 @@ window.addEventListener('scroll', () =>{
 
 /* Call element */
 var loading = document.querySelector('.loading');
-var darkMode	 = document.querySelector('#darkMode');
+var darkMode = document.querySelector('#darkMode');
 var menu = document.getElementById("menu").children;
 var jonrieLogo = document.querySelector('#jonrieLogo');
 var left = document.querySelector('.left');
@@ -43,23 +43,6 @@ contactShake = ()=>{
 setInterval(contactShake,2000);
 
 
-
-
-
-/* loading */
-window.addEventListener('load', ()=>{
-	/* do if window is loaded */
-	loadingFunc = ()=>{
-		loading.style.opacity="0";
-		loading.style.zIndex="-999999";
-
-		clearInterval(count);
-	}
-	/* timer for loadingFunc */
-	var count = setInterval(loadingFunc,500);
-
-
-});
 
 
 

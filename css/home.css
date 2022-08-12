@@ -10,6 +10,9 @@ html{
 }
 body{
 	transition: .3s ease;
+
+	/* disable scroll , if window not yet completely loaded */
+	overflow: hidden;
 }
 body h1,h6,p{
 	cursor: default;
