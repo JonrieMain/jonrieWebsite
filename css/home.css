@@ -198,12 +198,17 @@ body h1,h6,p{
 	align-items: center;
 }
 .main-container .header .menu a{
-	padding-left: 1rem;
+	margin-left: 1rem;
+	padding: .4rem;
+	border-radius: 50%;
 	text-decoration: none;
 	color: black;
 	font-size: 1.5rem;
 	transition: .3s ease-in-out;
 	text-transform: uppercase;
+}
+.main-container .header .menu a:hover{
+	background: tomato;
 }
 .main-container .header span{
 	display: flex;
@@ -291,9 +296,11 @@ body h1,h6,p{
 .main-container .home .right .jonrie{
 	height: 100%;
 	width: 100%;
-	max-width: 25rem;
-	max-height: 25rem;
+	max-width: 27rem;
+	max-height: 27rem;
 	margin-bottom: 4rem;
+	background: #d1d1d12e;
+	border-radius: 50%;
 }
 
 
