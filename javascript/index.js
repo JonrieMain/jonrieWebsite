@@ -20,9 +20,20 @@ var contact = document.querySelector('#contactTrig');
 var contactMain = document.querySelector('.contactMain');
 var theme = document.querySelector('.theme');
 var themeBtn = document.querySelector('.themeBtn');
+var carouselPrevAndNextBtn = document.querySelectorAll('#carouselPrevAndNextBtn');
+var carouselPrevAndNext = document.querySelector('#certificate');
 
 
 
+
+/* carousel hover */
+carouselPrevAndNext.addEventListener('mouseover', ()=>{
+		carouselPrevAndNextBtn.forEach(e=>e.style.display="block")
+})
+carouselPrevAndNext.addEventListener('mouseout', ()=>{
+		carouselPrevAndNextBtn.forEach(e=>e.style.display="none")
+})
+	
 
 
 
