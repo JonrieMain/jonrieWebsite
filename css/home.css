@@ -4,12 +4,12 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
+	transition: .3s linear;
 }
 html{
 	scroll-behavior: smooth;
 }
 body{
-	transition: .3s ease;
 
 	/* disable scroll , if window not yet completely loaded */
 	overflow: hidden;
@@ -21,25 +21,25 @@ body h1,h6,p{
 /*For Scroll Bar*/
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+	width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px silver; 
-  border-radius: 1rem;
+	box-shadow: inset 0 0 5px silver; 
+	border-radius: 1rem;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: tomato; 
-  border-radius: 10px;
+	background: tomato; 
+	border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #4a91fa; 
-    transition: .4s linear;
+	background: #4a91fa; 
+	transition: .4s linear;
 }
 
 
@@ -48,7 +48,7 @@ body h1,h6,p{
 /* up style */
 .fa-solid.fa-up-long{
 	position: fixed;
-	 top: 88.5%;;
+	top: 88.5%;;
 	right: -50%;
 	font-size: 3rem;
 	color: tomato;
@@ -97,7 +97,7 @@ body h1,h6,p{
 	cursor: pointer;
 }
 .theme:hover{
-		cursor: pointer;
+	cursor: pointer;
 }
 .theme #darkMode{
 	cursor: pointer;
@@ -141,7 +141,7 @@ body h1,h6,p{
 	z-index: 1000;
 }
 .main-container .header.boxShadow{
-	 box-shadow: 1px 1px 30px #888888;
+	box-shadow: 1px 1px 30px #888888;
 }
 .main-container .header #jonrieLogo{
 	text-decoration: none;
@@ -187,7 +187,8 @@ body h1,h6,p{
 	position: relative;
 	min-height: 700px;
 	padding: 9rem 0 3rem 0;
-	transition: .4;
+	transition: .4s linear;
+	opacity: 0;
 }
 
 
@@ -197,7 +198,7 @@ body h1,h6,p{
 	justify-content: center;
 	align-items: center;
 
-		z-index: 10;
+	z-index: 10;
 
 }
 .main-container .home .left .home-icon-con{
@@ -270,13 +271,13 @@ body h1,h6,p{
 
 .main-container .home .circle{
 	position: absolute;
-	      top: 58%;
-    left: 28%;
+	top: 58%;
+	left: 28%;
 	transform: translate(-50%,-50%);
 	height: 100%;
 	width: 100%;
 	max-height: 20rem;
-    max-width: 20rem;
+	max-width: 20rem;
 	z-index: -9999;
 	border-radius: 50%;
 	opacity: .3;
@@ -284,7 +285,7 @@ body h1,h6,p{
 .main-container .home .circle1{
 	position: absolute;
 	top: 33%;
-    left: 51%;
+	left: 51%;
 	transform: translate(-50%,-50%);
 	height: 100%;
 	width: 100%;
@@ -292,13 +293,13 @@ body h1,h6,p{
 	max-width: 5rem;
 	border-radius: 50%;
 	opacity: .3;
-		z-index: 5;
-			transition: 1s linear;
+	z-index: 5;
+	transition: 1s linear;
 }
 .main-container .home .circle2{
 	position: absolute;
-	    top: 100%;
-    left: 25%;
+	top: 100%;
+	left: 25%;
 	transform: translate(-50%,-50%);
 	height: 100%;
 	width: 100%;
@@ -329,7 +330,7 @@ body h1,h6,p{
 
 
 /* --------------------- Media Query ---------------------------- */
-@media screen and (max-width: 678px){
+@media screen and (max-width: 750px){
 
 	.main-container .header{
 		flex-direction: column;
@@ -346,30 +347,35 @@ body h1,h6,p{
 	}   
 	/* reset */
 	.main-container .header .menu a:nth-child(2){
-			padding-right: 0rem;
+		padding-right: 0rem;
 	}
 
-.main-container .home .circle{
-	 top: 35%;
-    left: 50%;
-}
-.main-container .home .circle1{
-	display: none;
-}
+	.main-container .home .circle{
+		top: 35%;
+		left: 50%;
+	}
+	.main-container .home .circle1{
+		display: none;
+	}
 
 	.main-container .slider-all #carouselExampleDark .bootstrap-custom-indicator h3{
 		font-size: 1.1rem;
-}
+	}
 
 
 
 	.main-container .home{
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		justify-content: unset;
 		height: 100%;
+		gap: 2rem;
 	}
-	.main-container .home .right img{
+	
+	.main-container .home .right{
+		background: #d1d1d12e;
+	}
+	.main-container .home .right .jonrie{
 		max-height: 20rem;
 		max-width: 20rem;
 		width: 100%;
@@ -404,8 +410,8 @@ body h1,h6,p{
 		font-size: .8rem;
 	}
 	.main-container .header .menu input[type=color]{
-	height: 20px;
-	width: 30px;
-}
+		height: 20px;
+		width: 30px;
+	}
 
 }
