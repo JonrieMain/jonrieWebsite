@@ -358,10 +358,9 @@ body h1,h6,p{
 		display: none;
 	}
 
-	.main-container .slider-all #carouselExampleDark .bootstrap-custom-indicator h3{
-		font-size: 1.1rem;
-	}
-
+	.main-container .home .left .home-icon-con{
+	display: none;
+}
 
 
 	.main-container .home{
