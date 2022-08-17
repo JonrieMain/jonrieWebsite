@@ -229,6 +229,7 @@ body h1,h6,p{
 }
 .main-container .home .left .home-text-con p{
 	color: grey;
+	max-width: 400px;
 }
 .main-container .home .left .home-text-con .home-btn{
 	padding: .7rem;
@@ -353,11 +354,28 @@ body h1,h6,p{
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-direction: column;
 		padding: 0 .6rem;
 	}
 	.main-container .home .left .home-icon-con{
-		display: none;
+		display: flex;
+		flex-direction: row;
 	}
+	.main-container .home .left .home-text-con{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+	}
+	.main-container .home .left .home-text-con p{
+	text-align: center;
+}
+
+.main-container .home .left .home-text-con .home-btn{
+	width: 80vw;
+}
+
 
 	.main-container .home .circle{
 		top: 35%;
@@ -393,6 +411,9 @@ body h1,h6,p{
 		transition: .3s ease;
 		padding-right: 1rem;
 		padding-top: 4rem;
+
+		 /* remove */
+		 background: none;
 	}
 	.main-container .home .left .circle1{
 		display: none;
