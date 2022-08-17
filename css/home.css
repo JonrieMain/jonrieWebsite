@@ -349,6 +349,15 @@ body h1,h6,p{
 	.main-container .header .menu a:nth-child(2){
 		padding-right: 0rem;
 	}
+	.main-container .home .left{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 .6rem;
+	}
+	.main-container .home .left .home-icon-con{
+		display: none;
+	}
 
 	.main-container .home .circle{
 		top: 35%;
@@ -358,9 +367,10 @@ body h1,h6,p{
 		display: none;
 	}
 
-	.main-container .home .left .home-icon-con{
-	display: none;
-}
+	.main-container .slider-all #carouselExampleDark .bootstrap-custom-indicator h3{
+		font-size: 1.1rem;
+	}
+
 
 
 	.main-container .home{
