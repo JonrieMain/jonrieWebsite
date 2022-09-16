@@ -41,6 +41,10 @@ carouselPrevAndNext.addEventListener('mouseout', ()=>{
 
 
 
+
+
+
+
 const emailClick = document.querySelector('#emailClick').addEventListener('click', ()=>{
 	contact.click();
 });
@@ -144,6 +148,10 @@ darkFunc = () =>{
 	}
 	jonrieLogo.style.color="white";
 	localStorage.setItem("themeColor", "dark");
+
+	/* sub carousel bg and project list bg*/
+	document.querySelector('.carouselSubButton').style.background="#d1d1d12e";
+	document.querySelectorAll('#bgChange').forEach(bgChange=>bgChange.style.background="#d1d1d12e")
 }
 
 
@@ -162,6 +170,10 @@ lightFunc = () =>{
 	}
 	jonrieLogo.style.color="black";
 	localStorage.setItem("themeColor", "light");
+
+	/* sub carousel bg and project list bg*/
+	document.querySelector('.carouselSubButton').style.background="#d1d1d1";
+	document.querySelectorAll('#bgChange').forEach(bgChange=>bgChange.style.background="#d1d1d1")
 }
 
 /* --------------------- check localStorage ---------------------------- */
@@ -189,4 +201,38 @@ darkMode.addEventListener('click',()=>{
 });
 
 
+
+
+// Carousel trig buttons(h3)
+document.querySelector('#indi1').addEventListener('click', ()=>{
+	document.querySelector('#staticWebsite').click();
+});
+document.querySelector('#indi2').addEventListener('click', ()=>{
+	document.querySelector('#dynamicWebsite').click();
+});
+document.querySelector('#indi3').addEventListener('click', ()=>{
+	document.querySelector('#destopApp').click();
+});
+document.querySelector('#indi4').addEventListener('click', ()=>{
+	document.querySelector('#mobileApp').click();
+});
+
+// trig active
+const activeh3 = document.querySelectorAll('.sub')
+activeh3.forEach((ac) =>{
+
+	ac.addEventListener('click', ()=>{
+		/* remove */
+		activeh3.forEach(rem=>rem.classList.remove('active'));
+		/* add */
+		ac.classList.add('active');
+	});
+
+
+
+
+
+
+
+});
 
