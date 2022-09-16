@@ -116,6 +116,16 @@
 		}
 }
 
+@media screen and (max-width: 500px){
+
+
+	/* height of carousel new indicator */
+	.main-container .projects .carouselSubButton{
+	height: 12rem;
+}
+
+}
+
 
 
 
