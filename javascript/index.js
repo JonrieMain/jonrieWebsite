@@ -2,8 +2,11 @@
 var header = document.querySelector('.header');
 var up = document.querySelector('#up');
 window.addEventListener('scroll', () =>{
-	up.classList.toggle('sticky', window.scrollY > 0);
-	header.classList.toggle('boxShadow', window.scrollY > 0);
+	up.classList.toggle('sticky', window.scrollY > 50);
+	if(window.matchMedia("(min-width: 751px)")){
+		header.classList.toggle('boxShadow', window.scrollY > 0);	
+	}
+	
 });
 
 
@@ -28,14 +31,19 @@ var carouselPrevAndNext = document.querySelector('#certificate');
 
 /* carousel hover */
 carouselPrevAndNext.addEventListener('mouseover', ()=>{
-		carouselPrevAndNextBtn.forEach(e=>e.style.display="block")
+	carouselPrevAndNextBtn.forEach(e=>e.style.display="block")
 })
 carouselPrevAndNext.addEventListener('mouseout', ()=>{
-		carouselPrevAndNextBtn.forEach(e=>e.style.display="none")
+	carouselPrevAndNextBtn.forEach(e=>e.style.display="none")
 })
-	
 
 
+
+
+
+const emailClick = document.querySelector('#emailClick').addEventListener('click', ()=>{
+	contact.click();
+});
 
 
 

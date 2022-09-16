@@ -1,0 +1,17 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.main #jonrieLogo{
+	position: absolute;
+	top: 1%;
+	left: 1%;
+	text-decoration: none;
+	transition: .3s;
+	font-family: sans-serif;
+}
+.main #jonrieLogo:hover{
+	opacity: .7;
+}

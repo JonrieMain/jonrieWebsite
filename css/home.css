@@ -169,7 +169,7 @@ body h1,h6,p{
 	text-transform: uppercase;
 }
 .main-container .header .menu a:hover{
-	background: tomato;
+	font-size: 25.5px;
 }
 .main-container .header span{
 	display: flex;
@@ -231,6 +231,9 @@ body h1,h6,p{
 	color: grey;
 	max-width: 400px;
 }
+
+
+
 .main-container .home .left .home-text-con .home-btn{
 	padding: .7rem;
 	font-size: 1rem;
@@ -242,6 +245,7 @@ body h1,h6,p{
 	width: 50%;
 	transition: .3s ease;
 	border: 1px solid black;
+	margin-bottom: .5rem;
 }
 .main-container .home .left .home-text-con .home-btn:hover{
 	box-shadow: 1px 1px 30px tomato;
@@ -336,6 +340,8 @@ body h1,h6,p{
 	.main-container .header{
 		flex-direction: column;
 		padding-bottom: 1rem;
+
+		position: unset;
 	}
 	.main-container .header .menu{
 		display: flex;
@@ -347,6 +353,9 @@ body h1,h6,p{
 		padding-left: 0;
 	}   
 	/* reset */
+	.main-container .header .menu a:hover{
+	font-size: 24px;
+}
 	.main-container .header .menu a:nth-child(2){
 		padding-right: 0rem;
 	}
@@ -376,10 +385,17 @@ body h1,h6,p{
 	width: 80vw;
 }
 
+/* reset */
+.main-container .home .left .home-text-con .home-btn:hover{
+	box-shadow: unset;
+}
 
+
+
+	/* circle new css */
 	.main-container .home .circle{
-		top: 35%;
-		left: 50%;
+		top: 22%;
+    left: 50%;
 	}
 	.main-container .home .circle1{
 		display: none;
@@ -397,6 +413,9 @@ body h1,h6,p{
 		justify-content: unset;
 		height: 100%;
 		gap: 2rem;
+
+		/* reset */
+		padding: 0rem 0 3rem 0;
 	}
 	
 	.main-container .home .right{
