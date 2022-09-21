@@ -3,6 +3,9 @@ var header = document.querySelector('.header');
 var up = document.querySelector('#up');
 window.addEventListener('scroll', () =>{
 	up.classList.toggle('sticky', window.scrollY > 50);
+	if(window.matchMedia("(min-width: 751px)")){
+		header.classList.toggle('boxShadow', window.scrollY > 0);	
+	}
 });
 
 
