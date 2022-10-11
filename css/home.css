@@ -257,7 +257,8 @@ body h1,h6,p{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	flex-direction: column;
+	clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
 	z-index: 10;
 }
 .main-container .home .right .jonrie{
@@ -265,9 +266,16 @@ body h1,h6,p{
 	width: 100%;
 	max-width: 27rem;
 	max-height: 27rem;
-	margin-bottom: 4rem;
+	margin-bottom: 1rem;
 	background: #d1d1d12e;
 	border-radius: 50%;
+}
+.main-container .home .right p{
+	font-family: mono;
+	text-align: center;
+}
+.main-container .home .right p >a{
+	color: tomato;
 }
 
 

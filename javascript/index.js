@@ -151,6 +151,7 @@ darkFunc = () =>{
 	/* sub carousel bg and project list bg*/
 	document.querySelector('.carouselSubButton').style.background="#d1d1d12e";
 	document.querySelectorAll('#bgChange').forEach(bgChange=>bgChange.style.background="#d1d1d12e")
+	document.querySelector('.jonrie').style.background="#d1d1d12e";
 }
 
 
@@ -173,6 +174,7 @@ lightFunc = () =>{
 	/* sub carousel bg and project list bg*/
 	document.querySelector('.carouselSubButton').style.background="#d1d1d1";
 	document.querySelectorAll('#bgChange').forEach(bgChange=>bgChange.style.background="#d1d1d1")
+	document.querySelector('.jonrie').style.background="#d1d1d1db";
 }
 
 /* --------------------- check localStorage ---------------------------- */
