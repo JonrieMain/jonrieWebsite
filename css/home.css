@@ -270,7 +270,7 @@ body h1,h6,p{
 	border-radius: 50%;
 }
 .main-container .home .right p{
-	font-family: mono;
+	font-family: monospace;
 	text-align: center;
 }
 .main-container .home .right p >a{
