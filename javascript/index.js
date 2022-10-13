@@ -152,6 +152,9 @@ darkFunc = () =>{
 	document.querySelector('.carouselSubButton').style.background="#d1d1d12e";
 	document.querySelectorAll('#bgChange').forEach(bgChange=>bgChange.style.background="#d1d1d12e")
 	document.querySelector('.jonrie').style.background="#d1d1d12e";
+
+	/* loading J color */
+	document.querySelector('.loading strong').style.color="#fff";
 }
 
 
@@ -175,6 +178,9 @@ lightFunc = () =>{
 	document.querySelector('.carouselSubButton').style.background="#d1d1d1";
 	document.querySelectorAll('#bgChange').forEach(bgChange=>bgChange.style.background="#d1d1d1")
 	document.querySelector('.jonrie').style.background="#d1d1d1db";
+
+	/* loading J color */
+	document.querySelector('.loading strong').style.color="#000";
 }
 
 /* --------------------- check localStorage ---------------------------- */
