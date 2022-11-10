@@ -69,65 +69,8 @@ setInterval(contactShake,2000);
 
 
 
-/* Color picker*/
-color.addEventListener('click', ()=>{
-	/* do if color is onClick */
-	checkColor = ()=>{
-		document.body.style.background=color.value;
-		header.style.background=color.value;
-		localStorage.setItem("themeColor", color.value)
-	}
-	/* timer */
-	const countColor = setInterval(checkColor,.1)
 
 
-	/* clear interval if click is outside color container */
-	document.addEventListener('click', (event)=>{
-		if(event.target.closest("#colorContainer")){
-			/* return none if inside click */
-			return true
-		}else{
-			/* clearn interval if outside click*/
-			clearInterval(countColor)
-		}
-
-
-	})
-
-
-})
-
-
-
-
-
-/* open close*/
-themeBtn.addEventListener('click',()=>{
-	if(theme.classList.contains('close')){
-
-		/* add & remove */
-		theme.classList.remove('close')
-		theme.classList.add('open')
-
-		/* change */
-		themeBtn.classList.remove('fa-arrow-left')
-		themeBtn.classList.add('fa-arrow-right')
-
-		/* open*/
-		theme.style.right="-.3%"
-	}else{
-		/* add & remove */
-		theme.classList.remove('open')
-		theme.classList.add('close')
-
-		/* change */
-		themeBtn.classList.add('fa-arrow-left')
-		themeBtn.classList.remove('fa-arrow-right')
-
-		/* close */
-		theme.style.right="-30%"
-	}
-})
 
 
 
@@ -140,11 +83,12 @@ darkFunc = () =>{
 	document.body.style.color="white";
 	darkMode.classList.remove('fa-moon')
 	darkMode.classList.add('fa-sun')
-	darkMode.style.color="gold";
 	header.style.background="black";
 	for (var i = 0; i < menu.length; i++) {
 		menu[i].style.color = "white";
 	}
+		darkMode.style.color="gold";
+	
 	jonrieLogo.style.color="white";
 	localStorage.setItem("themeColor", "dark");
 
@@ -160,18 +104,27 @@ darkFunc = () =>{
 
 /* --------------------- Function for light ---------------------------- */
 lightFunc = () =>{
+	// background change to white
 	document.body.style.background="white";
+	// remove and add 
 	document.body.classList.remove('dark')
 	document.body.classList.add('light')
+	// set some element to color white
 	document.body.style.color="black";
+	// change classlist of darkmode
 	darkMode.classList.add('fa-moon')
 	darkMode.classList.remove('fa-sun')
-	darkMode.style.color="#000";
+	// change header background to white
 	header.style.background="white";
+	// loop all header list and set a color to black
 	for (var i = 0; i < menu.length; i++) {
 		menu[i].style.color = "black";
 	}
+	// set color of darkmode icon to black
+		darkMode.style.color="#000";
+		// set my logo to color black
 	jonrieLogo.style.color="black";
+	// save to local storage
 	localStorage.setItem("themeColor", "light");
 
 	/* sub carousel bg and project list bg*/
