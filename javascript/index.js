@@ -3,9 +3,7 @@ var header = document.querySelector('.header');
 var up = document.querySelector('#up');
 window.addEventListener('scroll', () =>{
 	up.classList.toggle('sticky', window.scrollY > 50);
-	if(window.matchMedia("(min-width: 751px)")){
-		header.classList.toggle('boxShadow', window.scrollY > 0);	
-	}
+	header.classList.toggle('hideHeader', window.scrollY > 300)
 });
 
 
@@ -24,7 +22,7 @@ var theme = document.querySelector('.theme');
 var themeBtn = document.querySelector('.themeBtn');
 var carouselPrevAndNextBtn = document.querySelectorAll('#carouselPrevAndNextBtn');
 var carouselPrevAndNext = document.querySelector('#certificate');
-
+let about = document.querySelector('.about');
 
 
 
@@ -77,6 +75,9 @@ setInterval(contactShake,2000);
 
 /* --------------------- Function for dark ---------------------------- */
 darkFunc = () =>{
+	document.querySelector('.labelTheme').style.display="none";
+	document.querySelector('.labelTheme2').style.display="block";
+
 	document.body.style.background="black";
 	document.body.classList.remove('light')
 	document.body.classList.add('dark')
@@ -87,7 +88,7 @@ darkFunc = () =>{
 	for (var i = 0; i < menu.length; i++) {
 		menu[i].style.color = "white";
 	}
-		darkMode.style.color="gold";
+	darkMode.style.color="gold";
 	
 	jonrieLogo.style.color="white";
 	localStorage.setItem("themeColor", "dark");
@@ -104,6 +105,10 @@ darkFunc = () =>{
 
 /* --------------------- Function for light ---------------------------- */
 lightFunc = () =>{
+
+	document.querySelector('.labelTheme').style.display="block";
+	document.querySelector('.labelTheme2').style.display="none";
+
 	// background change to white
 	document.body.style.background="white";
 	// remove and add 
@@ -121,7 +126,7 @@ lightFunc = () =>{
 		menu[i].style.color = "black";
 	}
 	// set color of darkmode icon to black
-		darkMode.style.color="#000";
+	darkMode.style.color="#000";
 		// set my logo to color black
 	jonrieLogo.style.color="black";
 	// save to local storage

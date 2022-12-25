@@ -72,6 +72,8 @@
 	<!-- script for preLoader -->
 	<script type="text/javascript">
 
+
+
 		/* loading */
 		window.addEventListener('load', ()=>{
 			var home = document.querySelector('#home');
@@ -101,6 +103,9 @@
 
 		});
 
+
+
+	
 	</script>
 	<!-- CSS for preLoader -->
 	<style type="text/css">
@@ -175,8 +180,8 @@
 
 
 				<div class="menu" id="menu">
-					<a href="#about">About</a>
-					<a href="#projects">Projects</a>
+					<p class="labelTheme">Dark mode? &#10167;</p>
+					<p class="labelTheme2">Light mode? &#10167;</p>
 					<i id="darkMode" class="fa-solid fa-moon"></i>
 				</div>
 
@@ -190,6 +195,11 @@
 
 			<!-- --------------------------home section-------------------------- -->
 			<div class="home" id="home">
+
+				<!-- go to about -->
+				<a id="shortCut" class="aboutMe" href="#about">About Me <br>&#9735;</a>
+
+
 
 				<div class="left">
 					<div class="home-icon-con">
@@ -235,6 +245,10 @@
 			<div class="about" id="about">
 
 
+				<!-- go to self projects -->
+				<a class="seeProjects" id="shortCut" href="#projects">See Projects <br>&#9735;</a>
+
+
 				<h1>About</h1>
 				<p data-aos="fade-down"data-aos-easing="linear"data-aos-duration="750">Hello! I'm Jonrie, and I'm 20 years old from Quezon City. I'm a working student and I want to become a software engineer soon. I'm currently a 1st year Bachelor in Science in Information Systems(BSIS) student at <a href="https://www.facebook.com/IIHCMARKETINGOFFICIAL2009"> IIH College Novaliches Campus</a>, and I'm still studying web development and other technologies to make my knowledge solid.</p>
 				<br>
@@ -242,24 +256,35 @@
 
 				<div class="aboutRow">
 					<div class="aboutIcon" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">
-						<h2>Technologies</h2>
+						<h2>Technologies Uses</h2>
 						<span>
-							<abbr title="HTML"><i class="fa-brands fa-html5"></i></abbr>
-							<abbr title="CSS"><i class="fa-brands fa-css3"></i></abbr>
-							<abbr title="JAVASCRIPT"><i class="fa-brands fa-js"></i></abbr>
-							<abbr title="BOOTSTRAP"><i class="fa-brands fa-bootstrap"></i></abbr>
-							<abbr title="GIT"><i class="fa-brands fa-git-alt"></i></abbr>
-							<abbr title="GITHUB"><i class="fa-brands fa-github"></i></abbr>
-							<abbr title="PHP"><i class="fa-brands fa-php"></i></abbr>
-							<abbr title="MYSQL"><img src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg"></abbr>
-							<abbr title="SQL"><i class="fa-solid fa-database"></i></abbr>
+							<!-- HTML -->
+							<img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-image-logo-html-7.png" alt="html5 logo, image logo html" />
+							<!-- CSS -->
+							<img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-css-logo-png-transparent-svg-vector-bie-supply-9.png"  alt="html5 logo, css logo png transparent svg vector bie supply" />
+							<!-- Javascript -->
+							<img src="https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png" alt="png javascript badge picture" />
+							<!-- Bootstrap -->
+							<img src="https://www.brcline.com/wp-content/uploads/2016/01/bootstrap-logo.png">
+							<!-- GIT -->
+							<img class="git" src="./images/git.png">
+							<!-- Github -->
+							<img class="github" src="./images/github.png">
+							<!-- PHP -->
+							<img src="https://www.php.net//images/logos/new-php-logo.svg">
+							<!-- Mysql -->
+							<img src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg">
+							<!-- SQL -->
+							<img src="./images/sql.png">
+							<!-- jquery -->
+							<img src="./images/jquery.png">
 						</span>
 					</div>
 
 
 
 					<!-- --------------certifications----------------- -->
-					<div class="certificate-con" id="certificate" data-aos="fade-left"data-aos-offset="300"data-aos-easing="ease-in-sine">
+					<div class="certificate-con" id="certificate">
 						<h1>Certifications</h1>
 						<!-- --------------------------Bootstrap Carousel-------------------------- -->
 						<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -331,7 +356,8 @@
 
 
 			<!-- --------------------------Project Section-------------------------- -->
-			<div class="projects" id="projects">
+			<div data-aos="fade-up" data-aos-delay="900"     data-aos-duration="2500"
+ class="projects" id="projects">
 				<h1>Self Projects</h1>
 				<!-- ----------------------------------Project Container-------------------->
 
@@ -351,6 +377,7 @@
 					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
+
 							<div class="projectStatic">
 								<div id="bgChange" class="dheeluxe">
 									<abbr title="Dheeluxe"><a target="__blank" href="https://jonriemain.github.io/ExampleBeautyProducts/"><img alt="dheeluxeImage" src="./images/dheeluxe.png"></a></abbr>
@@ -485,7 +512,7 @@
 
 
 				<!-- --------------------------Footer Section-------------------------- -->
-				<div class="footer" id="footer">
+				<div direction="right" class="footer" id="footer">
 
 					<p>© 2022 Jonrie | Personal Portfolio</p>	
 					<div class="footer-icon">

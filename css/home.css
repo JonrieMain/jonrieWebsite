@@ -49,26 +49,20 @@ body h1,h6,p{
 .fa-solid.fa-up-long{
 	position: fixed;
 	top: 88.5%;
-	right: -50%;
+	right: 2%;
 	font-size: 3rem;
 	color: tomato;
 	cursor: pointer;
 	z-index: 100000;
 	transition: .7s;
+	display: none;
 }
 .fa-solid.fa-up-long.sticky{
-	right: 2%;
+	display: block;
 }
 .fa-solid.fa-up-long.sticky:hover{
 	transform: scale(1.1);
 }
-
-
-
-
-
-
-
 
 
 
@@ -92,10 +86,17 @@ body h1,h6,p{
 	flex-wrap: wrap;
 	min-height: 5rem;
 	background: #fff;
-	transition: .3s ease;
+	transition: 1s linear;
 	position: fixed;
 	z-index: 1000;
 }
+/* toggle header */
+.main-container .header.hideHeader{
+	margin-top: -150%;
+}
+
+
+
 .main-container .header.boxShadow{
 	box-shadow: 1px 1px 30px #888888;
 }
@@ -114,19 +115,18 @@ body h1,h6,p{
 	justify-content: center;
 	align-items: center;
 }
-.main-container .header .menu a{
-	margin-left: 1rem;
-	padding: .4rem;
-	border-radius: 50%;
-	text-decoration: none;
-	color: black;
-	font-size: 1.5rem;
-	transition: .3s ease-in-out;
-	text-transform: uppercase;
+.main-container .header .menu >p{
+	font-style: italic;
+	transform: rotate(-13deg);
 }
-.main-container .header .menu a:hover{
-	font-size: 25.5px;
+.main-container .header .menu .labelTheme2{
+	display: none;
 }
+
+
+
+
+
 .main-container .header span{
 	display: flex;
 }
@@ -156,12 +156,31 @@ body h1,h6,p{
 	height: 100vh;
 	width: 100%;
 	max-width: 2000px;
+	max-height: 1000px;
 	margin: 0 auto;
 	position: relative;
 	min-height: 700px;
 	padding: 9rem 0 3rem 0;
-	transition: .4s linear;
 	opacity: 0;
+
+	transition: 1s linear;
+}
+
+.main-container .home .aboutMe{
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 2rem;
+	text-decoration: none;
+	color: tomato;
+	font-weight: bold;
+	text-align: center;
+	animation: aboutMe .5s ease infinite alternate;
+}
+@keyframes aboutMe{
+	0%{}
+	100%{margin-top: -10px}
 }
 
 
@@ -319,26 +338,23 @@ body h1,h6,p{
 
 	.main-container .header{
 		flex-direction: column;
-		padding-bottom: 1rem;
-
 		position: unset;
+		margin-bottom: 1rem;
 	}
 	.main-container .header .menu{
 		display: flex;
 	}
-	.main-container .header .menu a{
-		font-size: 1.4rem;
-		margin-top: 1rem;
-		padding-right: .8rem;
-		padding-left: 0;
-	}   
-	/* reset */
-	.main-container .header .menu a:hover{
-	font-size: 24px;
+
+   /* aboutMe button new postion */ 
+   .main-container .home .aboutMe{
+	top: 10%;
+	left: 33%;
+	font-size: 1.1rem;
+	z-index: 1000;
 }
-	.main-container .header .menu a:nth-child(2){
-		padding-right: 0rem;
-	}
+
+
+
 	.main-container .home .left{
 		display: flex;
 		justify-content: center;

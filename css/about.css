@@ -1,7 +1,7 @@
 .main-container .about{
 	height: 100%;
 	width: 100%;
-	padding: 1rem .4rem 2rem .4rem;
+	padding: 1rem .4rem 15rem .4rem;
 	display: flex;
 	flex-direction: column;
 	justify-content:center;
@@ -12,6 +12,24 @@
 	position: relative;
 		overflow: hidden;
 }
+.main-container .about .seeProjects{
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 2rem;
+	text-decoration: none;
+	color: tomato;
+	font-weight: bold;
+	text-align: center;
+	animation: seeProjects .5s ease infinite alternate;
+	z-index: 100000;
+}
+@keyframes seeProjects{
+	0%{}
+	100%{margin-top: -10px}
+}
+
 
 .main-container .about >h1{
 	font-size: 6rem;
@@ -54,6 +72,7 @@
 	font-weight: bold;
 	opacity: .7;
 	text-align: center;
+	margin-bottom: 1.5rem;
 }
 
 
@@ -64,55 +83,22 @@
 	flex-wrap: wrap;
 	gap: 2.5rem;
 }
-.main-container .about span abbr i{
-	font-size: 8rem;
-		cursor: default;
-}
-.main-container .about span abbr i:hover{
-	animation: shake .5s ease-in-out alternate;
-}
 
-/* colors */
-.main-container .about span abbr:nth-child(1){
-	color: #d84924;
-}
-.main-container .about span abbr:nth-child(2){
-	color: #2760e5;
-}
-.main-container .about span abbr:nth-child(3){
-	color: #ead41c;
-}
-.main-container .about span abbr:nth-child(4){
-	color: #6c10e9;
-}
-.main-container .about span abbr:nth-child(5){
-	color: #d84924;
-}
-.main-container .about span abbr:nth-child(6){
-	color: silver;
-}
-.main-container .about span abbr:nth-child(7){
-	color: #4f5b93;
-}
-.main-container .about span abbr:nth-child(8) img{
+.main-container .about span >img{
 	height: 100%;
 	width: 100%;
-	max-width: 150px;
-	max-height: 150px;
-}
-.main-container .about span abbr:nth-child(8):hover{
-		animation: shake .5s ease-in-out alternate;
-}
-.main-container .about span abbr:nth-child(9){
-	color: #41619b;
+	max-width: 100px;
+	max-height: 100px;
 }
 
-/* keyframes */
-@keyframes shake{
-	0%{transform: rotate(10deg);}
-	90%{transform: rotate(-10deg);}
-	100%{transform: rotate(0deg);}
+.main-container .about span img:nth-child(1),
+.main-container .about span img:nth-child(2),
+.main-container .about span img:nth-child(3),
+.main-container .about span .github,.git{
+	background: #f4f4f4;
+	padding: 2px;
 }
+
 
 
 .main-container .about .circle3{
