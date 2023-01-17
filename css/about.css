@@ -1,7 +1,7 @@
 .main-container .about{
 	height: 100%;
 	width: 100%;
-	padding: 1rem .4rem 15rem .4rem;
+	padding: 1rem .4rem 6rem .6rem;
 	display: flex;
 	flex-direction: column;
 	justify-content:center;
@@ -11,6 +11,7 @@
 	background: #80808017;
 	position: relative;
 		overflow: hidden;
+
 }
 .main-container .about .seeProjects{
 	position: absolute;
@@ -36,7 +37,7 @@
 	opacity: .7;
 		font-weight: 800;
 		padding-bottom: 1.5rem;
-
+align-self: flex-start;
 }
 .main-container .about p a{
 	color: gray;

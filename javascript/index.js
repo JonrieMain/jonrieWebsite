@@ -1,3 +1,4 @@
+
 /* Scroll effect for up*/
 var header = document.querySelector('.header');
 var up = document.querySelector('#up');
@@ -14,25 +15,16 @@ var menu = document.getElementById("menu").children;
 var jonrieLogo = document.querySelector('#jonrieLogo');
 var left = document.querySelector('.left');
 var mainContainer = document.querySelector('.main-container');
-var color = document.querySelector('#color');
-var colorContainer = document.querySelector('#colorContainer');
 var contact = document.querySelector('#contactTrig');
 var contactMain = document.querySelector('.contactMain');
-var theme = document.querySelector('.theme');
 var themeBtn = document.querySelector('.themeBtn');
 var carouselPrevAndNextBtn = document.querySelectorAll('#carouselPrevAndNextBtn');
 var carouselPrevAndNext = document.querySelector('#certificate');
+
 let about = document.querySelector('.about');
 
 
 
-/* carousel hover */
-carouselPrevAndNext.addEventListener('mouseover', ()=>{
-	carouselPrevAndNextBtn.forEach(e=>e.style.display="block")
-})
-carouselPrevAndNext.addEventListener('mouseout', ()=>{
-	carouselPrevAndNextBtn.forEach(e=>e.style.display="none")
-})
 
 
 
@@ -42,9 +34,9 @@ carouselPrevAndNext.addEventListener('mouseout', ()=>{
 
 
 
-const emailClick = document.querySelector('#emailClick').addEventListener('click', ()=>{
-	contact.click();
-});
+
+
+
 
 
 
@@ -168,6 +160,25 @@ darkMode.addEventListener('click',()=>{
 
 
 
+
+
+
+const emailClick = document.querySelector('#emailClick').addEventListener('click', ()=>{
+	contact.click();
+});
+	
+					/* carousel hover */
+	carouselPrevAndNext.addEventListener('mouseover', ()=>{
+		carouselPrevAndNextBtn.forEach(e=>e.style.display="block")
+	})
+	carouselPrevAndNext.addEventListener('mouseout', ()=>{
+		carouselPrevAndNextBtn.forEach(e=>e.style.display="none")
+	})
+
+
+
+
+
 // Carousel trig buttons(h3)
 document.querySelector('#indi1').addEventListener('click', ()=>{
 	document.querySelector('#staticWebsite').click();
@@ -200,4 +211,8 @@ activeh3.forEach((ac) =>{
 
 
 });
+
+
+
+
 

@@ -19,6 +19,7 @@
 	text-align: center;
 	margin: 1.5rem 0;
 	word-break: break-word;
+	align-self: flex-start;
 }
 
 

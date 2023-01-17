@@ -164,6 +164,8 @@ body h1,h6,p{
 	opacity: 0;
 
 	transition: 1s linear;
+
+
 }
 
 .main-container .home .aboutMe{
@@ -222,7 +224,9 @@ body h1,h6,p{
 .main-container .home .left .home-text-con p{
 	color: grey;
 	max-width: 400px;
+
 }
+
 
 
 
@@ -264,10 +268,14 @@ body h1,h6,p{
 .main-container .home .right p{
 	font-family: monospace;
 	text-align: center;
+
 }
 .main-container .home .right p >a{
 	color: tomato;
 }
+
+
+
 
 
 
