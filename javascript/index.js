@@ -1,4 +1,8 @@
 
+
+
+
+
 /* Scroll effect for up*/
 var header = document.querySelector('.header');
 var up = document.querySelector('#up');
@@ -211,6 +215,51 @@ activeh3.forEach((ac) =>{
 
 
 });
+
+
+
+
+
+// change animation function
+changePic = ()=>{
+	setTimeout(()=>{
+		// pos1
+		document.querySelector('.pos').src="./images/pos1.png";
+
+
+		//pos2
+		setTimeout(()=>{
+			document.querySelector('.pos').src="./images/pos2.png";
+
+
+
+
+			//pos3
+		setTimeout(()=>{
+			document.querySelector('.pos').src="./images/pos3.png";
+
+
+
+
+
+			//pos4
+		setTimeout(()=>{
+			document.querySelector('.pos').src="./images/pos4.png";
+		},3000)//for pos4
+
+
+
+		},3000)//for pos 3
+
+
+		},3000)//for pos2
+
+
+	},100)//for pos1
+} 
+document.querySelector('.pos').addEventListener('mouseover', ()=>{
+	changePic()
+})
 
 
 

@@ -28,7 +28,6 @@
 
 
 
-
 	<!-- css -->
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
 
@@ -63,7 +62,9 @@
 	<title>Jonrie</title>
 </head>
 
-<body class="light">
+<body class="light" id="loaded">
+
+	
 
 
 
@@ -188,6 +189,7 @@
 
 
 		</header>
+		<marquee class="textSlide" direction="left"><i class="fa-solid fa-bell"></i> An incoming project titled "Point of Sale" will be finished soon. Check in dynamic project section.</marquee>
 
 
 
@@ -209,12 +211,12 @@
 				</div>
 				<div class="home-text-con">
 					<h1>Hi, I am Jonrie</h1>
-					<h6>1st Year BSIS Student</h6><br>
+					<h6>Software Engineer</h6><br>
 					<p>I want to creat stunning website for your
 						business. To enchance my skill and establish stronger connection
 					and development</p>
 					<a href="./cv/JonrieCV.docx" download><button class="home-btn">Download CV</button></a>
-					<a href="#about" id="loadAbout"><button class="home-btn">About</button></a>
+					<a href="#aboutSlide" id="loadAbout"><button class="home-btn">About</button></a>
 
 				</div>
 
@@ -245,7 +247,7 @@
 
 
 		<!-- --------------------------Project Section-------------------------- -->
-		<div data-aos="fade-up" data-aos-delay="800"     data-aos-duration="2500"
+		<div data-aos="fade-up" data-aos-delay="300"     data-aos-duration="2500"
 		class="projects" id="projects">
 		<!-- ----------------------------------Project Container-------------------->
 
@@ -265,6 +267,7 @@
 				<h3 id="destopApp" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">Destop App</h3>
 				<h3 id="mobileApp" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">Mobile App</h3>
 			</div>
+
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 
@@ -325,12 +328,24 @@
 					</div>
 
 
+				</div>
+
+
+				<div class="carousel-item" id="posCon">
+					
+
+					<div class="projectDynamic">
+
+						<h1 class="workIn">Work in Progress</h1>
+						<img class="pos" src="./images/pos1.png" alt="pos">
+
+					
+
+					</div>
 
 
 				</div>
-				<div class="carousel-item">
-					<strong>No data</strong>
-				</div>
+
 				<div class="carousel-item">
 					<strong>No data</strong>
 				</div> 
@@ -349,6 +364,9 @@
 
 
 
+
+
+			<hr id="aboutSlide">
 		<!-- --------------------------About Section-------------------------- -->
 		<div data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000" class="about" id="about">
 
@@ -359,7 +377,7 @@
 
 
 			<h1>About</h1>
-			<p>Hello! I'm Jonrie, and I'm 20 years old from Quezon City. I'm a working student and I want to become a software engineer soon. I'm currently a 1st year Bachelor in Science in Information Systems(BSIS) student at <a href="https://www.facebook.com/IIHCMARKETINGOFFICIAL2009"> IIH College Novaliches Campus</a>, and I'm still studying web development and other technologies to make my knowledge solid.</p>
+			<p>Hello! I'm Jonrie, and I'm 20 years old and from Quezon City, a young software engineer. I'm currently a 1st year Bachelor in Science in Information Systems (BSIS) student at <a href="https://www.facebook.com/IIHCMARKETINGOFFICIAL2009"> IIH College Novaliches Campus</a>, and I'm still studying more, especially in web development and other technologies, to make my knowledge solid.</p>
 			<br>
 			<p>For any sort of help, feel free to send me an <a href="#about" id="emailClick">email</a> and I'll get back to you soon</p>
 
@@ -547,6 +565,9 @@
 	<!-- --------------------------Font Awesome CDN-------------------------- -->
 	<script src="https://kit.fontawesome.com/4f085de0b2.js" crossorigin="anonymous"></script>
 
+
+
+
 	<!-- --------------------------Main Javascript-------------------------- -->
 	<script type="text/javascript" src="./javascript/index.js"></script>
 
@@ -565,7 +586,8 @@
 		AOS.init({
 			once: true,
 			duration: 400,
-			startEvent: 'DOMContentLoaded'
+			startEvent: 'DOMContentLoaded',
+			disable: 'mobile'
 		})
 	</script>
 

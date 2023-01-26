@@ -68,6 +68,8 @@ body h1,h6,p{
 
 
 
+
+
 /* ---------------------Main Container style---------------------------- */
 .main-container{
 	height: 100%;
@@ -148,6 +150,17 @@ body h1,h6,p{
 
 
 
+/* text slide css */
+.main-container marquee{
+	margin-top: 5rem;
+	background: rgba(255, 99, 71, 0.471);
+	text-transform: uppercase;
+}
+.main-container marquee >i{
+	margin-right: 6px;
+}
+
+
 
 /* --------------------- Home Section style ---------------------------- */
 .main-container .home{
@@ -160,7 +173,7 @@ body h1,h6,p{
 	margin: 0 auto;
 	position: relative;
 	min-height: 700px;
-	padding: 9rem 0 3rem 0;
+	padding: 1rem 0 3rem 0;
 	opacity: 0;
 
 	transition: 1s linear;
@@ -168,22 +181,6 @@ body h1,h6,p{
 
 }
 
-.main-container .home .aboutMe{
-	position: absolute;
-	top: 85%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	font-size: 2rem;
-	text-decoration: none;
-	color: tomato;
-	font-weight: bold;
-	text-align: center;
-	animation: aboutMe .5s ease infinite alternate;
-}
-@keyframes aboutMe{
-	0%{}
-	100%{margin-top: -10px}
-}
 
 
 /*Home left side css*/

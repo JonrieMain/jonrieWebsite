@@ -38,6 +38,7 @@
 .main-container .projects .carouselSubButton h3{
 	cursor: pointer;
 	transition: .3s;
+	font-size: 1.3rem;
 }
 .main-container .projects .carouselSubButton h3:hover{
 	color: tomato;
@@ -56,18 +57,24 @@
 }
 
 
+
+
+/* all empty project */
 .main-container .projects #carouselExampleIndicators .carousel-inner:nth-child(3),
-.main-container .projects #carouselExampleIndicators .carousel-inner:nth-child(4),
-.main-container .projects #carouselExampleIndicators .carousel-inner:nth-child(5){
+.main-container .projects #carouselExampleIndicators .carousel-inner:nth-child(4){
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.main-container .projects #carouselExampleIndicators .carousel-inner .projectStatic{
+
+
+/* projectStatic */
+.main-container .projects #carouselExampleIndicators .projectStatic{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: row-reverse;
 	flex-wrap: wrap;
 	gap: 1rem;
 	max-width: 2000px;
@@ -94,6 +101,39 @@
 	transform: scale(1.2);
 }
 
+
+
+
+/* projectDynamic */
+.main-container .projects #carouselExampleIndicators .projectDynamic{
+	width: 100vw;
+	display: grid;
+	place-items: center;
+	padding-top: 3rem;
+	position: relative;
+}
+
+
+
+.main-container .projects #carouselExampleIndicators .projectDynamic >h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #d1d1d1c1;
+	display: none;
+	padding: 2rem 1rem;
+	border-radius: 1rem;
+}
+
+.main-container .projects #carouselExampleIndicators .projectDynamic .pos{
+	height: 600px;
+	width: 70%;
+	max-width: 1200px;
+}
+.main-container .projects #carouselExampleIndicators .projectDynamic:hover .workIn {
+	display: block;
+}
 
 
 
