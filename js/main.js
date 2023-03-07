@@ -70,7 +70,7 @@ $(document).ready(()=>{
         }
     });
 
-    closeFormFunc = ()=>{
+   let closeFormFunc = ()=>{
 
         // allow scroll
         $('body').css("overflow","unset");
@@ -79,14 +79,14 @@ $(document).ready(()=>{
         contactForm.css("opacity","0");
         setTimeout(()=>{
             contactForm.css("left","200%");
-        },1000)
-    }
+        },1000);
+    };
 
 
     // get date
     let date = new Date();
     let getYear = date.getFullYear();
-    $('#c').html(`Jonrie © ${getYear}`);
+    $('#c').text(`Jonrie © ${getYear}`);
 
 
 
