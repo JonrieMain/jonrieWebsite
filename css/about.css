@@ -140,6 +140,7 @@ line-height: 3rem;
     line-height: 3rem;
     word-break: break-word;
      font-family: var(--sans);
+     max-width: 1500px;
 }
 
 
@@ -226,6 +227,24 @@ line-height: 3rem;
         .main .aboutExperience >p{
             font-size: 20px;
         }
+
+
+
+        /* decrease p */
+            /* for frontend */
+    .main .aboutUses .aboutUsesSub .frontend >div >p{
+        font-size: 20px;
+    }
+
+    /* for backend */
+    .main .aboutUses .aboutUsesSub .backend >div >p{
+        font-size: 20px;
+    }
+
+    /* for others */
+    .main .aboutUses .aboutUsesSub .others >div >p{
+        font-size: 20px;
+    }
 
 
 }
