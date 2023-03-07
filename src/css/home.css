@@ -1,0 +1,473 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url(//db.onlinewebfonts.com/c/5afcc6e055927a510d82c2ced10c01c9?family=Wide+Latin);
+
+/* root */
+:root{
+    --sans: 'Open Sans', sans-serif;
+    --wideLatin: "Wide Latin";
+}
+
+/* reset */
+*,html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*For Scroll Bar*/
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px silver; 
+	border-radius: 1rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #00ADB5; 
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #222831; 
+}
+
+
+
+
+/* contact */
+.main #contact{
+    position: fixed;
+    z-index: 10000;
+    bottom: 2%;
+    right: 2%;
+    font-size: 2.5rem;
+    color: #00ADB5;
+    background: #EEEEEE;
+    padding: .7rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.main #contact::after{
+    content: "Contact";
+    padding: .4rem;
+    position: absolute;
+    top: -1.5rem;
+    left: -1rem;
+    font-size: .9rem;
+    color: #fff;
+    transition: 1.3s linear;
+    opacity: 0;
+}
+.main #contact:hover::after{
+    opacity: 1;
+}
+
+/* contact form */
+.main .contactForm{
+    position: fixed;
+    top: 0%;
+    left: 200%;
+    z-index: 100000000000000000000;
+    background: #222831;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    transition: .7s linear;
+    opacity: 0;
+    padding: 3rem .3rem;
+}
+
+.main .contactForm #closeContactForm{
+    position: absolute;
+    top: 6%;
+    right: 3%;
+    color: #EEEEEE;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+.main .contactForm >h1{
+    color: #EEEEEE;
+    font-family: var(--sans);
+    text-align: center;
+    word-break: break-word;
+}
+.main .contactForm >div >input{
+    padding: .5rem;
+    font-size: 1.3rem;
+    outline: none;
+    border-radius: .7rem;
+    width: 100vw;
+    max-width: 550px;
+    transition: .2s;
+    border: 3px solid #222831;
+}
+.main .contactForm >div >input:focus,
+.main .contactForm >div >textarea:focus{
+   border: 3px solid #00ADB5;
+}
+.main .contactForm >div >textarea{
+    height: 100%;
+    width: 100vw;
+    max-width: 550px;
+    font-size: 1.3rem;
+    border-radius: .7rem;
+    outline: none;
+    transition: .2s;
+    padding: .3rem;
+    border: 3px solid #222831;
+}
+.main .contactForm >button{
+    padding: .8rem 0;
+    width: 100vw;
+    max-width: 10rem;
+    font-size: 1.3rem;
+    font-family: var(--sans);
+    cursor: pointer;
+    border-radius: .6rem;
+    background: none;
+    outline: none;
+    border: 2px solid #00ADB5;
+    color: #ffff;
+    transition: .5s linear;
+}
+.main .contactForm >button:hover{
+    background: #00ADB5;
+}
+
+
+
+
+
+
+/* social links */
+.main .socialLinks{
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem
+}
+.main .socialLinks a >i{
+    font-size: 2rem;
+    color: #393E46;
+    transition: .5s linear;
+}
+.main .socialLinks a >i:hover{
+    color: #000;
+    transform: translateY(-3px);
+}
+
+
+
+.main .home{
+    background: url("../assets/homebg.jpg")no-repeat center center/cover;
+    height: 100vh;
+    min-height: 1200px;
+    max-height: 1400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+/* header */
+.main .home header{
+    position: relative;
+    height: 170px;
+    width: 100%;
+}
+.main .home header #bars{
+    font-size: 3rem;
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    z-index: 1000000;
+    transition: 1.3s;
+}
+
+/* links container */
+.main .home header .linksCon{
+ /* layout for non-absolute */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+.main .home header a .logo{
+    width: 100%;
+    height: 100%;
+    max-height: 152px;
+    max-width: 137px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+/* header links */
+/* left */
+.main .home header .linksCon .left a{
+    color: #000;
+    font-size: 40px;
+    text-decoration: none;
+    margin-right: 2rem;
+    position: relative;
+    font-family: var(--sans);
+}
+.main .home header .linksCon .left a:nth-child(1){
+margin-left: -2rem;
+}
+/* left a hover effect */
+.main .home header .linksCon .left a::before{
+    content: "";
+    background: #00ADB5;
+    height: 10%;
+    width: 0%;
+    position: absolute;
+    bottom: -3%;
+    right: 0;
+    transition: 1s;
+    z-index: 2;
+}
+.main .home header .linksCon .left a:hover::before{
+    width: 100%;
+    opacity: .40;
+}
+
+
+
+
+/* right */
+.main .home header .linksCon .right{
+    margin-right: -8rem;
+}
+.main .home header .linksCon .right a{
+    color: #EEEEEE;
+    font-size: 40px;
+    text-decoration: none;
+    margin-right: 2rem;
+    transition: 1s;
+    position: relative;
+    font-family: var(--sans);
+}
+/* hover effect for right */
+.main .home header .linksCon .right a::before{
+    content: "";
+    background: #EEEEEE;
+    height: 10%;
+    width: 0%;
+    position: absolute;
+    bottom: -3%;
+    left: 0;
+    transition: 1s;
+    z-index: 2;
+}
+.main .home header .linksCon .right a:hover::before{
+    width: 100%;
+    opacity: .40;
+}
+.main .home header .linksCon .right a:hover{
+    color: #000;
+}
+.homeTextCon{
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* subTextCon */
+.homeTextCon .subTextCon{
+    position: relative;
+}
+/* I AM */
+.homeTextCon .subTextCon .iAm{
+    position: absolute;
+    top: -2%;
+    left: 19.2rem;
+    transform: rotate(-30deg);
+    font-family: var(--sans);
+    font-size: 40px;
+}
+
+.homeTextCon .subTextCon .jonrieText{
+    font-size: 179px;
+    font-family: var(--wideLatin);
+    display: inline-block;
+    transform: scale(.5, 1.3);
+}
+
+.homeTextCon .subTextCon .aWebDeveloper{
+    position: absolute;
+    bottom: 0rem;
+    right: 10rem;
+    bottom: -2rem;
+    transform: rotate(-15deg);
+    font-family: var(--sans);
+    font-size: 40px;
+}
+
+
+
+
+
+
+/* media query */
+@media screen and (max-width: 1050px){
+
+    /* (A WEB DEVELOPER) adjust position */
+    .homeTextCon .subTextCon .aWebDeveloper{
+        right: 16rem;
+        bottom: -4rem;
+    }
+
+    /* logo decrease size */
+    .main .home header a .logo{
+        width: 100%;
+        height: 100%;
+        max-height: 100px;
+        max-width: 90px;
+        left: .3rem;
+    }
+
+}
+
+/* show bars */
+@media screen and (max-width: 875px){
+    /* show bars */
+    .main .home header #bars{
+        display: block;
+    }
+
+
+    /* links new layout */
+    .main .home header .linksCon{
+        /* reset */
+        padding-top: 0;
+
+        /* layout for non-absolute */
+        flex-direction: column;
+        background: #00ADB5;
+        z-index: 10000;
+        height: 100vw;
+        min-height: 700px;
+        width: 100%;
+        position: absolute;
+        left: 200%;
+        top: 0;
+        transition: .8s;
+        opacity: 0;
+       }
+       .main .home header .linksCon  .left a,
+       .main .home header .linksCon  .right a{
+        font-size: 2rem;
+        color: #fff;
+        margin-bottom: 1rem;
+        text-align: center;
+
+        /* reset */
+        margin-right: 0;
+       }
+
+       .main .home header .linksCon  .left,
+       .main .home header .linksCon  .right{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+       }
+
+       /* reset */
+       .main .home header .linksCon  .left a:nth-child(1){
+        margin: 0;
+       }
+
+       /* reset */
+       .main .home header .linksCon .right{
+        margin-right: 0rem;
+    }
+
+
+}
+
+@media screen and (max-width: 855px){
+
+    /* new layout and style of home Text */
+
+    /* I AM */
+.homeTextCon .subTextCon .iAm{
+    position: absolute;
+    top: -20%;
+    left: 27rem;
+    transform: rotate(-30deg);
+    font-family: var(--sans);
+    font-size: 25px;
+}
+
+.homeTextCon .subTextCon .jonrieText{
+    font-size: 120px;
+}
+
+.homeTextCon .subTextCon .aWebDeveloper{
+    right: 21rem;
+    bottom: -3rem;
+    font-size: 25px;
+}
+
+}
+
+
+@media screen and (max-width: 500px){
+            /* new layout and style of home Text */
+
+            /* I AM */
+        .homeTextCon .subTextCon .iAm{
+            position: absolute;
+            top: -20%;
+            left: 27rem;
+            transform: rotate(-30deg);
+            font-family: var(--sans);
+            font-size: 25px;
+        }
+
+        .homeTextCon .subTextCon .jonrieText{
+            font-size: 25vw;
+        }
+
+        .homeTextCon .subTextCon .aWebDeveloper{
+            right: 21rem;
+            bottom: -3rem;
+            font-size: 25px;
+        }
+}
+
+@media screen and (max-width: 392px){
+
+    /* I AM and A WEB DEVELOPER new position */
+
+    .homeTextCon .subTextCon .aWebDeveloper{
+        right: 11rem;
+    }
+
+    .homeTextCon .subTextCon .iAm{
+        top: -40%;
+        left: 11rem;
+    }
+
+}

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google verification -->
+	<meta name="google-site-verification" content="ItHg_9cysnHe3fNSXX4yRCHi1qzFSCHoBpSwdHJYUpw" />
+	<!-- bing verification -->
+	<meta name="msvalidate.01" content="FFC781C75C297841C2A847D7E625CB6D" />
+	<!-- Description -->
+	<meta name="description" content="Jonrie | Web Developer">
+	<meta name="keywords" content="Jonrie, Portfolio, Personal, Website, Personal Portfolio,Personal Portfolio Website, Jonrie Personal Portfolio Website, Jonrie Badiang, Jonrie Portfolio, JonrieCV, Jonrie Morales Badiang, Badiang Jonrie Morales,Jonrie Web Deloper, JonrieMain, jonrie portfolio, jonrie morales badiang, jonrie website, web developer, Software Engineer, Engineer">
+
+
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="./assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+
+
+    <title>Jonrie | Web Developer</title>
+</head>
+<body>
+    
+<div class="main">
+
+
+    <!-- home -->
+    <div class="home">
+
+        <!-- contact btn -->
+       <i id="contact" class="fa-solid fa-phone"></i>
+
+        <!-- contact form -->
+        <form class="contactForm close" action="https://formsubmit.co/ad4e0ff231edc13df9d5c9beef1e68b3" method="POST">
+
+            <i onClick="closeFormFunc()" id="closeContactForm" class="fa-solid fa-x"></i>
+
+            <h1>LET'S HAVE A TALK</h1> 
+            <div> 
+                <input placeholder="Full name" name="fullName" type="text" id="fullName" aria-describedby="emailHelp" required> </div>
+
+            <div> 
+                <input placeholder="Email address" name="email" type="email" id="emailAddress" aria-describedby="emailHelp" required> </div>
+            
+            <div> 
+                 <input placeholder="Subject" name="subject" type="text" id="subject" aria-describedby="emailHelp" required> </div>
+            
+            <div> 
+                <textarea placeholder="Message" name="message" id="messege" type="text" class="form-control" rows="9" required></textarea> </div>
+             <!---------------extra----------------------> <!-- redirect after submit --> 
+             <input type="hidden" name="_next" value="https://jonrie.xyz/afterform"> 
+             <!----------------------------------------> <button type="submit">Submit</button>
+
+        </form>
+
+
+        <!-- header -->
+        <header id="home">
+
+           <i id="bars" class="fa-solid fa-bars"></i>
+
+            <a href="https://jonrie.xyz/"><img class="logo" src="./assets/logo.png" alt="logo"></a>
+
+            <span class="linksCon" id="linksCon">
+                <span class="left">
+                    <a class="links" href="#home">Home</a>
+                    <a class="links" href="#about">About me</a>
+                </span>
+
+                <span class="right">
+                    <a class="links" href="#myWorks">My works</a>
+                    <a class="links" href="#letsTalk">Let's talk</a>
+                </span>
+            </span>
+
+        </header>
+
+        <!-- home text -->
+        <div class="homeTextCon">
+            <div class="subTextCon">
+                <span class="iAm">I AM</span>
+                <span class="jonrieText">JONRIE</span>
+                <span class="aWebDeveloper">A WEB DEVELOPER</span>
+            </div>
+        </div>
+
+
+
+        <!-- social links -->
+        <div class="socialLinks">
+           <a href="https://facebook.com/JonrieMain"><i class="fa-brands fa-square-facebook"></i></a>
+
+            <a href="https://www.instagram.com/jonrieeee/"><i class="fa-brands fa-square-instagram"></i></a>
+
+            <a href="https://github.com/JonrieMain"><i class="fa-brands fa-square-github"></i></a>
+
+            <a href="https://www.linkedin.com/in/jonrie-badiang-06b60a241/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        
+
+
+
+    </div>
+
+    <!-- about -->
+    <div id="about" class="about">
+        <div class="leftAbout">
+        <h2>Who am i?</h2>
+        <p>My name is Jonrie Badiang, and I am a 
+            frontend developer. I enjoy building 
+            websites as well as transforming them into
+             mobile and user-friendly applications. 
+            Turning conceptual designs into actual 
+            web applications is something I enjoy 
+            doing. Although my interest is front-end 
+            development, I also have back-end 
+            development experience. And I like 
+            cardistry, sometimes known as "flourishing.
+             Cardistry is the art of using your hands to 
+            manipulate playing cards to make cuts, 
+            displays, fans, patterns, and sequences. 
+            You can employ a variety of arm spreads, 
+            cuts, shuffles, and leaps. The goal is to 
+            provide eye-catching motion and a stunning 
+            spectacle. I'm also performing some basic magic tricks.</p>
+        </div>
+        <div class="rightAbout">
+            <img src="./assets/jonrie.png" alt="">
+        </div>
+    </div>
+
+    <!-- technologies uses -->
+    <div class="aboutUses">
+        <h2>What are the technologies i use?</h2>
+        <div class="aboutUsesSub">
+            <div class="frontend">
+                <h3>For frontend</h3>
+                <div>
+                <p>Javascript</p>
+                <p>JQuery</p>
+                <p>HTML 5</p>
+                <p>CSS 3</p>
+                <p>Bootstrap</p>
+            </div>
+            </div>
+            <div class="backend">
+                <h3>For backend</h3>
+                <div>
+                <p>PHP</p>
+                <p>MySQL</p>
+                <p>AJAX</p>
+            </div>
+            </div>
+            <div class="others">
+                <h3>For version control and others</h3>
+                <div>
+                <p>Git</p>
+                <p>Github</p>
+                <p>Fontawesome</p>
+                <p>Googlefonts</p>
+                <p>Formsubmit</p>
+            </div>
+            </div>
+     </div>
+
+
+         <div class="aboutExperience">
+            <h2>How about my experience?</h2>
+            <p>I started to learn programming when I was in grade 10, way back in 2018. 
+                My first languages and technologies that I use are HTML, CSS, and Javascript, 
+                and after a few years, I began learning PHP, MySQL/MariaDB, JQuery, and 
+                Ajax. The first system that I developed was my personal portfolio website, 
+                and now I am currently building an inventory with a point of sale system for 
+                portfolio purposes. I am also currently in my first year of college, taking a 
+                Bachelor of Science in Information Systems (BSIS) at the Integrated 
+                Innovation and Hospitality College, and I am currently studying React JS,
+                Node JS, Typescript, etc. to solidify my knowledge after I graduate 
+                from college.</p>
+         </div>
+
+
+    </div>
+
+
+
+        <!-- My works/Projects -->
+        <div class="myWorks">
+
+            <h2 id="myWorks">My works and Projects</h2>
+            <p>As of now, I have received no projects from a client. Here are some of my full-stack apps and a converted PSD to a web-page application.</p>
+
+
+            <div class="worksCon">
+
+
+                <!-- dheeluxe -->
+                <div>
+                    <h2>Dheeluxe</h2>
+                    <p>HTML,CSS,BOOTSTRAP,JAVASCRIPT</p>
+                    <div class="sub">
+                        <div>
+                            <img src="./assets/works/dheeluxe.png" alt="Dheeluxe">
+
+                            <span>
+                            <a target="__blank" href="https://github.com/JonrieMain/ExampleBeautyProducts"><i class="fa-brands fa-github"></i></i> Github</a>
+
+                            <a target="__blank" href="https://jonriemain.github.io/ExampleBeautyProducts/"><i class="fa-solid fa-globe"></i> View site</a>
+                        </span>
+                        </div>
+                        <div>
+                            <p>This is the first website that i created with html,css,javascript and css frameworks which is bootstrap. I created this to enhance my skills in using HTML, CSS, and JavaScript and tried to enhance my web designing skills and this project is for portfolio purposes.</p>
+                        </div>
+                    </div>
+               </div>
+
+
+
+
+
+
+               <!-- Always choose good -->
+               <div>
+                <h2 class="linesFrom">Always Choose Good</h2>
+                <p>HTML,CSS,BOOTSTRAP,JAVASCRIPT</p>
+                <div class="sub">
+                    <div>
+                        <img src="./assets/works/alwaysChooseGood.png" alt="always Choose Good">
+
+                        <span>
+                        <a target="__blank" href="https://github.com/JonrieMain/AlwaysChooseGood"><i class="fa-brands fa-github"></i> Github</a>
+
+                        <a target="__blank" href="https://jonriemain.github.io/AlwaysChooseGood/"><i class="fa-solid fa-globe"></i> View site</a>
+                    </span>
+                    </div>
+                    <div>
+                        <p>This is the second website I created. I found it on YouTube and tried to copy or clone it using HTML, CSS, and JavaScript for portfolio purposes only.</p>
+                    </div>
+                </div>
+           </div>
+
+
+
+           <!-- best mobile app -->
+           <div>
+            <h2>Phone Brand</h2>
+            <p>HTML,CSS,JAVASCRIPT</p>
+            <div class="sub">
+                <div>
+                    <img src="./assets/works/phoneBrand.png" alt="Phone Brand">
+
+                    <span>
+                    <a target="__blank" href="https://github.com/JonrieMain/PhoneBrand"><i class="fa-brands fa-github"></i> Github</a>
+
+                    <a target="__blank" href="https://jonriemain.github.io/PhoneBrand/"><i class="fa-solid fa-globe"></i> View site</a>
+                </span>
+                </div>
+                <div>
+                    <p>This is the third website I've created; I found this one too on YouTube, which I tried to copy or clone to enhance my skills and for portfolio purposes.</p>
+                </div>
+            </div>
+       </div>
+
+
+
+        <!-- TPC blogsite -->
+        <div>
+            <h2>TPC Blogsite</h2>
+            <p>HTML,CSS,JAVASCRIPT,Bootstrap</p>
+            <div class="sub">
+                <div>
+                    <img src="./assets/works/trinityBlogsite.png" alt="TPC Blogsite">
+
+                    <span>
+                    <a target="__blank" href="https://github.com/JonrieMain/TrinityPolytechnicCollegeBlogsite"><i class="fa-brands fa-github"></i> Github</a>
+
+                    <a target="__blank" href="https://jonriemain.github.io/TrinityPolytechnicCollegeBlogsite/"><i class="fa-solid fa-globe"></i> View site</a>
+                </span>
+                </div>
+                <div>
+                    <p>This website I create is for school purposes when I am in senior high school in 2021. This time im a modular just i need is to answer all and pass in the school my one module have activity that need to create a blogsite represent my school and i create this using html,css,javsacript and bootstrap.</p>
+                </div>
+            </div>
+       </div>
+
+
+
+
+
+        <!-- Restaurant opening -->
+        <div>
+            <h2>Restaurant Opening</h2>
+            <p>HTML,CSS,JAVASCRIPT</p>
+            <div class="sub">
+                <div>
+                    <img src="./assets/works/restauOpeningDestop.png" alt="Restaurant Opening">
+
+                    <span>
+                    <a target="__blank" href="https://github.com/JonrieMain/RestaurantsOpening"><i class="fa-brands fa-github"></i> Github</a>
+
+                    <a target="__blank" href="https://jonriemain.github.io/RestaurantsOpening/"><i class="fa-solid fa-globe"></i> View site</a>
+                </span>
+                </div>
+                <div>
+                    <p>This is the first website I converted from Photoshop to an actual webpage. I found this on the <a href="https://www.freepik.com/psd/website-templates">Freepik</a> website. I found that website and am looking for websites that I want to convert from PSD to actual webpages. This project is for portfolio purposes.</p>
+                </div>
+            </div>
+       </div>
+
+
+
+
+
+       <!-- Hiking Concept -->
+        <div>
+            <h2>Hiking Concept</h2>
+            <p>HTML,CSS,JAVASCRIPT</p>
+            <div class="sub">
+                <div>
+                    <img src="./assets/works/hikingConcept.png" alt="Hiking Concept">
+
+                    <span>
+                    <a target="__blank" href="https://github.com/JonrieMain/HikingConcept"><i class="fa-brands fa-github"></i> Github</a>
+
+                    <a target="__blank" href="https://jonriemain.github.io/HikingConcept/"><i class="fa-solid fa-globe"></i> View site</a>
+                </span>
+                </div>
+                <div>
+                    <p>This is the second website that I converted from psd to actual webpage, and this is from <a href="https://www.freepik.com/psd/website-templates">Freepik</a> and for portfolio purposes.</p>
+                </div>
+            </div>
+       </div>
+
+
+
+
+
+
+       <!-- Music show -->
+       <div>
+        <h2>Music Show</h2>
+        <p>HTML,CSS,JAVASCRIPT</p>
+        <div class="sub">
+            <div>
+                <img src="./assets/works/musicShow.png" alt="Music Show">
+
+                <span>
+                <a target="__blank" href="https://github.com/JonrieMain/musicShow"><i class="fa-brands fa-github"></i> Github</a>
+
+                <a target="__blank" href="https://jonriemain.github.io/musicShow/"><i class="fa-solid fa-globe"></i> View site</a>
+            </span>
+            </div>
+            <div>
+                <p>This is the second website that I converted from psd to actual webpage, and this is from <a href="https://www.freepik.com/psd/website-templates">Freepik</a> and for portfolio purposes.</p>
+            </div>
+        </div>
+   </div>
+
+
+
+   <!-- Research/Capstone title generator -->
+   <div>
+    <h2>Research/Capstone Title Generator</h2>
+    <p>HTML,CSS,JAVASCRIPT</p>
+    <div class="sub">
+        <div>
+            <img src="./assets/works/researchGenerator.png" alt="Research/Capstone Title Generator">
+
+            <span>
+            <a target="__blank" href="https://github.com/JonrieMain/ResearchTitlesGenerator"><i class="fa-brands fa-github"></i> Github</a>
+
+            <a target="__blank" href="https://jonriemain.github.io/ResearchTitlesGenerator/"><i class="fa-solid fa-globe"></i> View site</a>
+        </span>
+        </div>
+        <div>
+            <p>This website I created to make a random selection using vanilla javascript and tried to help other people choose their title for their thesis or capstone. This generated title is for computer majors only.</p>
+        </div>
+    </div>
+</div>
+
+
+
+            <!-- POS -->
+            <div>
+                <h2>Inventory with Point of Sale</h2>
+                <p>HTML,CSS,JQUERY,AJAX,PHP,MYSQL/MARIADB</p>
+                <div class="sub">
+                    <div>
+                        <img src="./assets/works/pos.png" alt="POS">
+
+                        <span>
+                        <a href="#"><i class="fa-brands fa-github"></i> Github</a>
+
+                        <a href="#"><i class="fa-solid fa-globe"></i> View site</a>
+                    </span>
+                    </div>
+                    <div>
+                        <p>This is the first full-stack app I created, titled Inventory with Point of Sale. This app has a login and registration, allows you to add, remove, and edit products like quantity, name, and price; add sales; add products that you receive from suppliers; record sales reports; and has an employee list and details. Users who have access to this app and account settings This system is not yet finished and is for portfolio purposes only.</p>
+                    </div>
+                </div>
+           </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="letsTalk">
+            <h2 id="letsTalk">Contact</h2>
+            <p>I'm looking forward to working with you and I hope my portfolio satisfied you. If you're not yet satisfied, you can contact me to learn more about me, and if you are, I'd appreciate it if you did. The following details are how you can get in touch with me. I'll respond as quickly as I can. Thank you </p>
+           
+            <span>
+            <i class="fa-solid fa-phone"> <span> 09702552127</span></i>
+            <i class="fa-regular fa-envelope"> <span>jonriemain@gmail.com</span></i>
+            <div>
+                <a href="https://facebook.com/JonrieMain"><i class="fa-brands fa-square-facebook"></i></a>
+
+            <a href="https://www.instagram.com/jonrieeee/"><i class="fa-brands fa-square-instagram"></i></a>
+
+            <a href="https://github.com/JonrieMain"><i class="fa-brands fa-square-github"></i></a>
+
+            <a href="https://www.linkedin.com/in/jonrie-badiang-06b60a241/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </span>
+        </div>
+
+
+
+
+
+        <footer>
+            <p id="c"></p>
+        </footer>
+
+
+
+
+
+
+</div>
+
+
+</body>
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.slim.js" integrity="sha512-M3zrhxXOYQaeBJYLBv7DsKg2BWwSubf6htVyjSkjc9kPqx7Se98+q1oYyBJn2JZXzMaZvUkB8QzKAmeVfzj9ug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- custom JS -->
+<script type="module" src="./js/main.js"></script>
+</html>

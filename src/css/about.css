@@ -1,0 +1,240 @@
+.main .about{
+    height: 100%;
+    width: 100%;
+    background: #222831;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 0 .5rem;
+    
+    /* for picture */
+    overflow: hidden;
+}
+.main .about .leftAbout{
+    max-width: 850px;
+    align-self: flex-start;
+    padding-top: 3rem;
+}
+.main .about .leftAbout >h2{
+    font-size: 45px;
+    color: #00adb5;
+     margin-bottom: 1rem;
+     font-family: var(--sans);
+     font-weight: 500;
+}
+.main .about .leftAbout >p{
+font-size: 30px;
+color: #eeeeee;
+font-family: var(--sans);
+word-break: break-word;
+padding-left: 3rem;
+line-height: 3rem;
+}
+
+.main .about .rightAbout{
+    align-self: flex-start;
+}
+
+
+
+/* about uses CSS */
+.main .aboutUses{
+    height: 100%;
+    width: 100%;
+    background: #222831;
+    padding: 3rem .5rem 2rem .5rem;
+}
+.main .aboutUses >h2{
+    font-size: 45px;
+    color: #00adb5;
+    font-weight: 500;
+    padding-left: 4.3rem;
+    font-family: var(--sans);
+}
+.main .aboutUses .aboutUsesSub{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 2rem;
+    margin-top: 2.2rem;
+    padding-left: 4.3rem;
+}
+
+/* for all h3 */
+.main .aboutUses .aboutUsesSub .frontend >h3,
+.main .aboutUses .aboutUsesSub .backend >h3{
+    font-size: 35px;
+    font-weight: 500;
+    color: #eeeeee;
+    display: flex;
+    font-family: var(--sans);
+}
+.main .aboutUses .aboutUsesSub .others >h3{
+    font-size: 25px;
+    color: #eeeeee;
+    display: flex;
+    font-family: var(--sans);
+}
+
+/* for all p */
+.main .aboutUses .aboutUsesSub >div >div p{
+    color: #eeeeee;
+    font-size: 30px;
+}
+/* layout for all and indention for all div */
+.main .aboutUses .aboutUsesSub >div >div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
+
+
+/* for frontend */
+.main .aboutUses .aboutUsesSub .frontend >div >p{
+    background: #273122;
+    padding: .6rem;
+    border-radius: .5rem;
+}
+
+/* for backend */
+.main .aboutUses .aboutUsesSub .backend >div >p{
+    background: #262231;
+    padding: .6rem;
+    border-radius: .5rem;
+}
+
+/* for others */
+.main .aboutUses .aboutUsesSub .others >div >p{
+    background: #312e22;
+    padding: .6rem;
+    border-radius: .5rem;
+}
+
+
+
+
+
+
+
+/* for about experience */
+.main .aboutExperience{
+    height: 100%;
+    background: #222831;
+    padding: 3rem .5rem 2rem 4.2rem;
+}
+.main .aboutExperience >h2{
+    font-size: 45px;
+    color: #00adb5;
+    font-weight: 500;
+    margin-bottom: 2.3rem;
+     font-family: var(--sans);
+}
+.main .aboutExperience >p{
+    font-size: 30px;
+    color: #eeeeee;
+    line-height: 3rem;
+    word-break: break-word;
+     font-family: var(--sans);
+}
+
+
+
+
+
+
+
+
+/* media for about Use */
+@media screen and (max-width: 990px){
+
+    /* put flex-wrap and flex-start */
+    .main .aboutUses .aboutUsesSub{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+
+
+}
+@media screen and (max-width: 675px){
+
+        /* decrease indention ~ padding-left from 4.3rem */
+    .main .aboutUses .aboutUsesSub{
+        padding-left: 1rem;
+    }
+
+    /* decrease h2 padding-left from 4.3rem */
+    .main .aboutUses >h2{
+        padding-left: 0;
+        text-align: center;
+    }
+
+
+
+
+    /* about Experience decrease indention/margin */
+    .main .aboutExperience{
+        padding: 3rem .5rem 2rem 1rem;
+    }
+    /* set center h2 */
+    .main .aboutExperience >h2{
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* media */
+@media screen and (max-width: 950px){
+
+        /* make image center */
+    .main .about .rightAbout{
+        align-self: center;
+    }
+
+        /* make center */
+    .main .about .leftAbout >h2{
+        text-align: center;
+        font-size: 35px;
+    }
+
+        /* reset */
+    .main .about .leftAbout >p{
+        padding-left: 0;
+        font-size: 20px;
+        }
+
+    
+
+        .main .aboutUses >h2,
+        .main .aboutExperience >h2{
+            font-size: 35px;
+        }
+
+        .main .aboutExperience >p{
+            font-size: 20px;
+        }
+
+
+}
+
+@media screen and (max-width: 810px){
+
+        /* new layout of about */
+    .main .about{
+       flex-direction: column-reverse;
+    }
+
+}
