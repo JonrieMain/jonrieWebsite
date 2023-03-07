@@ -70,8 +70,11 @@ $(document).ready(()=>{
         }
     });
 
-   let closeFormFunc = ()=>{
 
+        // close form
+        $('#closeContactForm').on('click',()=>{
+
+            
         // allow scroll
         $('body').css("overflow","unset");
 
@@ -80,7 +83,11 @@ $(document).ready(()=>{
         setTimeout(()=>{
             contactForm.css("left","200%");
         },1000);
-    };
+
+
+        });
+
+    
 
 
     // get date
