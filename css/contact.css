@@ -41,6 +41,14 @@
     word-break: break-word;
 }
 
+/* cv */
+.main .letsTalk >span >.cv >a{
+    text-decoration: none;
+    color: #eeeeee;
+    font-family: var(--sans);
+    word-break: break-word;
+}
+
 
 /* icons links */
 .main .letsTalk >span >div{
