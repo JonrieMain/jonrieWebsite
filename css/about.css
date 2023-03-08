@@ -34,6 +34,7 @@ line-height: 3rem;
 
 .main .about .rightAbout{
     align-self: flex-start;
+    padding-top: 2rem;
 }
 
 
@@ -159,6 +160,11 @@ line-height: 3rem;
         justify-content: flex-start;
         
     }
+
+/*  reset aboutRight  margin  */
+    .main .about .rightAbout{
+    padding-top: 0;
+}
 
 
 }
