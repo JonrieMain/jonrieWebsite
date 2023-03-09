@@ -40,6 +40,10 @@
     font-family: var(--sans);
     word-break: break-word;
 }
+.main .letsTalk >span >i >span >a{
+text-decoration: none;
+color: #eeeeee;
+}
 
 /* cv */
 .main .letsTalk >span >.cv >a{
