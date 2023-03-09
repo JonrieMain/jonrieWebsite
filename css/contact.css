@@ -39,6 +39,7 @@
     color: #eeeeee;
     font-family: var(--sans);
     word-break: break-word;
+    font-weight: 500;
 }
 .main .letsTalk >span >i >span >a{
 text-decoration: none;
@@ -51,6 +52,8 @@ color: #eeeeee;
     color: #eeeeee;
     font-family: var(--sans);
     word-break: break-word;
+    font-weight: 500;
+    font-size: 19.2px;
 }
 
 
