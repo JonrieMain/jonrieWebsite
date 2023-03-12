@@ -405,6 +405,13 @@ margin-left: -2rem;
         margin-right: 0;
        }
 
+
+       /* reset home */
+        .main .home{
+    background-attachment: unset;
+    }
+
+
        .main .home header .linksCon  .left,
        .main .home header .linksCon  .right{
             display: flex;
