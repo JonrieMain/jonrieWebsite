@@ -143,6 +143,22 @@
 
 
 
+/* large screen width */
+@media screen and (min-width: 2300px){
+    /* works con new layout 2300px */
+    .main .myWorks .worksCon{
+        max-width: unset;
+    }
+    /* lines from make none */
+    .main .myWorks .worksCon >div >.linesFrom::before{
+        display: none;
+    }
+    /* dots from h2 adjust position */
+    .main .myWorks .worksCon >div >h2::after{
+        left: -3%;
+    }
+}
+
 
 /* media */
 @media screen and (max-width: 950px){

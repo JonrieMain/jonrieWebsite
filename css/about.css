@@ -7,7 +7,6 @@
     align-items: center;
     gap: .5rem;
     padding: 0 .5rem;
-    
     /* for picture */
     overflow: hidden;
 }
@@ -61,6 +60,7 @@ line-height: 3rem;
     gap: 2rem;
     margin-top: 2.2rem;
     padding-left: 4.3rem;
+    max-width: 2500px;
 }
 
 /* for all h3 */
