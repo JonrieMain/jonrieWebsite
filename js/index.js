@@ -1,5 +1,11 @@
 $(document).ready(()=>{
     
+    setTimeout(()=>{
+        $('body').css("overflow","unset");
+        $('.main').css("opacity","1");
+        $('.preloader').css("display", "none")
+    },1000)
+
     let bars = $('#bars');
     let linksCon = $('#linksCon');
     bars.on('click',()=>{
