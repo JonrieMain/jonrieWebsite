@@ -55,12 +55,16 @@ line-height: 3rem;
 
 .main .aboutUses .aboutUsesSub{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: baseline;
     gap: 2rem;
     margin-top: 2.2rem;
     padding-left: 4.3rem;
     max-width: 2500px;
+}
+.main .aboutUses .aboutUsesSub .backend,.fronend,
+.others{
+    min-width: 32%;
 }
 
 /* for all h3 */
