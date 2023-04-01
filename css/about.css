@@ -43,7 +43,7 @@ line-height: 3rem;
     height: 100%;
     width: 100%;
     background: #222831;
-    padding: 8rem .5rem 2rem .5rem;
+    padding: 6rem .5rem 2rem .5rem;
 }
 .main .aboutUses >h2{
     font-size: 45px;
@@ -131,7 +131,7 @@ line-height: 3rem;
 .main .aboutExperience{
     height: 100%;
     background: #222831;
-    padding: 8rem .5rem 2rem 4.2rem;
+    padding: 6rem .5rem 2rem 4.2rem;
 }
 .main .aboutExperience >h2{
     font-size: 45px;
