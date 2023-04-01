@@ -24,8 +24,12 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
+
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- custom CSS -->
     <link rel="stylesheet" href="./css/main.css">
@@ -128,8 +132,9 @@
     <!-- about -->
     <div class="about">
         <div class="leftAbout">
-        <h2 id="about">Who am i?</h2>
-        <p>My name is Jonrie Badiang, and I am a 
+        <h2 data-aos="fade-right" id="about">Who am i?</h2>
+        <p data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"  data-aos-delay="700" data-aos-duration="1000">My name is Jonrie Badiang, and I am a 
             frontend developer. I enjoy building 
             websites as well as transforming them into
              mobile and user-friendly applications. 
@@ -147,16 +152,17 @@
             provide eye-catching motion and a stunning 
             spectacle. I'm also performing some basic magic tricks.</p>
         </div>
-        <div class="rightAbout">
+        <div class="rightAbout" data-aos="flip-right" data-aos-delay="700" data-aos-duration="1000">
             <img src="./assets/jonrie.png" alt="">
         </div>
     </div>
 
     <!-- technologies uses -->
     <div class="aboutUses">
-        <h2>What are the technologies i use?</h2>
+        <h2 data-aos="fade-right">What are the technologies i use?</h2>
         <div class="aboutUsesSub">
-            <div class="frontend">
+            <div class="frontend" data-aos="fade-up"
+            data-aos-duration="1000">
                 <h3>For frontend</h3>
                 <div>
                 <p>Javascript</p>
@@ -167,7 +173,8 @@
 		<p>Parcel JS</p>
             </div>
             </div>
-            <div class="backend">
+            <div class="backend" data-aos="fade-up"
+            data-aos-duration="1000" data-aos-delay="300">
                 <h3>For backend</h3>
                 <div>
                 <p>PHP</p>
@@ -175,7 +182,8 @@
                 <p>AJAX</p>
             </div>
             </div>
-            <div class="others">
+            <div class="others" data-aos="fade-up"
+            data-aos-duration="1000" data-aos-delay="500">
                 <h3>For version control and others</h3>
                 <div>
                 <p>Git</p>
@@ -190,8 +198,9 @@
 
 
          <div class="aboutExperience">
-            <h2>How about my experience?</h2>
-            <p>I started to learn programming when I was in grade 10, way back in 2018. 
+            <h2 data-aos="fade-right">How about my experience?</h2>
+            <p data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"  data-aos-delay="700" data-aos-duration="1000">I started to learn programming when I was in grade 10, way back in 2018. 
                 My first languages and technologies that I use are HTML, CSS, and Javascript, 
                 and after a few years, I began learning PHP, MySQL/MariaDB, JQuery, and 
                 Ajax. The first system that I developed was my personal portfolio website, 
@@ -211,15 +220,15 @@
         <!-- My works/Projects -->
         <div class="myWorks">
 
-            <h2 id="myWorks">My works and Projects</h2>
-            <p>I haven't yet received any projects from clients. Here are some of my full-stack apps and a PSD application that has been turned into a web page.</p>
+            <h2 data-aos="fade-right" id="myWorks">My works and Projects</h2>
+            <p data-aos="zoom-in" data-aos-duration="1000">I haven't yet received any projects from clients. Here are some of my full-stack apps and a PSD application that has been turned into a web page.</p>
 
 
             <div class="worksCon">
 
 
                 <!-- dheeluxe -->
-                <div>
+                <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
                     <h2>Dheeluxe</h2>
                     <p>HTML,CSS,BOOTSTRAP,JAVASCRIPT</p>
                     <div class="sub">
@@ -244,8 +253,8 @@
 
 
                <!-- Always choose good -->
-               <div>
-                <h2 class="linesFrom">Always Choose Good</h2>
+               <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                <h2>Always Choose Good</h2>
                 <p>HTML,CSS,BOOTSTRAP,JAVASCRIPT</p>
                 <div class="sub">
                     <div>
@@ -266,7 +275,7 @@
 
 
            <!-- best mobile app -->
-           <div>
+           <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
             <h2>Phone Brand</h2>
             <p>HTML,CSS,JAVASCRIPT</p>
             <div class="sub">
@@ -288,7 +297,7 @@
 
 
         <!-- TPC blogsite -->
-        <div>
+        <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
             <h2>TPC Blogsite</h2>
             <p>HTML,CSS,JAVASCRIPT,Bootstrap</p>
             <div class="sub">
@@ -312,7 +321,7 @@
 
 
         <!-- Restaurant opening -->
-        <div>
+        <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
             <h2>Restaurant Opening</h2>
             <p>HTML,CSS,JAVASCRIPT</p>
             <div class="sub">
@@ -336,7 +345,7 @@
 
 
        <!-- Hiking Concept -->
-        <div>
+        <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
             <h2>Hiking Concept</h2>
             <p>HTML,CSS,JAVASCRIPT</p>
             <div class="sub">
@@ -361,7 +370,7 @@
 
 
        <!-- Music show -->
-       <div>
+       <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
         <h2>Music Show</h2>
         <p>HTML,CSS,JAVASCRIPT</p>
         <div class="sub">
@@ -383,7 +392,7 @@
 
 
    <!-- Research/Capstone title generator -->
-   <div>
+   <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
     <h2>Research/Capstone Title Generator</h2>
     <p>HTML,CSS,JAVASCRIPT</p>
     <div class="sub">
@@ -405,8 +414,8 @@
 
 
             <!-- POS -->
-            <div>
-                <h2>Inventory with Point of Sale</h2>
+            <div data-aos="fade-left" data-aos-duration="800">
+                <h2 class="linesFrom">Inventory with Point of Sale</h2>
                 <p>HTML,CSS,JQUERY,AJAX,PHP,MYSQL/MARIADB</p>
                 <div class="sub">
                     <div>
@@ -444,19 +453,17 @@
 
 
 
-
-
         <div class="letsTalk">
-            <h2 id="letsTalk">Contact</h2>
-            <p>I'm looking forward to working with you and I hope my portfolio satisfied you. If you're not yet satisfied, you can contact me to learn more about me, and if you are, I'd appreciate it if you did. The following details are how you can get in touch with me. I'll respond as quickly as I can. Thank you </p>
+            <h2 data-aos="fade-right" id="letsTalk">Contact</h2>
+            <p data-aos="zoom-in" data-aos-duration="1000">I'm looking forward to working with you and I hope my portfolio satisfied you. If you're not yet satisfied, you can contact me to learn more about me, and if you are, I'd appreciate it if you did. The following details are how you can get in touch with me. I'll respond as quickly as I can. Thank you </p>
            
             <span>
-            <i class="fa-solid fa-phone"> <span> 09702552127</span></i>
-		    <i class="fa-regular fa-envelope"> <span><a href="mailto:jonriemain@gmail.com">jonriemain@gmail.com</a></span></i>
+            <i data-aos="fade-right"data-aos-delay="100" class="fa-solid fa-phone"> <span> 09702552127</span></i>
+		    <i data-aos="fade-right" data-aos-delay="300" class="fa-regular fa-envelope"> <span><a href="mailto:jonriemain@gmail.com">jonriemain@gmail.com</a></span></i>
 
-            <i class="fa-solid fa-file cv"><a target="_blank" href="./cv/JonrieCV.pdf"> Download CV</a></i>
+            <i data-aos="fade-right" data-aos-delay="300" class="fa-solid fa-file cv"><a target="_blank" href="./cv/JonrieCV.pdf"> Download CV</a></i>
 
-            <div>
+            <div data-aos="fade-right" data-aos-delay="300">
                 <a href="https://facebook.com/JonrieMain"><i class="fa-brands fa-square-facebook"></i></a>
 
             <a href="https://www.instagram.com/jonrieeee/"><i class="fa-brands fa-square-instagram"></i></a>
@@ -490,6 +497,16 @@
 </body>
 <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<!-- aos js -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+  AOS.init({
+    once: true,
+    easing: 'linear',
+    startEvent: 'DOMContentLoaded'
+  });
+</script>
 <!-- custom JS -->
 <script type="module" src="./js/main.js"></script>
 </html>

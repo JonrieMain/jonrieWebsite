@@ -17,13 +17,14 @@
 }
 body{
     overflow: hidden;
+    background: #222831;
 }
 
 
 /* pre loader style */
 .spinner {
     --size: 30px;
-    --first-block-clr: #222831a6;
+    --first-block-clr: #EEEEEE;
     --second-block-clr: #00ADB5;
     --clr: #111;
     width: 100px;
