@@ -213,7 +213,8 @@ body{
     padding: .3rem;
     border: 3px solid #222831;
 }
-.main .contactForm >button{
+.main .contactForm >#button{
+    text-align: center;
     padding: .8rem 0;
     width: 100vw;
     max-width: 10rem;
@@ -227,8 +228,13 @@ body{
     color: #ffff;
     transition: .5s linear;
 }
-.main .contactForm >button:hover{
+.main .contactForm >#button:hover{
     background: #00ADB5;
+}
+
+.main .contactForm #chk{
+    position: absolute;
+    left: -500%;
 }
 
 

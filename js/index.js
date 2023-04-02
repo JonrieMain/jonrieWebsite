@@ -1,5 +1,6 @@
 $(document).ready(()=>{
     
+    // preloader
     setTimeout(()=>{
         $('body').css("overflow","unset");
         $('.main').css("opacity","1");
@@ -101,6 +102,16 @@ $(document).ready(()=>{
     let getYear = date.getFullYear();
     $('#c').text(`Jonrie © ${getYear}`);
 
+
+        // validate
+        $('#chk').css({position: "absolute",left: "-500%"});
+            $('#button').on('click',()=>{
+                if($('#fullName').val()==""||$('#emailAddress').val()==""||$('#subject').val()==""||$('#messege').val()==""){
+                        alert("Error!  All input is required. ")
+                }else{
+                    $('#chk').click();
+                }
+            });
 
 
 });

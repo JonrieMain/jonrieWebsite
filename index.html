@@ -62,20 +62,21 @@
 
             <h1>LET'S HAVE A TALK</h1> 
             <div> 
-                <input placeholder="Full name" name="fullName" type="text" id="fullName" aria-describedby="emailHelp" required> </div>
+                <input minlength="3" maxlength="40" placeholder="Full name" name="fullName" type="text" id="fullName" aria-describedby="emailHelp" required> </div>
 
             <div> 
-                <input placeholder="Email address" name="email" type="email" id="emailAddress" aria-describedby="emailHelp" required> </div>
+                <input minlength="10" maxlength="40" placeholder="Email address" name="email" type="email" id="emailAddress" aria-describedby="emailHelp" required> </div>
             
             <div> 
-                 <input placeholder="Subject" name="subject" type="text" id="subject" aria-describedby="emailHelp" required> </div>
+                 <input minlength="3" maxlength="40" placeholder="Subject" name="subject" type="text" id="subject" aria-describedby="emailHelp" required> </div>
             
             <div> 
-                <textarea placeholder="Message" name="message" id="messege" type="text" class="form-control" rows="9" required></textarea> </div>
+                <textarea minlength="6" maxlength="50" placeholder="Message" name="message" id="messege" type="text" class="form-control" rows="9" required></textarea> </div>
              <!---------------extra----------------------> <!-- redirect after submit --> 
              <input type="hidden" name="_next" value="https://jonrie.xyz/afterform.html"> 
-             <!----------------------------------------> <button type="submit">Submit</button>
-
+             <!----------------------------------------> 
+             <div id="button">Submit</div>
+             <button id="chk" type="submit"></button>
         </form>
 
 
