@@ -1,5 +1,82 @@
 <!DOCTYPE html>
+<!-- preloader -->
+<div class="preloader">
+    <div class="spinner"></div>
+    </div>
+
+
+<style>
+.spinner {
+    --size: 30px;
+    --first-block-clr: #EEEEEE;
+    --second-block-clr: #00ADB5;
+    --clr: #111;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   }
+   
+   .spinner::after,.spinner::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    width: var(--size);
+    height: var(--size);
+    top: 50%;
+    animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+    left: 50%;
+    background: var(--first-block-clr);
+   }
+   
+   .spinner::after {
+    background: var(--second-block-clr);
+    top: calc(50% - var(--size));
+    left: calc(50% - var(--size));
+    animation: down 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+   }
+   
+   @keyframes down {
+    0%, 100% {
+     transform: none;
+    }
+   
+    25% {
+     transform: translateX(100%);
+    }
+   
+    50% {
+     transform: translateX(100%) translateY(100%);
+    }
+   
+    75% {
+     transform: translateY(100%);
+    }
+   }
+   
+   @keyframes up {
+    0%, 100% {
+     transform: none;
+    }
+   
+    25% {
+     transform: translateX(-100%);
+    }
+   
+    50% {
+     transform: translateX(-100%) translateY(-100%);
+    }
+   
+    75% {
+     transform: translateY(-100%);
+    }
+   }
+</style>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,12 +115,6 @@
     <title>Jonrie | Web Developer</title>
 </head>
 <body>
-    
-    <!-- preloader -->
-    <div class="preloader">
-    <div class="spinner"></div>
-    </div>
-      
 
 
 <div class="main">
@@ -510,4 +581,14 @@
 </script>
 <!-- custom JS -->
 <script type="module" src="./js/main.js"></script>
+
+<script>
+    // preloader
+    setTimeout(()=>{
+       $('body').css("overflow","unset");
+       $('.main').css("opacity","1");
+       $('.preloader').css("display", "none");
+   },1000)
+</script>
+
 </html>
