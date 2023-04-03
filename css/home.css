@@ -47,7 +47,7 @@ body{
 .main{
     /* for pre loader */
     opacity: 0;
-    transition: 1s linear;
+    transition: 2s linear;
 }
 
 /* contact */
