@@ -551,6 +551,8 @@ margin-left: -2rem;
 @media screen and (max-width: 380px){
     .homeTextCon .subTextCon .aWebDeveloper{
         bottom: -8rem;
+        top: 8rem;
+        z-index: 100000000;
     }
 }
 
