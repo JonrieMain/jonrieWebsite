@@ -152,6 +152,93 @@ line-height: 3rem;
 
 
 
+/* says about me */
+.main .saysAboutMe{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 6rem .5rem 2rem .5rem;
+
+}
+.main .saysAboutMe >h2{
+    font-size: 45px;
+    color: #00adb5;
+    font-family: var(--sans);
+    font-weight: 500;
+    padding-left: 4.3rem;
+    padding-bottom: 2.3rem;
+}
+
+.main .saysAboutMe >#scroll{
+    display: flex;
+    gap: 2rem;
+    animation: marquee 20s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main .saysAboutMe >#scroll >div{
+    height: 28rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    position: relative;
+    overflow: auto;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: 0px 21px 17px -8px rgba(0,173,181,0.55);
+    -webkit-box-shadow: 0px 21px 17px -8px rgba(0,173,181,0.55);
+    -moz-box-shadow: 0px 21px 17px -8px rgba(0,173,181,0.55);
+    padding: .2rem;
+}
+
+
+.main .saysAboutMe >#scroll >div:hover{
+    background: #00adb5;    
+}
+.main .saysAboutMe >#scroll >div >span{
+    height: 2rem;
+    width: 100%;
+    position: relative;
+    background: #222831;
+    box-sizing: content-box;
+}
+.main .saysAboutMe >#scroll >div >span >i{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    background: #efefef;
+    border-radius: 50%;
+    padding: 1rem 1.2rem;
+    border: 12px solid #00adb5;
+    color: #222831;
+}
+.main .saysAboutMe >#scroll >div >h3{
+    position: absolute;
+    top: 6.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    word-break: break-word;
+    width: 100%;
+}
+.main .saysAboutMe >#scroll >div >p{
+    text-align: center;
+    padding-top: 9rem;
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #eeeeee;
+    word-break: break-word;
+    overflow-y: auto;
+}
+
+
+
+
 
 
 
@@ -166,43 +253,13 @@ line-height: 3rem;
         
     }
 
-/*  reset aboutRight  margin  */
-    .main .about .rightAbout{
-    padding-top: 0;
-}
-
-
-}
-@media screen and (max-width: 675px){
-
-        /* decrease indention ~ padding-left from 4.3rem */
-    .main .aboutUses .aboutUsesSub{
-        padding-left: 1rem;
-    }
-
-    /* decrease h2 padding-left from 4.3rem */
-    .main .aboutUses >h2{
-        padding-left: 0;
-        text-align: center;
-    }
-
-
-
-
-    /* about Experience decrease indention/margin */
-    .main .aboutExperience{
-        padding: 3rem .5rem 2rem 1rem;
-    }
-    /* set center h2 */
-    .main .aboutExperience >h2{
-        text-align: center;
+    /*  reset aboutRight  margin  */
+        .main .about .rightAbout{
+        padding-top: 0;
     }
 
 
 }
-
-
-
 
 
 
@@ -220,6 +277,11 @@ line-height: 3rem;
     .main .about .leftAbout >h2{
         text-align: center;
         font-size: 35px;
+    }
+
+      /* decrease h2 saysAbout & reset */
+      .main .saysAboutMe >h2{
+       font-size: 35px;
     }
 
         /* reset */
@@ -266,5 +328,39 @@ line-height: 3rem;
     .main .about{
        flex-direction: column-reverse;
     }
+
+}
+
+
+@media screen and (max-width: 675px){
+
+        /* decrease indention ~ padding-left from 4.3rem */
+    .main .aboutUses .aboutUsesSub{
+        padding-left: 1rem;
+    }
+
+    /* decrease h2 padding-left from 4.3rem */
+    .main .aboutUses >h2{
+        padding-left: 0;
+        text-align: center;
+    }
+
+    /* decrease h2 saysAbout & reset */
+    .main .saysAboutMe >h2{
+        text-align: center;
+        padding-left: 0;
+     }
+
+
+
+    /* about Experience decrease indention/margin */
+    .main .aboutExperience{
+        padding: 3rem .5rem 2rem 1rem;
+    }
+    /* set center h2 */
+    .main .aboutExperience >h2{
+        text-align: center;
+    }
+
 
 }
