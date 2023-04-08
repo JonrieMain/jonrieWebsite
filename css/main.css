@@ -1,8 +1,8 @@
-@import "./home.css";
-@import "./about.css";
-@import "./myWorks.css";
-@import "./contact.css";
-@import "./footer.css";
+@import "./home.min.css";
+@import "./about.min.css";
+@import "./myWorks.min.css";
+@import "./contact.min.css";
+@import "./footer.min.css";
 
 /* color */
 /* https://colorhunt.co/palette/222831393e4600adb5eeeeee */
