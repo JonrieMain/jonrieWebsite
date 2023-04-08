@@ -149,6 +149,98 @@ line-height: 3rem;
      max-width: 1500px;
 }
 
+/* expe level */
+.main .aboutExperience .expLevel{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 6rem;
+    margin-top: 5rem;
+}
+.main .aboutExperience .expLevel >div{
+    background-color: transparent;
+    box-shadow: -3px 0px 27px -11px rgba(0,173,181,0.75);
+    -webkit-box-shadow: -3px 0px 27px -11px rgba(0,173,181,0.75);
+     -moz-box-shadow: -3px 0px 27px -11px rgba(0,173,181,0.75);
+    height: 100%;
+    max-height: 20rem;
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem .5rem 2rem .5rem;
+    position: relative;
+}
+.main .aboutExperience .expLevel >div >small{
+    position: absolute;
+    top: -2.1rem;
+    left: -2rem;
+    font-size: 2rem;
+    color: #00adb54a;
+}
+
+.main .aboutExperience .expLevel >div::after{
+    content: "";
+    background: #00adb54a;
+    height: 6rem;
+    width: .3rem;
+    position: absolute;
+    top:-5.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+}
+.main .aboutExperience .expLevel >div::before{
+    content: "";
+    background: #00adb54a;
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    top:-6.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    animation: dotVib 1s cubic-bezier(0,0,.2,1)  infinite;
+}
+/* remove after and before */
+.main .aboutExperience .expLevel >div:nth-child(3)::before,
+.main .aboutExperience .expLevel >div:nth-child(3)::after{
+    display: none;
+}
+
+
+@keyframes dotVib{
+    from{}
+    to{
+        opacity: 0;
+        height: 1.3rem;
+        width: 1.3rem;
+    }
+}
+
+
+.main .aboutExperience .expLevel >div >h3{
+    color: #00adb5;
+    font-size: 1.6rem;
+}
+.main .aboutExperience .expLevel >div >h4{
+    font-size: 1.4rem;
+    color: #00adb54a;
+}
+.main .aboutExperience .expLevel >div >p{
+    color: #00adb54a;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -157,8 +249,7 @@ line-height: 3rem;
     height: 100%;
     width: 100%;
     overflow: hidden;
-    padding: 6rem .5rem 2rem .5rem;
-
+    padding: 5rem .5rem 2rem .5rem;
 }
 .main .saysAboutMe >h2{
     font-size: 45px;
@@ -350,6 +441,12 @@ line-height: 3rem;
         text-align: center;
         padding-left: 0;
      }
+
+
+     /* exp small move position */
+     .main .aboutExperience .expLevel >div >small{
+        left: .1rem;
+    }
 
 
 
