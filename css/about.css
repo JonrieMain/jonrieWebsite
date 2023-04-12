@@ -149,6 +149,8 @@ line-height: 3rem;
      max-width: 1500px;
 }
 
+
+
 /* expe level */
 .main .aboutExperience .expLevel{
     height: 100%;
@@ -166,9 +168,9 @@ line-height: 3rem;
     -webkit-box-shadow: -3px 0px 27px -11px rgba(0,173,181,0.75);
      -moz-box-shadow: -3px 0px 27px -11px rgba(0,173,181,0.75);
     height: 100%;
-    max-height: 20rem;
+    max-height: 22rem;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     padding: 1rem .5rem 2rem .5rem;
     position: relative;
 }
@@ -225,11 +227,11 @@ line-height: 3rem;
     font-size: 1.6rem;
 }
 .main .aboutExperience .expLevel >div >h4{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #00adb54a;
 }
 .main .aboutExperience .expLevel >div >p{
-    color: #00adb54a;
+    color: #00acb5ba;
     font-size: 1.2rem;
     margin-top: 1.5rem;
 }
@@ -271,7 +273,7 @@ line-height: 3rem;
 }
 .main .saysAboutMe >#scroll >div{
     height: 28rem;
-    width: 20rem;
+    width: 21rem;
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
@@ -281,12 +283,13 @@ line-height: 3rem;
     box-shadow: 0px 21px 17px -8px rgba(0,173,181,0.55);
     -webkit-box-shadow: 0px 21px 17px -8px rgba(0,173,181,0.55);
     -moz-box-shadow: 0px 21px 17px -8px rgba(0,173,181,0.55);
-    padding: .2rem;
+    padding: .2rem .5rem;
 }
 
 
 .main .saysAboutMe >#scroll >div:hover{
     background: #00adb5;    
+    transform: translateY(-3px);
 }
 .main .saysAboutMe >#scroll >div >span{
     height: 2rem;
@@ -318,8 +321,7 @@ line-height: 3rem;
     width: 100%;
 }
 .main .saysAboutMe >#scroll >div >p{
-    text-align: center;
-    padding-top: 9rem;
+    margin-top: 9rem;
     font-size: 1.1rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #eeeeee;
