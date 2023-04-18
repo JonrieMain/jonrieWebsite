@@ -218,8 +218,8 @@ body{
 }
 .main .home header #bars{
     font-size: 3rem;
-    position: absolute;
-    top: 30%;
+    position: fixed;
+    top: 2rem;
     right: 2%;
     color: #fff;
     cursor: pointer;
@@ -237,7 +237,7 @@ body{
     padding-top: 3rem;
 }
 .main .home header .linksCon >.left{
-    margin-left: -1rem;
+    margin-left: -7rem;
 }
 .main .home header a .logo{
     width: 100%;
@@ -252,7 +252,7 @@ body{
 /* left */
 .main .home header .linksCon .left a{
     color: #000;
-    font-size: 40px;
+    font-size: 30px;
     text-decoration: none;
     margin-right: 2rem;
     position: relative;
@@ -287,7 +287,7 @@ margin-left: -2rem;
 }
 .main .home header .linksCon .right a{
     color: #EEEEEE;
-    font-size: 40px;
+    font-size: 30px;
     text-decoration: none;
     margin-right: 2rem;
     transition: 1s;
@@ -425,6 +425,11 @@ margin-left: -2rem;
     background-attachment: unset;
     }
 
+
+        /* reset */
+    .main .home header .linksCon >.left{
+        margin-left: 0;
+    }
 
        .main .home header .linksCon  .left,
        .main .home header .linksCon  .right{

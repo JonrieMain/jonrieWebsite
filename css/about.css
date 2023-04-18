@@ -270,6 +270,8 @@ line-height: 3rem;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 .main .saysAboutMe >#scroll >div{
     height: 28rem;
