@@ -1,6 +1,6 @@
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url(//db.onlinewebfonts.com/c/5afcc6e055927a510d82c2ced10c01c9?family=Wide+Latin);
+
 
 /* root */
 :root{
@@ -48,6 +48,7 @@ body{
     /* for pre loader */
     opacity: 0;
     transition: 2s linear;
+    overflow: hidden;
 }
 
 /* contact */
@@ -259,6 +260,7 @@ body{
     margin-right: 2rem;
     position: relative;
     font-family: var(--sans);
+    z-index: 10000;
 }
 .main .home header .linksCon .left a:nth-child(1){
 margin-left: -2rem;

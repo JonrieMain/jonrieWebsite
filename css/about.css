@@ -9,6 +9,7 @@
     padding: 0 .5rem;
     /* for picture */
     overflow: hidden;
+    max-width: 2500px;
 }
 .main .about .leftAbout{
     max-width: 900px;
@@ -161,9 +162,10 @@ line-height: 3rem;
     flex-direction: column-reverse;
     gap: 6rem;
     margin-top: 5rem;
+    max-width: 2500px;
 }
 .main .aboutExperience .expLevel >div{
-    background-color: transparent;
+    background: transparent;
     box-shadow: -3px 0px 27px -11px rgba(0,173,181,0.75);
     -webkit-box-shadow: -3px 0px 27px -11px rgba(0,173,181,0.75);
      -moz-box-shadow: -3px 0px 27px -11px rgba(0,173,181,0.75);
@@ -252,6 +254,7 @@ line-height: 3rem;
     width: 100%;
     overflow: hidden;
     padding: 5rem .5rem 2rem .5rem;
+    max-width: 2500px;
 }
 .main .saysAboutMe >h2{
     font-size: 45px;

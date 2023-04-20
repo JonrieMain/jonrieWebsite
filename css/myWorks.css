@@ -65,7 +65,7 @@
 /* lines from */
 .main .myWorks .worksCon >div >.linesFrom::before{
     content: "";
-    height: 450rem;
+    height: 10000rem;
     width: 1.5px;
     background: #eeeeee;
     position: absolute;

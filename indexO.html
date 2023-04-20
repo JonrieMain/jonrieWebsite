@@ -248,7 +248,7 @@
                 <p>HTML 5</p>
                 <p>CSS 3</p>
                 <p>Bootstrap</p>
-		<p>Parcel JS</p>
+		        <p>Parcel JS</p>
             </div>
             </div>
             <div class="backend" data-aos="fade-up"
@@ -270,6 +270,7 @@
                 <p>Googlefonts</p>
                 <p>GoogleIcons</p>
                 <p>Formsubmit</p>
+                <p>FileMinification</p>
             </div>
             </div>
      </div>
@@ -579,7 +580,7 @@
 
             <!-- POS -->
             <div data-aos="fade-left" data-aos-duration="800">
-                <h2 class="linesFrom">Inventory with Point of Sale</h2>
+                <h2>Inventory with Point of Sale</h2>
                 <p>HTML,CSS,JQUERY,AJAX,PHP,MYSQL/MARIADB</p>
                 <div class="sub">
                     <div>
@@ -597,6 +598,27 @@
                 </div>
            </div>
 
+
+
+           <!-- apiCalling -->
+           <div data-aos="fade-left" data-aos-duration="800">
+            <h2 class="linesFrom">API Calling</h2>
+            <p>HTML,CSS,JQUERY,AJAX</p>
+            <div class="sub">
+                <div>
+                    <img src="./assets/works/apiPic.png" alt="POS">
+
+                    <span>
+                    <a target="_blank" href="https://github.com/JonrieMain/APICalling"><i class="fa-brands fa-github"></i> Github</a>
+
+                    <a target="_blank" href="https://jonriemain.github.io/APICalling/"><i class="fa-solid fa-globe"></i> View site</a>
+                </span>
+                </div>
+                <div>
+                    <p>This application I built is a simple image generator with cats, dogs, and random advice. I built this to enhance my skills in API integration.</p>
+                </div>
+            </div>
+       </div>
 
 
 
@@ -617,7 +639,7 @@
 
 
 
-        <div class="letsTalk">
+        <div class="letsTalk" id="vantaContact">
             <h2 data-aos="fade-right" id="letsTalk">Contact</h2>
             <p data-aos="zoom-in" data-aos-duration="1000">I'm looking forward to working with you and I hope my portfolio satisfied you. If you're not yet satisfied, you can contact me to learn more about me, and if you are, I'd appreciate it if you did. The following details are how you can get in touch with me. I'll respond as quickly as I can. Thank you </p>
            
@@ -659,52 +681,11 @@
 
 
 </body>
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-<!-- vanta -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-
-<script>
-    VANTA.NET({
-      el: "#homeVanta",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      points: 18.00,
-      maxDistance: 14.00,
-      spacing: 14.00,
-      backgroundColor: 0x222831,
-      color: 0x00adb5,
-    })
-    </script>
-
-
-<!-- aos js -->
+<!-- aos -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-  AOS.init({
-    once: true,
-    easing: 'linear',
-    startEvent: 'DOMContentLoaded'
-  });
-</script>
+
 <!-- custom JS -->
 <script type="module" src="./js/main.js"></script>
-
-<script>
-    // preloader
-    setTimeout(()=>{
-       $('body').css("overflow","unset");
-       $('.main').css("opacity","1");
-       $('.preloader').css("display", "none");
-   },3500)
-</script>
 
 </html>

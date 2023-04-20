@@ -13,6 +13,10 @@ $(document).ready(()=>{
             setTimeout(()=>{
                 linksCon.css("opacity","1");
             },1100);
+
+                // overlap remove
+            $('.homeTextCon').css("display","none");
+            $('.socialLinks').css("left","-20%");
         }else{
             bars.addClass('fa-bars').removeClass('fa-close')
             // set opacity
@@ -23,6 +27,10 @@ $(document).ready(()=>{
             setTimeout(()=>{
                 linksCon.css("left","200%");
             },1100);
+
+            // overlap show
+            $('.homeTextCon').css("display","block");
+            $('.socialLinks').css("left","4%");
         }
     });
 
@@ -30,6 +38,11 @@ $(document).ready(()=>{
     let links = $('.links');
     links.each(function(index,btn){
        $(this).on('click',function(){
+
+        // spe
+        $('.spe').each((ind,val)=>{
+            $(val).css("display","block");
+        });
 
         // check if window width is less than 875
         if($(window).width()<= 874){
@@ -45,6 +58,9 @@ $(document).ready(()=>{
         },1100);
         }
 
+        // overlap
+        $('.homeTextCon').css("display","block");
+         $('.socialLinks').css("left","4%");
 
         });
     });
