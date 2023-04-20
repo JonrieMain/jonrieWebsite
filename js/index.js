@@ -16,6 +16,7 @@ $(document).ready(()=>{
 
                 // overlap remove
             $('.homeTextCon').css("display","none");
+            $('.letTalkIn').css("display","none");
             $('.socialLinks').css("left","-20%");
         }else{
             bars.addClass('fa-bars').removeClass('fa-close')
@@ -30,6 +31,7 @@ $(document).ready(()=>{
 
             // overlap show
             $('.homeTextCon').css("display","block");
+            $('.letTalkIn').css("display","block");
             $('.socialLinks').css("left","4%");
         }
     });
@@ -60,6 +62,7 @@ $(document).ready(()=>{
 
         // overlap
         $('.homeTextCon').css("display","block");
+        $('.letTalkIn').css("display","block");
          $('.socialLinks').css("left","4%");
 
         });

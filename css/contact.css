@@ -2,22 +2,22 @@
     background: #222831;
     height: 100%;
     width: 100%;
-    min-height: 6rem;
+    min-height: 800px;
     padding: 4rem .3rem;
     display: flex;
     flex-direction: column;
-    justify-content: centerw;
+    justify-content: center;
     align-items: center;
     border-top: 1.5px solid #eeeeee;
 }
-.main .letsTalk >h2{
+.main .letsTalk .letTalkIn >h2{
     font-size: 40px;
     color: #00adb5;
     margin-bottom: 1.4rem;
     font-weight: 500;
     font-family: var(--sans);
 }
-.main .letsTalk >p{
+.main .letsTalk .letTalkIn >p{
     word-break: break-word;
     color: #eeeeee;
     font-size: 25px;
@@ -25,29 +25,31 @@
     font-family: var(--sans);
     margin-bottom: 4rem;
     border-right: 2px solid #00adb5;
+    background: #2228319d;
+    padding: 2px;
 }
-.main .letsTalk >span{
+.main .letsTalk .letTalkIn >span{
     display: flex;
     flex-direction: column;
 }
-.main .letsTalk >span >i{
+.main .letsTalk .letTalkIn >span >i{
     font-size: 1.4rem;
     color: #00adb5;
     margin-bottom: 2rem;
 }
-.main .letsTalk >span >i >span{
+.main .letsTalk .letTalkIn >span >i >span{
     color: #eeeeee;
     font-family: var(--sans);
     word-break: break-word;
     font-weight: 500;
 }
-.main .letsTalk >span >i >span >a{
+.main .letsTalk .letTalkIn >span >i >span >a{
 text-decoration: none;
 color: #eeeeee;
 }
 
 /* cv */
-.main .letsTalk >span >.cv >a{
+.main .letsTalk .letTalkIn >span >.cv >a{
     text-decoration: none;
     color: #eeeeee;
     font-family: var(--sans);
@@ -58,24 +60,29 @@ color: #eeeeee;
 
 
 /* icons links */
-.main .letsTalk >span >div{
+.main .letsTalk .letTalkIn >span >div{
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
 }
-.main .letsTalk >span >div >a{
+.main .letsTalk .letTalkIn >span >div >a{
     font-size: 2rem;
 }
-.main .letsTalk >span >div >a >i{
+.main .letsTalk .letTalkIn >span >div >a >i{
     color: #eeeeee;
 }
 
 @media screen and (max-width: 950px){
-    .main .letsTalk >p{
+    .main .letsTalk .letTalkIn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main .letsTalk .letTalkIn >p{
         font-size: 20px;
     }
 
-    .main .letsTalk >span >i >span{
+    .main .letsTalk .letTalkIn >span >i >span{
         font-size: 1.2rem;
     }
 }
