@@ -39,6 +39,77 @@ line-height: 3rem;
 
 
 
+
+/* services */
+.main .services{
+    height: 100%;
+    width: 100%;
+    background: #222831;
+    padding: 6rem .5rem 2rem .5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main .services >h2{
+    font-size: 45px;
+    color: #00adb5;
+     margin-bottom: 1rem;
+     font-family: var(--sans);
+     font-weight: 500;
+}
+.main .services >span{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+.main .services >span >div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s;
+} 
+.main .services >span >div:hover{
+    transform: scale(1.1);
+}
+.main .services >span >div:hover >i{
+    transform: rotate(1turn);
+    border-radius: 50%;
+}
+
+
+.main .services >span >div >i{
+    font-size: 3rem;
+    color: #eeeeee;
+    background: #00adb5;
+    padding: 1rem;
+    border-radius: 1px;
+    transition: 1.5s;
+}
+.main .services >span >div >h3{
+    color: #eeeeee;
+    font-family: var(--sans);
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 0;
+}
+.main .services >span >div >p{
+    max-width: 350px;
+    text-align: center;
+    color: #eeeeee;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
 /* about uses CSS */
 .main .aboutUses{
     height: 100%;
@@ -325,6 +396,22 @@ line-height: 3rem;
     word-break: break-word;
     width: 100%;
 }
+.main .saysAboutMe >#scroll >div >h3 >a{
+    text-decoration: none;
+}
+.main .saysAboutMe >#scroll >div >h3 >a >i{
+    color: #eeeeee;
+    margin-right: .2rem;
+    font-size: 1.4rem;
+    transition: 1s;
+}
+.main .saysAboutMe >#scroll >div:hover >h3 >a >i{
+    transform: rotate(360deg);
+}
+.main .saysAboutMe >#scroll >div:hover >h3 >a >i:hover{
+    color: #222831;
+}
+
 .main .saysAboutMe >#scroll >div >p{
     margin-top: 9rem;
     font-size: 1.1rem;
@@ -347,8 +434,7 @@ line-height: 3rem;
     /* put flex-wrap and flex-start */
     .main .aboutUses .aboutUsesSub{
         flex-wrap: wrap;
-        justify-content: flex-start;
-        
+        justify-content: flex-start;  
     }
 
     /*  reset aboutRight  margin  */
@@ -377,10 +463,24 @@ line-height: 3rem;
         font-size: 35px;
     }
 
-      /* decrease h2 saysAbout & reset */
+      /* decrease h2 saysAbout */
       .main .saysAboutMe >h2{
        font-size: 35px;
     }
+     /* decrease h2 services and others */
+     .main .services >h2{
+        font-size: 35px;
+        text-align: center;
+     }
+     .main .services >span >div >h3{
+        font-size: 1.3rem;
+        text-align: center;
+     }
+     .main .services >span >div >p{
+        font-size: 1.1rem;
+        text-align: center;
+     }
+
 
         /* reset */
     .main .about .leftAbout >p{
