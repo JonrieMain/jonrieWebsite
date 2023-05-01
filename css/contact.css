@@ -15,7 +15,7 @@
     color: #00adb5;
     margin-bottom: 1.4rem;
     font-weight: 500;
-    font-family: var(--sans);
+    font-family: var(--castoro);
 }
 .main .letsTalk .letTalkIn >p{
     word-break: break-word;
@@ -27,6 +27,7 @@
     border-right: 2px solid #00adb5;
     background: #2228319d;
     padding: 2px;
+    font-weight: 400;
 }
 .main .letsTalk .letTalkIn >span{
     display: flex;
@@ -44,8 +45,15 @@
     font-weight: 500;
 }
 .main .letsTalk .letTalkIn >span >i >span >a{
-text-decoration: none;
-color: #eeeeee;
+    text-decoration: none;
+    color: #eeee;
+    font-family: var(--sans);
+    font-weight: 400;
+}
+.main .letsTalk .letTalkIn >span >i >span{
+padding-left: .5rem;
+    font-family: var(--sans);
+    font-weight: 400;
 }
 
 /* cv */
@@ -54,8 +62,10 @@ color: #eeeeee;
     color: #eeeeee;
     font-family: var(--sans);
     word-break: break-word;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 19.2px;
+    padding-left: .5rem;
+
 }
 
 

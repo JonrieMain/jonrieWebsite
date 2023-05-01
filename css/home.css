@@ -1,11 +1,12 @@
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
 
 /* root */
 :root{
     --sans: 'Open Sans', sans-serif;
     --wideLatin: "Wide Latin";
+    --castoro: 'Castoro Titling', cursive;
 }
 
 /* reset */
@@ -112,7 +113,7 @@ body{
 
 .main .contactForm >h1{
     color: #EEEEEE;
-    font-family: var(--sans);
+    font-family: var(--castoro);
     text-align: center;
     word-break: break-word;
 }

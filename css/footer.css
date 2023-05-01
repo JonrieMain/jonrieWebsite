@@ -11,7 +11,7 @@
 .main footer #c{
     color: #eeeeee;
     font-size: 20px;
-    font-family: var(--sans);
+    font-family: var(--castoro);
     word-wrap: break-word;
 }
 .main footer a >i{

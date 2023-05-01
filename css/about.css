@@ -20,7 +20,7 @@
     font-size: 45px;
     color: #00adb5;
      margin-bottom: 1rem;
-     font-family: var(--sans);
+     font-family: var(--castoro);
      font-weight: 500;
 }
 .main .about .leftAbout >p{
@@ -51,7 +51,7 @@ line-height: 3rem;
     font-size: 45px;
     color: #00adb5;
      margin-bottom: 1rem;
-     font-family: var(--sans);
+     font-family: var(--castoro);
      font-weight: 500;
      padding-left: 4.3rem;
 }
@@ -91,7 +91,7 @@ line-height: 3rem;
 }
 .main .services >span >div >h3{
     color: #eeeeee;
-    font-family: var(--sans);
+    font-family: var(--castoro);
     font-size: 1.5rem;
     margin: 2rem 0 1rem 0;
 }
@@ -100,7 +100,7 @@ line-height: 3rem;
     text-align: center;
     color: #eeeeee;
     font-size: 1.2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--sans);
 }
 
 
@@ -122,7 +122,7 @@ line-height: 3rem;
     color: #00adb5;
     font-weight: 500;
     padding-left: 4.3rem;
-    font-family: var(--sans);
+    font-family: var(--castoro);
 }
 
 .main .aboutUses .aboutUsesSub{
@@ -143,22 +143,23 @@ line-height: 3rem;
 .main .aboutUses .aboutUsesSub .frontend >h3,
 .main .aboutUses .aboutUsesSub .backend >h3{
     font-size: 35px;
-    font-weight: 500;
     color: #eeeeee;
     display: flex;
-    font-family: var(--sans);
+    font-family: var(--castoro);
 }
 .main .aboutUses .aboutUsesSub .others >h3{
     font-size: 25px;
     color: #eeeeee;
     display: flex;
-    font-family: var(--sans);
+    font-family: var(--castoro);
 }
 
 /* for all p */
 .main .aboutUses .aboutUsesSub >div >div p{
     color: #eeeeee;
-    font-size: 30px;
+    font-size: 25px;
+    font-family: var(--sans);
+
 }
 /* layout for all and indention for all div */
 .main .aboutUses .aboutUsesSub >div >div{
@@ -210,7 +211,7 @@ line-height: 3rem;
     color: #00adb5;
     font-weight: 500;
     margin-bottom: 2.3rem;
-     font-family: var(--sans);
+     font-family: var(--castoro);
 }
 .main .aboutExperience >p{
     font-size: 21px;
@@ -253,6 +254,7 @@ line-height: 3rem;
     left: -2rem;
     font-size: 2rem;
     color: #00adb54a;
+    font-family: var(--castoro);
 }
 
 .main .aboutExperience .expLevel >div::after{
@@ -278,7 +280,7 @@ line-height: 3rem;
     border-radius: 50%;
     animation: dotVib 1s cubic-bezier(0,0,.2,1)  infinite;
 }
-/* remove after and before */
+/* remove after and before of latest */
 .main .aboutExperience .expLevel >div:nth-child(3)::before,
 .main .aboutExperience .expLevel >div:nth-child(3)::after{
     display: none;
@@ -298,15 +300,22 @@ line-height: 3rem;
 .main .aboutExperience .expLevel >div >h3{
     color: #00adb5;
     font-size: 1.6rem;
+    font-family: var(--castoro);
+    font-weight: 800;
 }
 .main .aboutExperience .expLevel >div >h4{
     font-size: 1.2rem;
     color: #00adb54a;
+    font-family: var(--castoro);
+    font-weight: 400;
+    text-indent: 1rem;
 }
 .main .aboutExperience .expLevel >div >p{
     color: #00acb5ba;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 1.5rem;
+    font-family: var(--sans);
+    text-align: center;
 }
 
 
@@ -330,7 +339,7 @@ line-height: 3rem;
 .main .saysAboutMe >h2{
     font-size: 45px;
     color: #00adb5;
-    font-family: var(--sans);
+    font-family: var(--castoro);
     font-weight: 500;
     padding-left: 4.3rem;
     padding-bottom: 2.3rem;
@@ -348,7 +357,7 @@ line-height: 3rem;
     margin: 0 auto;
 }
 .main .saysAboutMe >#scroll >div{
-    height: 28rem;
+    height: 27rem;
     width: 21rem;
     display: flex;
     flex-direction: column;
@@ -395,6 +404,8 @@ line-height: 3rem;
     text-align: center;
     word-break: break-word;
     width: 100%;
+    font-family: var(--sans);
+    font-weight: 800;
 }
 .main .saysAboutMe >#scroll >div >h3 >a{
     text-decoration: none;
@@ -415,10 +426,11 @@ line-height: 3rem;
 .main .saysAboutMe >#scroll >div >p{
     margin-top: 9rem;
     font-size: 1.1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--sans);
     color: #eeeeee;
     word-break: break-word;
     overflow-y: auto;
+    font-weight: 400;
 }
 
 
