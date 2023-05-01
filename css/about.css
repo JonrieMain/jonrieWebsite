@@ -373,8 +373,8 @@ line-height: 3rem;
 
 
 .main .saysAboutMe >#scroll >div:hover{
-    background: #00adb5;    
-    transform: translateY(-3px);
+    background: #00acb548;   
+    transform: translateY(-5px);
 }
 .main .saysAboutMe >#scroll >div >span{
     height: 2rem;
