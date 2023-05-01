@@ -45,7 +45,7 @@ line-height: 3rem;
     height: 100%;
     width: 100%;
     background: #222831;
-    padding: 6rem .5rem 2rem .5rem;
+    padding: 6rem .5rem;
 }
 .main .services >h2{
     font-size: 45px;
@@ -70,14 +70,14 @@ line-height: 3rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: .5s;
 } 
-.main .services >span >div:hover{
-    transform: scale(1.1);
-}
 .main .services >span >div:hover >i{
-    transform: rotate(1turn);
+    animation: spin 1s linear;
     border-radius: 50%;
+}
+@keyframes spin{
+    from{}
+    to{transform: rotate(360deg);}
 }
 
 
