@@ -24,7 +24,7 @@
      font-weight: 500;
 }
 .main .about .leftAbout >p{
-font-size: 30px;
+font-size: 21px;
 color: #eeeeee;
 font-family: var(--sans);
 word-break: break-word;
@@ -46,8 +46,6 @@ line-height: 3rem;
     width: 100%;
     background: #222831;
     padding: 6rem .5rem 2rem .5rem;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 .main .services >h2{
     font-size: 45px;
@@ -55,6 +53,7 @@ line-height: 3rem;
      margin-bottom: 1rem;
      font-family: var(--sans);
      font-weight: 500;
+     padding-left: 4.3rem;
 }
 .main .services >span{
     display: flex;
@@ -64,6 +63,7 @@ line-height: 3rem;
     gap: 2rem;
     margin-top: 2rem;
     gap: 3rem;
+    max-width: 2500px;
 }
 .main .services >span >div{
     display: flex;
@@ -213,7 +213,7 @@ line-height: 3rem;
      font-family: var(--sans);
 }
 .main .aboutExperience >p{
-    font-size: 30px;
+    font-size: 21px;
     color: #eeeeee;
     line-height: 3rem;
     word-break: break-word;
@@ -471,6 +471,7 @@ line-height: 3rem;
      .main .services >h2{
         font-size: 35px;
         text-align: center;
+        padding-left: 0;
      }
      .main .services >span >div >h3{
         font-size: 1.3rem;
@@ -537,18 +538,16 @@ line-height: 3rem;
         padding-left: 1rem;
     }
 
+     /* decrease h2 saysAbout & reset */
     /* decrease h2 padding-left from 4.3rem */
-    .main .aboutUses >h2{
+     
+    .main .aboutUses >h2,
+    .main .saysAboutMe >h2{
         padding-left: 0;
         text-align: center;
     }
 
-    /* decrease h2 saysAbout & reset */
-    .main .saysAboutMe >h2{
-        text-align: center;
-        padding-left: 0;
-     }
-
+    
  
      /* exp small move position */
      .main .aboutExperience .expLevel >div >small{
