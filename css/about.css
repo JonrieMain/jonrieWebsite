@@ -565,6 +565,24 @@ line-height: 3rem;
      .main .aboutExperience .expLevel >div >small{
         left: .1rem;
     }
+    /* exp level text size reduce h3,h4,small */
+    .main .aboutExperience .expLevel >div >h3{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .main .aboutExperience .expLevel >div >h4{
+        font-size: .9rem;
+        text-align: center;
+    }
+    .main .aboutExperience .expLevel >div >small{
+        font-size: 1.3rem;
+    }
+    /* text indent unset */
+    .main .aboutExperience .expLevel >div >h3,
+    .main .aboutExperience .expLevel >div >h4,
+    .main .aboutExperience .expLevel >div >small{
+        text-indent: 0;
+    }
 
 
 
