@@ -1,5 +1,18 @@
 $(document).ready(()=>{
 
+    $(window).on('scroll',()=>{
+        if(window.scrollY > 50){
+            $('.up').css("zIndex","10000");
+        }else{
+            $('.up').css("zIndex","-1");
+        }
+    });
+
+    $('.up').on('click',()=>{
+        $('#up').click();
+    });
+
+
     let bars = $('#bars');
     let linksCon = $('#linksCon');
     bars.on('click',()=>{

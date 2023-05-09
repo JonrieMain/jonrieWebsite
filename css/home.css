@@ -56,7 +56,7 @@ body{
 .main #contact{
     position: fixed;
     z-index: 10000;
-    bottom: 2%;
+    bottom: 1rem;
     right: 2%;
     font-size: 2.5rem;
     color: #00ADB5;
@@ -79,6 +79,22 @@ body{
 .main #contact:hover::after{
     opacity: 1;
 }
+
+/* up */
+.main .up{
+    position: fixed;
+    z-index: -1;
+    bottom: 6rem;
+    right: 2.8%;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: #00ADB5;
+    transform: rotate(91deg);
+    -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 42% 100%, 0% 50%, 42% 0);
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 42% 100%, 0% 50%, 42% 0);
+    cursor: pointer;
+}
+
 
 /* contact form */
 .main .contactForm{
