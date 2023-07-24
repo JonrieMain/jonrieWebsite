@@ -12,6 +12,45 @@
     font-weight: 500;
     text-align: center;
 }
+
+
+
+/* swiper laptop */
+.main .myWorks .carou{
+    position: relative;
+    margin-bottom: 13rem;
+    margin-top: 2rem;
+}
+.main .myWorks .carou .laptop{
+    position: absolute;
+    top: -12%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 525px;
+    max-width: 799px
+}
+.main .myWorks .swiper {
+  width: 560px;
+  height: 300px;
+  margin-top: 2rem;
+}
+
+.main .myWorks .swiper .swiper-wrapper .swiper-slide img{
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    max-width: 560px;
+}
+
+
+
+
+
+
+
+
+
+
 .main .myWorks >p{
     color: #eeeeee;
     font-size: 1.1rem;
@@ -180,6 +219,15 @@
     }
 }
 
+
+/* for carousel */
+@media screen and (max-width: 780px){
+
+    /* make display none */
+    .main .myWorks .carou{
+        display: none;
+    }
+}
 
 
 @media screen and (max-width: 550px){

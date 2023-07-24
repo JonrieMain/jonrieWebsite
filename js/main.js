@@ -15,3 +15,19 @@ import "./vanta.min.js";
 import "./index.min.js";
 // preLoaderOut
 import "./loaderOut.min.js";
+
+// swiper js cdn and initialize
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs';
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      speed: 3500
+
+  });
