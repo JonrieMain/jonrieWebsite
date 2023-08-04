@@ -19,7 +19,8 @@ import "./loaderOut.min.js";
 // swiper js cdn and initialize
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs';
 
-const swiper = new Swiper('.swiper', {
+// Swiper Project
+const swiperProject = new Swiper('.swiperProject', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -30,4 +31,14 @@ const swiper = new Swiper('.swiper', {
       },
       speed: 3500
 
+  });
+
+  // Swiper Certificate
+  const swiperCertificates = new Swiper(".certiSwiper", {
+    effect: "cards",
+    grabCursor: true,
+    pagination: {
+        el: ".swiper-pagination",
+      }
+      
   });

@@ -224,7 +224,7 @@ line-height: 3rem;
 
 
 
-/* expe level */
+/* expe level and certificate cards */
 .main .aboutExperience .expLevel{
     height: 100%;
     width: 100%;
@@ -248,6 +248,8 @@ line-height: 3rem;
     padding: 1rem .5rem 2rem .5rem;
     position: relative;
 }
+
+
 .main .aboutExperience .expLevel >div >small{
     position: absolute;
     top: -2.1rem;
@@ -282,7 +284,9 @@ line-height: 3rem;
 }
 /* remove after and before of latest */
 .main .aboutExperience .expLevel >div:nth-child(3)::before,
-.main .aboutExperience .expLevel >div:nth-child(3)::after{
+.main .aboutExperience .expLevel >div:nth-child(3)::after,
+.main .aboutExperience .expLevel >div:nth-child(4)::before,
+.main .aboutExperience .expLevel >div:nth-child(4)::after{
     display: none;
 }
 
@@ -318,6 +322,25 @@ line-height: 3rem;
     text-align: center;
 }
 
+
+/* certificate cards */
+.main .aboutExperience .expLevel .certi{
+    position: relative;
+    margin: 2rem 0;
+}
+
+.main .aboutExperience .expLevel .certi > .certiSwiper .swiper-wrapper >div >img{
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+    max-width: 500px;
+}
+.main .aboutExperience .expLevel .certi .swiper-pagination{
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
 
