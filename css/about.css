@@ -329,6 +329,13 @@ line-height: 3rem;
     margin: 2rem 0;
 }
 
+
+
+/* hidden class of swiper set z-index */
+.main .aboutExperience .expLevel .certi .swiper-cards{
+    z-index: inherit;
+}
+
 .main .aboutExperience .expLevel .certi > .certiSwiper .swiper-wrapper >div >img{
     height: 100%;
     width: 100%;

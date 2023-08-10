@@ -25,7 +25,7 @@ $(document).ready(()=>{
             // set opacity
             setTimeout(()=>{
                 linksCon.css("opacity","1");
-            },1100);
+            },500);
 
                 // overlap remove
             $('.homeTextCon').css("display","none");
@@ -40,7 +40,7 @@ $(document).ready(()=>{
             // set opacity
             setTimeout(()=>{
                 linksCon.css("left","200%");
-            },1100);
+            },500);
 
             // overlap show
             $('.homeTextCon').css("display","block");

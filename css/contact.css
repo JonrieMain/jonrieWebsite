@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     border-top: 1.5px solid #eeeeee;
+    z-index: -1;
 }
 .main .letsTalk .letTalkIn >h2{
     font-size: 40px;
